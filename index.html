@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Order - Mama Laundry</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+		<link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">		
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<link rel="icon" href="images/tab-logo.ico">
+		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
+		<link rel="stylesheet" href="css/style.css">		
+	</head>
+	<!-- ## name selector
+	main-form :
+
+	in-custname		li-laundry-itemtype
+	in-phonenum		li-laundry-servicetype
+	li-prodtype		in-laundry-qty
+					in-laundry-totaleach
+					li-laundry-trxtype
+					in-laundry-totalall
+					in-laundry-amountpaid
+					in-laundry-amountchange
+					in-laundry-checkin
+					in-laundry-checkout
+	-->
+	<body>
+		<div class="wrapper">
+			<div class="inner">
+				<form action="" name="main-form">
+					<div id="logo" class="logo"><img src="images/mama-laundry.png"></div>
+					<div class="border"><br></div>					
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Customer</label>
+							<div class="small-icon"><i class="fas fa-user"></i></div>
+							<input name="in-custname" type="text" class="form-control" placeholder="Bapak / Ibu . . .">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Phone</label>
+							<div class="small-icon"><i class="fas fa-phone"></i></div>							
+							<input name="in-phonenum" type="number" class="form-control" placeholder="0821 . . .">
+						</div>
+					</div>
+					<div class="form-row long">
+						<div class="form-wrapper long">
+							<label for="">Product Type</label>
+							<div class="small-icon"><i class="fas fa-clone"></i></div>				
+							<select name="li-prodtype" id="prod-type" class="form-control long">
+								<option value="1">Laundry & Dry Cleaning</option>
+								<option value="2">Super Chemical Laundry</option>
+								<option value="3">Office & Kid Stationery</option>
+								<option value="4">Le Mineral Beverage</option>								
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="border menu"><br></div>
+					<div id="calendar" class="form-row">
+						<div class="form-wrapper">
+							<label for="">Check-in</label>
+							<div class="small-icon"><i class="fas fa-calendar-alt"></i></div>
+							<input name="in-laundry-checkin" type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Check-out</label>
+							<div class="small-icon"><i class="fas fa-calendar-check"></i></div>
+							<input name="in-laundry-checkout" type="text" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2">
+						</div>
+					</div>
+					<div class="form-row long" id="service-head">
+						<div class="form-wrapper long">
+							<label for="">Service Detail</label>
+						</div>
+					</div>
+					<ul id="list-menu" class="parent-list">
+						<li id="menu-laundry" name="0">
+							<div class="form-row">
+								<div class="form-wrapper item one">
+									<button id="rmv-item" type="button" onclick="removeItem()"><div class="small-icon item"><i class="fas fa-minus-circle"></i></div></button>
+									<div class="small-icon small-item one"><i class="fas fa-tshirt"></i></div>
+									<select name="li-laundry-itemtype" id="" class="form-control">
+										<option value="1">Pakaian</option>
+										<option value="2">Sprei Kecil</option>
+										<option value="3">Sprei Kecil Full-set</option>
+										<option value="4">Sprei Sedang</option>
+										<option value="5">Sprei Sedang Full-set</option>
+										<option value="6">Sprei Besar</option>
+										<option value="7">Sprei Besar Full-set</option>
+										<option value="8">Bedcover Kecil</option>
+										<option value="9">Bedcover Sedang</option>
+										<option value="10">Bedcover Besar</option>									
+										<option value="11">Jas / Jaket / Kebaya</option>
+										<option value="12">Peralatan Shalat</option>
+									</select>
+									<i class="zmdi zmdi-chevron-down"></i>
+								</div>
+								<div class="form-wrapper item two">
+									<div class="small-icon small-item two"><i class="fas fa-tint"></i></div>																
+									<select name="li-laundry-servicetype" id="" class="form-control">
+										<option value="1">Cuci Regular</option>
+										<option value="2">Cuci Express</option>
+										<option value="3">Setrika Regular</option>
+										<option value="4">Setrika Express</option>
+										<option value="5">Dry Cleaning</option>
+									</select>
+									<i class="zmdi zmdi-chevron-down"></i>
+								</div>
+								<div class="form-wrapper item three">
+									<div class="small-icon small-item three"><i class="fas fa-balance-scale"></i></div>
+									<input name="in-laundry-qty" type="number" class="form-control" placeholder="Qty" oninput="calcItem();">
+								</div>
+								<div class="form-wrapper item four">
+									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
+									<input name="in-laundry-totaleach" type="text" class="form-control money" placeholder="0">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="border"><br></div>
+					<div class="form-row long">
+						<div class="form-wrapper long item trx">
+							<label for="">Transaction Status</label>
+							<button id="add-item" type="button" data-text="ADD" onclick="addItem()">
+								<span><strong>ADD ITEM</strong></span>
+							</button>												
+							<div class="small-icon small-item long"><i class="fas fa-receipt"></i></div>							
+							<select name="li-laundry-trxtype" id="payment-type" class="form-control long">
+								<option value="1">Pembayaran Lunas ( Cash / Transfer )</option>
+								<option value="2">Pembayaran Nanti ( Barang Selesai )</option>
+								<option value="3">Pembayaran Rekap ( Bulanan )</option>								
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="border"><br></div>
+					<!-- START FROM HERE CAT | ITEM LAUNDRY -->
+					<!-- 2 form-row, last-cash & last-nocash -->					
+					<div class="form-row last long">
+						<div class="form-wrapper long">
+							<label for="">Total Price</label>
+							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>											
+							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0">
+						</div>
+					</div>
+					<div class="form-row last cash" id="last-nocash">
+						<div class="form-wrapper">
+							<label for="">Amount Paid</label>
+							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
+							<input name="in-laundry-amountpaid" type="text" class="form-control" placeholder="0">
+						</div>
+						<div class="form-wrapper change">
+							<label for="">Amount of Change</label>
+							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>							
+							<input name="in-laundry-amountchange" type="text" class="form-control" placeholder="0">
+						</div>
+					</div>					
+					<div class="checkbox">
+						<label>
+							<input id="check-verify" type="checkbox" onclick="EnableSubmit(this)">Please verify the issued order by checking up the box aside. Order that have been placed can't be modified later on. Contact <a>admin</a> to rollback the changes.
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<button type="button" id="commit" data-text="COMMIT ORDER">
+						<span><strong>PLACE ORDER</strong></span>
+					</button>
+				</form>
+			</div>
+		</div>
+	<div class="foot-logo">
+		<footer>			
+			<a href="https://github.com/hotpotcookie/"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/itshotpotcookie/"><i class="fab fa-twitter"></i></a>
+			<a href="https://instagram.com/hotpotcookie/"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-app-store"></i></a>
+			<a href="#"><i class="fab fa-google-play"></i></a>
+			<a href="https://www.youtube.com/channel/UCYF37a-4I8r3R_CQ99uxw-A"><i class="fab fa-youtube"></i></a>			
+			<br>
+			copyright © 2021 Mama Laundry, Inc. or it's affiliates. All rights reserved.
+			<br>
+			<a href="#">help</a> | 
+			<a href="#">feedback</a> | 
+			<a href="#">terms of use</a> | 
+			<a href="#">privacy</a>
+		</footer>
+	</div>			
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="vendor/date-picker/js/datepicker.js"></script>
+		<script src="vendor/date-picker/js/datepicker.en.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/handler.js"></script>		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
