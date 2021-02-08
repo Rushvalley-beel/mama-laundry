@@ -272,7 +272,7 @@ select {
 		transform: translate(-50%, -50%);
 		display: none;
 		content: '\f26b';
-		color: #4d65b5; }
+		color: black; }
 
 button {
 	border: none;
@@ -287,6 +287,7 @@ button {
 	background: linear-gradient(to right, rgba(85,128,233,1), rgba(132,206,235,1));
 	opacity: 1;
 	color: #283f6d;
+	text-shadow: 0px 0px 0px black; 		
 	text-transform: uppercase;
 	font-family: "Muli-Regular";
 	font-size: 15px;

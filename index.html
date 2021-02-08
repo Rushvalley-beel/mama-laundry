@@ -75,12 +75,12 @@
 						</div>
 					</div>
 					<ul id="list-menu" class="parent-list">
-						<li id="menu-laundry" name="0">
+						<li id="menu-laundry">
 							<div class="form-row">
 								<div class="form-wrapper item one">
 									<button id="rmv-item" type="button" onclick="removeItem()"><div class="small-icon item"><i class="fas fa-minus-circle"></i></div></button>
 									<div class="small-icon small-item one"><i class="fas fa-tshirt"></i></div>
-									<select name="li-laundry-itemtype" id="" class="form-control">
+									<select name="li-laundry-itemtype0" id="itemtype0" class="form-control">
 										<option value="1">Pakaian</option>
 										<option value="2">Sprei Kecil</option>
 										<option value="3">Sprei Kecil Full-set</option>
@@ -98,7 +98,7 @@
 								</div>
 								<div class="form-wrapper item two">
 									<div class="small-icon small-item two"><i class="fas fa-tint"></i></div>																
-									<select name="li-laundry-servicetype" id="" class="form-control">
+									<select name="li-laundry-servicetype0" id="servicetype0" class="form-control">
 										<option value="1">Cuci Regular</option>
 										<option value="2">Cuci Express</option>
 										<option value="3">Setrika Regular</option>
@@ -109,11 +109,11 @@
 								</div>
 								<div class="form-wrapper item three">
 									<div class="small-icon small-item three"><i class="fas fa-balance-scale"></i></div>
-									<input name="in-laundry-qty" type="number" class="form-control" placeholder="Qty" oninput="calcItem();">
+									<input name="in-laundry-qty0" type="number" class="form-control" placeholder="Qty" oninput="calcItem(this);">
 								</div>
 								<div class="form-wrapper item four">
 									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
-									<input name="in-laundry-totaleach" type="text" class="form-control money" placeholder="0">
+									<input name="in-laundry-totaleach0" type="text" class="form-control money" placeholder="0">
 								</div>
 							</div>
 						</li>
@@ -158,7 +158,7 @@
 					</div>					
 					<div class="checkbox">
 						<label>
-							<input id="check-verify" type="checkbox" onclick="EnableSubmit(this)">Please verify the issued order by checking up the box aside. Order that have been placed can't be modified later on. Contact <a>admin</a> to rollback the changes.
+							<input id="check-verify" type="checkbox">Please verify the issued order by checking up the box aside. Order that have been placed can't be modified later on. Contact <a>admin</a> to rollback the changes.
 							<span class="checkmark"></span>
 						</label>
 					</div>
