@@ -111,7 +111,7 @@ function calcItem(x) {
 	/*
 	parseFloat(n / 1.230769230769231).toFixed(0)
 	--
-	express 				base = ( n + 5000 )
+	express 				base = ( n * 1.625 )
 	setrika 				base = ( n / 1.230769230769231 )
 	satu set 				base = ( n + 5000 )
 	--

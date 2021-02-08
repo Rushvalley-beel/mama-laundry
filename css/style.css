@@ -314,6 +314,9 @@ button {
 		margin-bottom: 0px;
 		width: 27%; }
 
+.splash-screen {
+	display: none; }
+
 .foot-logo{
 	letter-spacing: 1px;
 	text-align: center;
@@ -338,6 +341,9 @@ button {
 		padding: 0; }}
 
 @media (max-width: 767px) {
+	body {
+		height: 100vh;
+		background-image: none; }
 	.inner {
 		width: 100%;
 		transform: translateY(0);
@@ -349,8 +355,29 @@ button {
 		-ms-box-shadow: none;
 		-o-box-shadow: none; }
 	.wrapper {
-		background: none;
-		display: flex; }
+		display: none; }
+	.foot-logo {
+		display: none;
+	}
+	.splash-screen {
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		margin: 0em 3em 0em 3em;
+		padding-top: 5em;
+		display: flex;
+		flex-direction: column;
+		overflow: visible;
+		color: black; }
+	.logo {
+		margin-top: 5em;
+		margin-bottom: 5em;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center; }
+		.logo img{
+			max-width: 80%;
+			opacity: 1; }	
 	form {
 		padding: 30px 20px; }
 		.form-row {
