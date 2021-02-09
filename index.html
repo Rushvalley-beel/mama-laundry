@@ -80,7 +80,7 @@
 								<div class="form-wrapper item one">
 									<button id="rmv-item" type="button" onclick="removeItem()"><div class="small-icon item"><i class="fas fa-minus-circle"></i></div></button>
 									<div class="small-icon small-item one"><i class="fas fa-tshirt"></i></div>
-									<select name="li-laundry-itemtype0" id="itemtype0" class="form-control">
+									<select name="li-laundry-itemtype0" id="itemtype0" class="form-control" onchange="changeItem(this)">
 										<option value="1">Pakaian</option>
 										<option value="2">Sprei Kecil</option>
 										<option value="3">Sprei Kecil Full-set</option>
@@ -98,12 +98,13 @@
 								</div>
 								<div class="form-wrapper item two">
 									<div class="small-icon small-item two"><i class="fas fa-tint"></i></div>																
-									<select name="li-laundry-servicetype0" id="servicetype0" class="form-control">
+									<select name="li-laundry-servicetype0" id="servicetype0" class="form-control" onchange="changeSvc(this)">
 										<option value="1">Cuci Regular</option>
 										<option value="2">Cuci Express</option>
 										<option value="3">Setrika Regular</option>
 										<option value="4">Setrika Express</option>
-										<option value="5">Dry Cleaning</option>
+										<option value="5">Dry Cleaning Rg</option>
+										<option value="6">Dry Cleaning Ex</option>										
 									</select>
 									<i class="zmdi zmdi-chevron-down"></i>
 								</div>

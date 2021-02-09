@@ -68,11 +68,26 @@ function addItem() {
 	clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-totaleach"+name);
 
 	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
-	clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;		
+	clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 	clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
 	clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = null;	
 
 	document.getElementById("list-menu").appendChild(clone);
+
+	var catch_item = document.getElementById("itemtype"+ctr);
+	var catch_service = document.getElementById("servicetype"+ctr);	
+	var fin_service_len = catch_service.options.length;
+	if (fin_service_len < 6) {
+		var option4 = document.createElement("option");
+		var option5 = document.createElement("option");		
+		option4.text = "Dry Cleaning Rg";
+		option4.value = "5"
+		option5.text = "Dry Cleaning Ex";
+		option5.value = "6"
+		catch_service.add(option4);
+		catch_service.add(option5);				
+	}
+
 	// add event listener di setiap in-laundry-qty0 dengan format [""] [""]
 	// nama in-laundry-qty[x] increment
 };
@@ -93,7 +108,50 @@ function removeItem() {
 			})(i);
 		}
 	}
+	tot_all = 0;
+	for (var i = 0; i <= ctr; i++) {
+		try {
+			var each_tot = document.forms["main-form"]["in-laundry-totaleach"+i].value
+			tot_all += parseInt(each_tot);
+			alert(each_tot);
+		} catch(err) {
+			alert("no index in " + i)
+		}
+	}
+	document.getElementsByName("in-laundry-totalall")[0].value = tot_all;	
 };
+
+function changeItem(x) {
+	var get_num = x.name;	
+	var catch_num = get_num.split("li-laundry-itemtype"); 
+	var fin_num = catch_num[1];
+	document.getElementsByName("in-laundry-qty"+fin_num)[0].value = null;
+	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = null;	
+	var catch_item = document.getElementById("itemtype"+fin_num);
+	var catch_service = document.getElementById("servicetype"+fin_num);	
+	var fin_item_val = catch_item.options[catch_item.selectedIndex].value;
+	if (fin_item_val != 1 && fin_item_val != 11) {
+		catch_service.remove(4);
+		catch_service.remove(4);		
+	} else {
+		var option4 = document.createElement("option");
+		var option5 = document.createElement("option");		
+		option4.text = "Dry Cleaning Rg";
+		option4.value = "5"
+		option5.text = "Dry Cleaning Ex";
+		option5.value = "6"
+		catch_service.add(option4);
+		catch_service.add(option5);		
+	}
+}
+
+function changeSvc(x) {
+	var get_num = x.name;	
+	var catch_num = get_num.split("li-laundry-servicetype"); 
+	var fin_num = catch_num[1];
+	document.getElementsByName("in-laundry-qty"+fin_num)[0].value = null;
+	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = null;
+}
 
 function calcItem(x) {
 	var qty = x.value;	
@@ -108,57 +166,123 @@ function calcItem(x) {
 	var fin_service_txt = catch_service.options[catch_service.selectedIndex].text;
 	var baseprice_item = 0;
 
-	/*
-	parseFloat(n / 1.230769230769231).toFixed(0)
-	--
-	express 				base = ( n * 1.625 )
-	setrika 				base = ( n / 1.230769230769231 )
-	satu set 				base = ( n + 5000 )
-	--
-	Pakaian + Cuci 			base =  8 000 
-	Sprei Kecil + Cuci 		base = 10 000	qty = Math.floor(qty)
-	Sprei Sedang + Cuci		base = 15 000 	qty = Math.floor(qty)
-	Sprei Besar + Cuci		base = 20 000 	qty = Math.floor(qty)
-	Bedcover Kecil + Cuci	base = 15 000 	qty = Math.floor(qty)
-	Bedcover Sedang + Cuci	base = 30 000 	qty = Math.floor(qty)
-	Bedcover Besar + Cuci 	base = 40 000 	qty = Math.floor(qty)
-	Jas/Jaket/Kebaya + Dry  base = 20 000 	qty = Math.floor(qty)
-	--
-	item 							service
-	--								--	
-	1  Pakaian						1 Cuci Regular
-	2  Seprei Kecil					2 Cuci Express
-	3  Seprei Kecil   4  + Set 		3 Setrika Regular
-	5  Seprei Sedang  6  + Set 		4 Setrika Express
-	7  Seprei Besar	  8  + Set 		5 Dry Cleaning
-	9  Bedcvr Kecil    
-	10 Bedcvr Sedang 
-	11 Bedcvr Besar 
-	12 Jas / Jaket / Kebaya
-	*/
+	function calcSection(y) {
+		switch(y) {
+			case "2":
+				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);
+				break;
+			case "3":
+				baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0);
+				break;
+			case "4":
+				baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0); 
+				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);			
+				break;
+			case "5":
+				baseprice_item = 20000;
+				break;
+			case "6":
+				baseprice_item = 20000;
+				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);					
+				break;
+		}
+		return baseprice_item;
+	}
 
 	switch(fin_item_val) {
-		case 1:
+		case "1":
 			baseprice_item = 8000;
 			break;
-		case 2:
+		case "2":
 			baseprice_item = 10000;
 			break;
-		case 3:
+		case "3":
 			baseprice_item = 15000;
 			break;
-		case 4:
+		case "4":
+			baseprice_item = 15000;
+			break;
+		case "5":
 			baseprice_item = 20000;
 			break;
-		case 5:
-			baseprice_item = 15000
+		case "6":
+			baseprice_item = 20000;
+			break;			
+		case "7":
+			baseprice_item = 25000;
 			break;
+		case "8":
+			baseprice_item = 15000;
+			break;
+		case "9":
+			baseprice_item = 30000;
+			break;
+		case "10":
+			baseprice_item = 40000;
+			break;			
+		case "11":
+			baseprice_item = 20000;
+			break;			
+		case "12":
+			baseprice_item = 0;
+			break;						
 	}
 
-	if (qty < 2.5 && qty > 0) {
-		var qty = 2.5;
+	calcSection(fin_service_val);
+	alert(" item : " + fin_item_val + ", service : " + fin_service_val + ", price : " + baseprice_item);
+
+	if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6") {
+		if (qty < 3 && qty > 0) {
+			qty = 3;
+		}
+	} else {
+		qty = Math.floor(qty);
 	}
-	var tot = qty * 8000;
-	var tot = tot.toLocaleString();
+
+	var tot = qty * baseprice_item;
+	//var tot = tot.toLocaleString();
 	document.forms["main-form"]["in-laundry-totaleach"+fin_num].value = tot;
+
+	// buat looping, trycatch ?
+	tot_all = 0;
+	for (var i = 0; i <= ctr; i++) {
+		try {
+			var each_tot = document.forms["main-form"]["in-laundry-totaleach"+i].value
+			tot_all += parseInt(each_tot);
+			alert(each_tot);
+		} catch(err) {
+			alert("no index in " + i)
+		}
+	}
+	document.getElementsByName("in-laundry-totalall")[0].value = tot_all;
+
 };
+
+/*
+parseFloat(n / 1.230769230769231).toFixed(0)
+--
+express 				base = ( n * 1.625 )
+setrika 				base = ( n / 1.230769230769231 )
+satu set 				base = ( n + 5000 )
+--
+Pakaian + Cuci 			base =  8 000 
+Sprei Kecil + Cuci 		base = 10 000	qty = Math.floor(qty)
+Sprei Sedang + Cuci		base = 15 000 	qty = Math.floor(qty)
+Sprei Besar + Cuci		base = 20 000 	qty = Math.floor(qty)
+Bedcover Kecil + Cuci	base = 15 000 	qty = Math.floor(qty)
+Bedcover Sedang + Cuci	base = 30 000 	qty = Math.floor(qty)
+Bedcover Besar + Cuci 	base = 40 000 	qty = Math.floor(qty)
+Jas/Jaket/Kebaya + Dry  base = 20 000 	qty = Math.floor(qty)
+--
+fin_item_val					fin_item_service
+--								--	
+1  Pakaian						1 Cuci Regular 
+2  Seprei Kecil   3  + Set 		3 Setrika Regular
+4  Seprei Sedang  5  + Set 		4 Setrika Express
+6  Seprei Besar	  7  + Set 		5 Dry Cleaning
+8  Bedcvr Kecil    
+9  Bedcvr Sedang 
+10 Bedcvr Besar 
+11 Jas / Jaket / Kebaya
+12 Peralatan Sholat
+*/
