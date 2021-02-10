@@ -61,7 +61,8 @@ function addItem() {
 	var name = menuitem.getAttribute(name) + (++ctr);
 	clone.id = "menu-laundry";
 	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("name","li-laundry-itemtype"+name);
-	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("id","itemtype"+name);	
+	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("button")[0].setAttribute("name","remove-item"+name);	
+	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("id","itemtype"+name);
 	clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].setAttribute("name","li-laundry-servicetype"+name);	
 	clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].setAttribute("id","servicetype"+name);		
 	clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-qty"+name);
@@ -70,7 +71,7 @@ function addItem() {
 	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 	clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 	clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
-	clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = null;	
+	clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;	
 
 	document.getElementById("list-menu").appendChild(clone);
 
@@ -93,7 +94,8 @@ function addItem() {
 };
 
 
-function removeItem() {
+function removeItem(x) {
+	var catch_pass = 0;
 	var len_list = document.getElementById("list-menu").getElementsByTagName("li").length
 	if ( len_list > 1 ) {
 		var menuitem = document.getElementById("list-menu");
@@ -103,22 +105,19 @@ function removeItem() {
 					pass_idx = index;
 					if ( pass_idx > 0 ) {
 						menuitem.removeChild(menuitem.getElementsByTagName("li")[pass_idx]);
+						catch_pass = i;
 					}
 				}
 			})(i);
 		}
 	}
-	tot_all = 0;
-	for (var i = 0; i <= ctr; i++) {
-		try {
-			var each_tot = document.forms["main-form"]["in-laundry-totaleach"+i].value
-			tot_all += parseInt(each_tot);
-			alert(each_tot);
-		} catch(err) {
-			alert("no index in " + i)
-		}
-	}
-	document.getElementsByName("in-laundry-totalall")[0].value = tot_all;	
+	// ambil number dari x.name kedalem catch_idx, masukin ke if j != catch_idx
+	alert(x.name);
+	var get_num = x.name;	
+	var catch_num = get_num.split("remove-item"); 
+	var fin_num = catch_num[1];	
+	alert(fin_num);
+	calcTotalAll(fin_num);
 };
 
 function changeItem(x) {
@@ -126,7 +125,7 @@ function changeItem(x) {
 	var catch_num = get_num.split("li-laundry-itemtype"); 
 	var fin_num = catch_num[1];
 	document.getElementsByName("in-laundry-qty"+fin_num)[0].value = null;
-	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = null;	
+	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = 0;	
 	var catch_item = document.getElementById("itemtype"+fin_num);
 	var catch_service = document.getElementById("servicetype"+fin_num);	
 	var fin_item_val = catch_item.options[catch_item.selectedIndex].value;
@@ -141,8 +140,9 @@ function changeItem(x) {
 		option5.text = "Dry Cleaning Ex";
 		option5.value = "6"
 		catch_service.add(option4);
-		catch_service.add(option5);		
+		catch_service.add(option5);
 	}
+	calcTotalAll(null);
 }
 
 function changeSvc(x) {
@@ -150,7 +150,8 @@ function changeSvc(x) {
 	var catch_num = get_num.split("li-laundry-servicetype"); 
 	var fin_num = catch_num[1];
 	document.getElementsByName("in-laundry-qty"+fin_num)[0].value = null;
-	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = null;
+	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = 0;
+	calcTotalAll(null);
 }
 
 function calcItem(x) {
@@ -244,19 +245,26 @@ function calcItem(x) {
 	document.forms["main-form"]["in-laundry-totaleach"+fin_num].value = tot;
 
 	// buat looping, trycatch ?
-	tot_all = 0;
-	for (var i = 0; i <= ctr; i++) {
-		try {
-			var each_tot = document.forms["main-form"]["in-laundry-totaleach"+i].value
-			tot_all += parseInt(each_tot);
-			alert(each_tot);
-		} catch(err) {
-			alert("no index in " + i)
-		}
-	}
-	document.getElementsByName("in-laundry-totalall")[0].value = tot_all;
+	calcTotalAll(null);
 
 };
+
+function calcTotalAll(y) {
+	// x = totalall, y = fin_num
+	var x = 0;
+	for (var j = 0; j <= ctr; j++) {
+		try {
+			var each_tot = document.forms["main-form"]["in-laundry-totaleach"+j].value
+			if (each_tot != NaN && j != y) {
+				x += parseInt(each_tot);
+			}
+			alert(each_tot + " index " + j);
+		} catch(err) {
+			alert("no index in " + j)
+		}
+	}
+	document.getElementsByName("in-laundry-totalall")[0].value = x;
+}
 
 /*
 parseFloat(n / 1.230769230769231).toFixed(0)

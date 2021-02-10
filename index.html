@@ -78,7 +78,7 @@
 						<li id="menu-laundry">
 							<div class="form-row">
 								<div class="form-wrapper item one">
-									<button id="rmv-item" type="button" onclick="removeItem()"><div class="small-icon item"><i class="fas fa-minus-circle"></i></div></button>
+									<button name="remove-item0" id="rmv-item" type="button" onclick="removeItem(this)"><div class="small-icon item"><i class="fas fa-minus-circle"></i></div></button>
 									<div class="small-icon small-item one"><i class="fas fa-tshirt"></i></div>
 									<select name="li-laundry-itemtype0" id="itemtype0" class="form-control" onchange="changeItem(this)">
 										<option value="1">Pakaian</option>
@@ -114,7 +114,7 @@
 								</div>
 								<div class="form-wrapper item four">
 									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
-									<input name="in-laundry-totaleach0" type="text" class="form-control money" placeholder="0">
+									<input name="in-laundry-totaleach0" type="text" class="form-control money" placeholder="0" value="0">
 								</div>
 							</div>
 						</li>
@@ -142,7 +142,7 @@
 						<div class="form-wrapper long">
 							<label for="">Total Price</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>											
-							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0">
+							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0" value="0">
 						</div>
 					</div>
 					<div class="form-row last cash" id="last-nocash">
@@ -154,7 +154,7 @@
 						<div class="form-wrapper change">
 							<label for="">Amount of Change</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>							
-							<input name="in-laundry-amountchange" type="text" class="form-control" placeholder="0">
+							<input name="in-laundry-amountchange" type="text" class="form-control" placeholder="0" value="0">
 						</div>
 					</div>					
 					<div class="checkbox">
