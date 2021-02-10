@@ -264,6 +264,19 @@ function calcTotalAll(y) {
 		}
 	}
 	document.getElementsByName("in-laundry-totalall")[0].value = x;
+};
+
+function calcChange(x) {
+	var paid = x.value;
+	var totalall = document.getElementsByName("in-laundry-totalall")[0].value;
+	alert(paid + " - " + totalall);
+	var totchange = paid - totalall;
+	alert(totchange);
+	if (totchange < 0) {
+		document.getElementsByName("in-laundry-amountchange")[0].value = 0;
+	} else {
+		document.getElementsByName("in-laundry-amountchange")[0].value = totchange;
+	}
 }
 
 /*

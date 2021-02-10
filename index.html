@@ -142,19 +142,19 @@
 						<div class="form-wrapper long">
 							<label for="">Total Price</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>											
-							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0" value="0">
+							<input name="in-laundry-totalall" type="number" class="form-control long" placeholder="0" value="0">
 						</div>
 					</div>
 					<div class="form-row last cash" id="last-nocash">
 						<div class="form-wrapper">
 							<label for="">Amount Paid</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
-							<input name="in-laundry-amountpaid" type="text" class="form-control" placeholder="0">
+							<input name="in-laundry-amountpaid" type="number" class="form-control" placeholder="0" oninput="calcChange(this);">
 						</div>
 						<div class="form-wrapper change">
 							<label for="">Amount of Change</label>
-							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>							
-							<input name="in-laundry-amountchange" type="text" class="form-control" placeholder="0" value="0">
+							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
+							<input name="in-laundry-amountchange" type="number" class="form-control" placeholder="0" value="0">
 						</div>
 					</div>					
 					<div class="checkbox">
