@@ -4,12 +4,12 @@
 		<meta charset="utf-8">
 		<title>Order - Mama Laundry</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="fonts/linearicons/style.css">
+		<link rel="stylesheet" href="asset/fonts/linearicons/style.css">
 		<link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">		
-		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-		<link rel="icon" href="images/tab-logo.ico">
-		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
-		<link rel="stylesheet" href="css/style.css">		
+		<link rel="stylesheet" href="asset/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<link rel="icon" href="asset/images/tab.ico">
+		<link rel="stylesheet" href="asset/vendor/date-picker/css/datepicker.min.css">
+		<link rel="stylesheet" href="source/css/style.css">		
 	</head>
 	<!-- ## name selector
 	main-form :
@@ -29,7 +29,7 @@
 		<div class="wrapper">
 			<div class="inner">
 				<form action="" name="main-form">
-					<div id="logo" class="logo"><img src="images/mama-laundry.png"></div>
+					<div id="logo" class="logo"><img src="asset/images/mama-laundry.png"></div>
 					<div class="border"><br></div>					
 					<div class="form-row">
 						<div class="form-wrapper">
@@ -155,19 +155,21 @@
 						<div class="form-wrapper long">
 							<label for="">Total Price</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>											
-							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0" value="0">
+							<input name="in-laundry-totalall" type="text" class="form-control long" placeholder="0" value="0" style="display: flex;">
+							<input name="in-chemical-totalall" type="text" class="form-control long" placeholder="0" value="0" style="display: none;">
+							<input name="in-stationary-totalall" type="text" class="form-control long" placeholder="0" value="0" style="display: none;">
 						</div>
 					</div>
 					<div class="form-row last cash" id="last-nocash">
 						<div class="form-wrapper">
 							<label for="">Amount Paid</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
-							<input name="in-laundry-amountpaid" type="number" class="form-control" placeholder="0" oninput="calcChange(this);">
+							<input name="in-amountpaid" type="number" class="form-control" placeholder="0" oninput="calcChange(this);">
 						</div>
 						<div class="form-wrapper change">
 							<label for="">Amount of Change</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
-							<input name="in-laundry-amountchange" type="text" class="form-control" placeholder="0" value="0">
+							<input name="in-amountchange" type="text" class="form-control" placeholder="0" value="0">
 						</div>
 					</div>					
 					<div class="checkbox">
@@ -183,7 +185,7 @@
 			</div>
 		</div>
 		<div class="splash-screen">
-			<div id="logo" class="logo"><img src="images/error-page-splash.png"></div>
+			<div id="logo" class="logo"><img src="asset/images/error-page-splash.png"></div>
 		</div>
 		<div class="foot-logo">
 			<footer>			
@@ -203,12 +205,12 @@
 			</footer>
 		</div>			
 			
-			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="source/js/jquery-3.3.1.min.js"></script>
 
-			<script src="vendor/date-picker/js/datepicker.js"></script>
-			<script src="vendor/date-picker/js/datepicker.en.js"></script>
+			<script src="asset/vendor/date-picker/js/datepicker.js"></script>
+			<script src="asset/vendor/date-picker/js/datepicker.en.js"></script>
 			
-			<script src="js/main.js"></script>
-			<script src="js/handler.js"></script>		
+			<script src="source/js/main.js"></script>
+			<script src="source/js/handler.js"></script>		
 	</body>
 </html>

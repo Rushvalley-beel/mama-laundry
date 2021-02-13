@@ -8,8 +8,7 @@ $(function(){
 document.getElementById('prod-type').addEventListener('change', function(){
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;	
 	switch(prods) {
-		case 0:
-			console.log("ctr");
+		case 0: //laundry
 			document.getElementById('calendar').style.display = 'flex'; 
 			//document.getElementById('menu-laundry').style.display = 'flex';
 			document.getElementById('service-head').style.display = 'flex';
@@ -21,8 +20,11 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			for (var i = 0; i < elem2.length; i++) {
 				elem2[i].style.display = 'flex'
 			};
+			document.getElementsByName("in-laundry-totalall")[0].style.display = 'flex';			
+			document.getElementsByName("in-chemical-totalall")[0].style.display = 'none';
+			document.getElementsByName("in-stationary-totalall")[0].style.display = 'none';			
 			break;
-		case 1:
+		case 1: //chemical
 			document.getElementById('calendar').style.display = 'none';
 			//document.getElementById('menu-laundry').style.display = 'none';
 			document.getElementById('service-head').style.display = 'none';	
@@ -34,7 +36,10 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			for (var i = 0; i < elem2.length; i++) {
 				elem2[i].style.display = 'none'
 			};
-			break;			
+			document.getElementsByName("in-laundry-totalall")[0].style.display = 'none';			
+			document.getElementsByName("in-chemical-totalall")[0].style.display = 'flex';
+			document.getElementsByName("in-stationary-totalall")[0].style.display = 'none';			
+			break;
 	}
 })
 
@@ -62,14 +67,18 @@ checker.onchange = function() {
 	}
 };
 
-var ctr = 0;
-var pass_idx = 0;
-var ctr_tmp = ctr;
+// perbaikin variabel dari sini | ldry, chem, stat
+var ctr_ldry = 0;
+var ctr_chem = 0;
+var ctr_stat = 0;
+var pass_idx_ldry = 0;
+var pass_idx_chem = 0;
+var pass_idx_stat = 0;
 
 function addItem() {
 	var menuitem = document.getElementById("menu-laundry");
 	var clone = menuitem.cloneNode(true);
-	var name = menuitem.getAttribute(name) + (++ctr);
+	var name = menuitem.getAttribute(name) + (++ctr_ldry);
 	clone.id = "menu-laundry";
 	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("name","li-laundry-itemtype"+name);
 	clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("button")[0].setAttribute("name","remove-item"+name);	
@@ -86,8 +95,8 @@ function addItem() {
 
 	document.getElementById("list-menu").appendChild(clone);
 
-	var catch_item = document.getElementById("itemtype"+ctr);
-	var catch_service = document.getElementById("servicetype"+ctr);	
+	var catch_item = document.getElementById("itemtype"+ctr_ldry);
+	var catch_service = document.getElementById("servicetype"+ctr_ldry);	
 	var fin_service_len = catch_service.options.length;
 	//alert("panjang service : " + fin_service_len);
 	if (fin_service_len < 6) {
@@ -134,7 +143,7 @@ function removeItem(x) {
 	var fin_num = catch_num[1];	
 	//alert(fin_num);
 	calcTotalAll(fin_num);
-	paid_obj = document.getElementsByName("in-laundry-amountpaid")[0];
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
 	calcChange(paid_obj);	
 };
 
@@ -165,7 +174,7 @@ function changeItem(x) {
 		}
 	}
 	calcTotalAll(null);
-	paid_obj = document.getElementsByName("in-laundry-amountpaid")[0];
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
 	calcChange(paid_obj);		
 }
 
@@ -176,7 +185,7 @@ function changeSvc(x) {
 	document.getElementsByName("in-laundry-qty"+fin_num)[0].value = null;
 	document.getElementsByName("in-laundry-totaleach"+fin_num)[0].value = 0;
 	calcTotalAll(null);
-	paid_obj = document.getElementsByName("in-laundry-amountpaid")[0];
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
 	calcChange(paid_obj);	
 }
 
@@ -272,19 +281,19 @@ function calcItem(x) {
 
 	// buat looping, trycatch ?
 	calcTotalAll(null);
-	paid_obj = document.getElementsByName("in-laundry-amountpaid")[0];
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
 	calcChange(paid_obj);
 };
 
 function calcTotalAll(y) {
 	// x = totalall, y = fin_num
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;
-	alert("index produk " + prods);
+	//alert("index produk " + prods);
 	switch(prods) {
 		case 0: //laundry
-			alert("masuk")
+			//alert("masuk")
 			var x = 0;
-			for (var j = 0; j <= ctr; j++) {
+			for (var j = 0; j <= ctr_ldry; j++) {
 				try {
 					var each_tot = document.forms["main-form"]["in-laundry-totaleach"+j].value;
 					each_tot = convMoney(each_tot);
@@ -303,11 +312,11 @@ function calcTotalAll(y) {
 			break;
 		case 1: //chemical
 			document.getElementsByName("in-laundry-totalall")[0].value = 0;
-			document.getElementsByName("in-laundry-amountchange")[0].value = 0;
+			document.getElementsByName("in-amountchange")[0].value = 0;
 			break;
 		case 2: //stationary & lemineral		
 			document.getElementsByName("in-laundry-totalall")[0].value = 0;
-			document.getElementsByName("in-laundry-amountchange")[0].value = 0;		
+			document.getElementsByName("in-amountchange")[0].value = 0;		
 			break;
 	}
 };
@@ -321,13 +330,13 @@ function calcChange(x) {
 		var totchange = paid - totalall;
 		//alert(totchange);
 		if (totchange < 0 || totalall <= 0) {
-			document.getElementsByName("in-laundry-amountchange")[0].value = 0;
+			document.getElementsByName("in-amountchange")[0].value = 0;
 		} else {
 			totchange = totchange.toLocaleString();
-			document.getElementsByName("in-laundry-amountchange")[0].value = totchange;
+			document.getElementsByName("in-amountchange")[0].value = totchange;
 		}
 	} else {
-		document.getElementsByName("in-laundry-amountchange")[0].value = 0;		
+		document.getElementsByName("in-amountchange")[0].value = 0;		
 	}
 }
 

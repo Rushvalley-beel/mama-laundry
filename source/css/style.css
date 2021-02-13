@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "Muli-Regular";
-	src: url("../fonts/muli/Muli-Regular.ttf"); }
+	src: url("../../asset/fonts/muli/Muli-Regular.ttf"); }
 @font-face {
 	font-family: "Muli-SemiBold";
-	src: url("../fonts/muli/Muli-SemiBold.ttf"); }
+	src: url("../../asset/fonts/muli/Muli-SemiBold.ttf"); }
 @font-face {
 	font-family: "Poppins-Regular";
-	src: url("../fonts/poppins/Poppins-Regular.ttf"); }
+	src: url("../../asset/fonts/poppins/Poppins-Regular.ttf"); }
 @font-face {
 	font-family: "Poppins-Medium";
-	src: url("../fonts/poppins/Poppins-Medium.ttf"); }
+	src: url("../../asset/fonts/poppins/Poppins-Medium.ttf"); }
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
 	box-sizing: border-box;
 	overflow-y: auto;
 	color: #FFF;
-	background-image: url("../images/memphis-colorful.png"); }
+	background-image: url("../../asset/images/memphis-colorful.png"); }
 
 input, textarea, select {
 	font-family: "Muli-Regular";
@@ -74,7 +74,7 @@ a {
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
 	-ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
 	-o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-	background: url("../images/bg-inner.png") repeat;
+	background: url("../../asset/images/bg-inner.png") repeat;
 	padding: 10px;
 	margin-top: 5em;
 	margin-bottom: 5em;
@@ -339,7 +339,7 @@ button {
 	font-size: 14px;
 	font-family: Consolas;
 	text-shadow: 0px 0px 2px black;
-	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
 	z-index: 9000;
 }
 
