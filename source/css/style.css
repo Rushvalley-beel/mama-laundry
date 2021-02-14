@@ -163,7 +163,7 @@ select {
 		margin-left: 143px; }
 	.form-wrapper i.zmdi-chevron-down {
 		position: absolute;
-		right: 2px;
+		right: 1px;
 		top: 42px;
 		font-size: 15px;
 		color: #FFF; }
@@ -192,8 +192,12 @@ select {
 		color: #fc99be; }
 	.small-icon.small-item.one{
 		left: 37px; }
+	.small-icon.small-item.one.chem{
+		left: 41px; }
 	.small-icon.small-item.two{
 		left: 41px; }  
+	.small-icon.small-item.two.chem{
+		left: 39px; }		
 	.small-icon.small-item.three, .small-icon.small-item.four {
 		left: 38px; }    
 	.small-icon.small-item.long{
@@ -233,9 +237,12 @@ select {
 	.form-control.datepicker-here {
 		padding-left: 25px; }
 
-.parent-list li:first-child .form-row .form-wrapper.item.one .small-icon.item {
+.parent-list.ldry li:first-child .form-row .form-wrapper.item.one .small-icon.item {
 	color: #c1d3ff;
 	pointer-events: none; }
+.parent-list.chem li:first-child .form-row .form-wrapper.item.one .small-icon.item {
+	color: #c1d3ff;
+	pointer-events: none; }	
 .parent-list .form-row {
 	margin-bottom: 0; }
 
