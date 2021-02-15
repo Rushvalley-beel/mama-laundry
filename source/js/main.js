@@ -13,7 +13,8 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			document.getElementById('calendar').style.display = 'flex'; 
 			//document.getElementById('menu-laundry').style.display = 'flex';
 			document.getElementById('service-head').style.display = 'flex';
-			document.getElementById('chem-head').style.display = 'none';			
+			document.getElementById('chem-head').style.display = 'none';
+			document.getElementById('chem-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
 				elem[i].style.display = 'flex'
@@ -34,7 +35,8 @@ document.getElementById('prod-type').addEventListener('change', function(){
 		case 1: //chemical
 			document.getElementById('calendar').style.display = 'none';
 			//document.getElementById('menu-laundry').style.display = 'none';
-			document.getElementById('service-head').style.display = 'none';	
+			document.getElementById('service-head').style.display = 'none';
+			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';			
 			document.getElementById('chem-head').style.display = 'flex';			
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
@@ -138,16 +140,19 @@ function addItem() {
 			clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].setAttribute("id","item-chem-type"+name);
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-qty"+name);
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-totaleach"+name);
+			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].setAttribute("name","li-chemical-jugtype"+name);
+			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].setAttribute("id","jug-chem-type"+name);
 
 			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
-			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;				
+			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;
+			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 
 			document.getElementById("list-menu-chem").appendChild(clone);
 			var catch_item = document.getElementById("item-chem-type"+ctr_chem);
 			var fin_item_len = catch_item.options.length;			
-			var arr_item_text = ["Molto Blue","Ocean Fresh","GGS","Snappy","Paris Hilton","Gold Rose","Daily"];
+			var arr_item_text = ["Molto B","Ocean F","GGS","Snappy","Paris H","G Rose","Daily"];
 			var arr_item_val = ["1","2","3","4","5","6","7"];	
 			for (var i = 0; i < fin_item_len; i++) {
 				catch_item.remove(0);			
@@ -235,12 +240,12 @@ function changeLqd(x) {
 	var catch_liquid = document.getElementById("liquid-chem-type"+fin_num);
 	var fin_liquid_val = catch_liquid.options[catch_liquid.selectedIndex].value;
 	var fin_item_len = catch_item.options.length;
-	var arr_item_text = ["Molto Blue","Ocean Fresh","GGS","Snappy","Paris Hilton","Gold Rose","Daily"];
+	var arr_item_text = ["Molto B","Ocean F","GGS","Snappy","Paris H","G Rose","Daily"];
 	var arr_item_val = ["1","2","3","4","5","6","7"];	
 	//alert(fin_liquid_val);
 	if (fin_liquid_val == 4) {
 		var option8 = document.createElement("option");
-		option8.text = "Heavy Duty";
+		option8.text = "Heavy D";
 		option8.value = "8";
 		for (var i = 0; i < fin_item_len; i++) {
 			catch_item.remove(0);			
@@ -266,7 +271,7 @@ function changeLqd(x) {
 		}
 		var option10 = document.createElement("option");
 		var option11 = document.createElement("option");		
-		option10.text = "Emulsifier";
+		option10.text = "Emulsifr";
 		option10.value = "10";
 		option11.text = "Oxpot";
 		option11.value = "11";		
@@ -329,6 +334,17 @@ function changeItem2(x) {
 	calcTotalAll(null);
 	paid_obj = document.getElementsByName("in-amountpaid")[0];
 	calcChange(paid_obj);	
+}
+
+function changeJug(x) {
+	var get_num = x.name;	
+	var catch_num = get_num.split("li-chemical-jugtype"); 
+	var fin_num = catch_num[1];
+	document.getElementsByName("in-chemical-qty"+fin_num)[0].value = null;
+	document.getElementsByName("in-chemical-totaleach"+fin_num)[0].value = 0;
+	calcTotalAll(null);
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
+	calcChange(paid_obj);		
 }
 
 function changeSvc(x) {
@@ -442,10 +458,12 @@ function calcItem(x) {
 			var catch_liquid = document.getElementById("liquid-chem-type"+fin_num);
 			var fin_liquid_val = catch_liquid.options[catch_liquid.selectedIndex].value;
 			var fin_liquid_txt = catch_liquid.options[catch_liquid.selectedIndex].text;
+			var catch_jug = document.getElementById("jug-chem-type"+fin_num);
+			var fin_jug_val = catch_jug.options[catch_jug.selectedIndex].value;
 
 			switch(fin_liquid_val) {
 				case "1":
-					baseprice_item = 40000;
+					baseprice_item = 42000;
 					break;
 				case "2":
 					baseprice_item = 22000;
@@ -463,8 +481,28 @@ function calcItem(x) {
 					baseprice_item = 20000;
 					break;			
 			}
+
 			qty = Math.floor(qty);
-			var tot = qty * baseprice_item;
+			var jug_add = 0;
+			var get_ceil = 0;
+			switch(fin_jug_val) {
+				case "1":
+					jug_add = 0;
+					break;
+				case "2":
+					get_ceil = qty / 1;
+					get_ceil = Math.ceil(get_ceil);
+					jug_add = get_ceil * 7000;
+					break;
+				case "3":
+					get_ceil = qty / 5;
+					get_ceil = Math.ceil(get_ceil);
+					jug_add = get_ceil * 8000;
+					break;
+			}
+
+			var tot = qty * baseprice_item + jug_add;
+
 			tot = tot.toLocaleString();
 			document.forms["main-form"]["in-chemical-totaleach"+fin_num].value = tot;			
 			break;
@@ -510,7 +548,7 @@ function calcTotalAll(y) {
 					if (each_tot != NaN && j != y) {
 						x += parseInt(each_tot);
 					}
-					alert(each_tot + " index " + j);
+					//alert(each_tot + " index " + j);
 				} catch(err) {
 					//alert("no index in " + j)
 					var dump = 0;

@@ -25,7 +25,7 @@ body {
 	box-sizing: border-box;
 	overflow-y: auto;
 	color: #FFF;
-	background-image: url("../../asset/images/memphis-colorful.png"); }
+	background-image: url("../../asset/images/memphis-light.png"); }
 
 input, textarea, select {
 	font-family: "Muli-Regular";
@@ -85,7 +85,7 @@ a {
 form {
 	width: 100%;
 	padding: 40px 40px 40px 40px;
-	background: linear-gradient(to bottom, rgba(49,72,155,1), rgba(0,55,79,1));
+	background: linear-gradient(to bottom, #142d4c, rgba(0,55,79,1));
 	border-radius: 7px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0.4, 0.4); }
 
@@ -127,16 +127,26 @@ select {
 				margin-right: 18px; }     
 			.form-row .form-wrapper.item:nth-child(3) {
 				margin-right: 18px; }
+			.form-row.chem .form-wrapper.item:nth-child(4) {
+				margin-right: 18px; }				
 			.form-row .form-wrapper.item {
-				width: 29%; }
+				width: 30.3%; }
 			.form-row .form-wrapper.item.two {
 				width: 24%; } 
-			.form-row .form-wrapper.item.three, .form-row .form-wrapper.item.four{
+			.form-row .form-wrapper.item.three {
+				width: 14.5%; }
+			.form-row .form-wrapper.item.four{
 				width: 15.85%; }
 			.form-row .form-wrapper.long.item.trx {
 				width: 76.50%; }			   
 			.form-row .form-wrapper.long:first-child {
-				margin-right: 0px; }  				
+				margin-right: 0px; } 
+			.form-row.chem .form-wrapper.item.one {
+				width: 20%; }
+			.form-row.chem .form-wrapper.item.two {
+				width: 16.4%; }
+			.form-row.chem .form-wrapper.item.five {
+				width: 15%; }
 	.form-row.long {
 		width: 100%; }
 		.form-row.long .form-wrapper.long {
@@ -144,11 +154,11 @@ select {
 		.form-row.long .form-wrapper.long i.fa-question-circle {
 			padding-left: 5px; 
 			cursor: pointer; }
-	ul {
-		list-style-type: none;
-		padding: 0;
-		margin: 0; 
-		display: block; }
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0; 
+	display: block; }
 
 .form-wrapper {
 	position: relative; }
@@ -370,7 +380,7 @@ span#prod {
 	letter-spacing: 1px;
 	text-align: center;
 	padding: 1.5em 1.3em 1.3em 1.3em;
-	background: linear-gradient(to right, rgba(49,72,155,1), rgba(0,55,79,1));
+	background: linear-gradient(to right, #142d4c, rgba(0,55,79,1));
 	font-size: 0.8em;
 	color: #FFFFFF; 
 	flex-shrink: 0; }
