@@ -434,11 +434,17 @@ function calcItem(x) {
 					break;			
 				case "12":
 					baseprice_item = 0;
-					break;						
+					break;
+				case "13":
+					baseprice_item = 10000;
+					break;				
+				case "14":
+					baseprice_item = 15000;
+					break;									
 			}
 			calcSection(fin_service_val);			
-			if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6") {
-				if (qty < 3 && qty > 0) {
+			if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6" || fin_item_val == "13" || fin_item_val == "14") {
+				if (qty < 3 && qty > 0 && fin_item_val != "13" && fin_item_val != "14") {
 					qty = 3;
 				}
 			} else {
