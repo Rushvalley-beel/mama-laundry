@@ -15,6 +15,8 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			document.getElementById('service-head').style.display = 'flex';
 			document.getElementById('chem-head').style.display = 'none';
 			document.getElementById('chem-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
+			document.getElementById('stat-head').style.display = 'none';
+			document.getElementById('stat-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
 				elem[i].style.display = 'flex'
@@ -27,17 +29,23 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			for (var i = 0; i < elem3.length; i++) {
 				elem3[i].style.display = 'none'
 			};
+			var elem4 = document.getElementsByClassName("menu-stationery-cls");
+			for (var i = 0; i < elem4.length; i++) {
+				elem4[i].style.display = 'none'
+			};
 			document.getElementsByName("in-laundry-totalall")[0].style.display = 'flex';			
 			document.getElementsByName("in-chemical-totalall")[0].style.display = 'none';
-			document.getElementsByName("in-stationary-totalall")[0].style.display = 'none';
+			document.getElementsByName("in-stationery-totalall")[0].style.display = 'none';
 			calcChange(tot_in);
 			break;
 		case 1: //chemical
 			document.getElementById('calendar').style.display = 'none';
 			//document.getElementById('menu-laundry').style.display = 'none';
 			document.getElementById('service-head').style.display = 'none';
-			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';			
-			document.getElementById('chem-head').style.display = 'flex';			
+			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
+			document.getElementById('chem-head').style.display = 'flex';
+			document.getElementById('stat-head').style.display = 'none';
+			document.getElementById('stat-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';			
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
 				elem[i].style.display = 'flex'
@@ -49,12 +57,45 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			var elem3 = document.getElementsByClassName("menu-chemical-cls");
 			for (var i = 0; i < elem3.length; i++) {
 				elem3[i].style.display = 'flex'
-			};			
+			};
+			var elem4 = document.getElementsByClassName("menu-stationery-cls");
+			for (var i = 0; i < elem4.length; i++) {
+				elem4[i].style.display = 'none'
+			};
 			document.getElementsByName("in-laundry-totalall")[0].style.display = 'none';			
 			document.getElementsByName("in-chemical-totalall")[0].style.display = 'flex';
-			document.getElementsByName("in-stationary-totalall")[0].style.display = 'none';
+			document.getElementsByName("in-stationery-totalall")[0].style.display = 'none';
 			calcChange(tot_in);			
 			break;
+		case 2: //chemical
+			document.getElementById('calendar').style.display = 'none';
+			//document.getElementById('menu-laundry').style.display = 'none';
+			document.getElementById('service-head').style.display = 'none';
+			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
+			document.getElementById('chem-head').style.display = 'none';
+			document.getElementById('chem-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';			
+			document.getElementById('stat-head').style.display = 'flex';
+			var elem = document.getElementsByClassName("border menu");
+			for (var i = 0; i < elem.length; i++) {
+				elem[i].style.display = 'flex'
+			}
+			var elem2 = document.getElementsByClassName("menu-laundry-cls");
+			for (var i = 0; i < elem2.length; i++) {
+				elem2[i].style.display = 'none'
+			};
+			var elem3 = document.getElementsByClassName("menu-chemical-cls");
+			for (var i = 0; i < elem3.length; i++) {
+				elem3[i].style.display = 'none'
+			};
+			var elem4 = document.getElementsByClassName("menu-stationery-cls");
+			for (var i = 0; i < elem4.length; i++) {
+				elem4[i].style.display = 'flex'
+			};
+			document.getElementsByName("in-laundry-totalall")[0].style.display = 'none';			
+			document.getElementsByName("in-chemical-totalall")[0].style.display = 'none';
+			document.getElementsByName("in-stationery-totalall")[0].style.display = 'flex';
+			calcChange(tot_in);
+			break;			
 	}
 })
 
@@ -164,6 +205,24 @@ function addItem() {
 				catch_item.add(optionall);
 			}			
 			break;
+		case 2:
+			var menuitem = document.getElementById("menu-stationery");
+			var clone = menuitem.cloneNode(true);
+			var name = menuitem.getAttribute(name) + (++ctr_stat);
+			clone.id = "menu-stationery";
+			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("name","li-stationery-itemtype"+name);
+			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("button")[0].setAttribute("name","remove-stat-item"+name);
+			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("id","item-stat-type"+name);
+			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-qty"+name);
+			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-totaleach"+name);
+
+			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
+			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
+			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;
+
+			document.getElementById("list-menu-stat").appendChild(clone);			
+			break;
+
 	}
 };
 
@@ -227,6 +286,31 @@ function removeItem(x) {
 			paid_obj = document.getElementsByName("in-amountpaid")[0];
 			calcChange(paid_obj);			
 			break;
+		case 2:
+			var catch_pass = 0;
+			var len_list = document.getElementById("list-menu-stat").getElementsByTagName("li").length;
+			if ( len_list > 1 ) {
+				var menuitem = document.getElementById("list-menu-stat");
+				for (var i = 0; i < len_list; i++) {
+					(function(index){
+						menuitem.children[i].onclick = function() {
+							pass_idx = index;
+							if ( pass_idx > 0 ) {
+								menuitem.removeChild(menuitem.getElementsByTagName("li")[pass_idx]);
+								catch_pass = i;
+							}
+						}
+					})(i);
+				}
+			}
+			var get_num = x.name;	
+			var catch_num = get_num.split("remove-stat-item"); 
+			var fin_num = catch_num[1];	
+			//alert(fin_num);
+			calcTotalAll(fin_num);
+			paid_obj = document.getElementsByName("in-amountpaid")[0];
+			calcChange(paid_obj);			
+			break;			
 	}
 };
 
@@ -336,6 +420,17 @@ function changeItem2(x) {
 	calcChange(paid_obj);	
 }
 
+function changeItem3(x) {
+	var get_num = x.name;	
+	var catch_num = get_num.split("li-stationery-itemtype"); 
+	var fin_num = catch_num[1];
+	document.getElementsByName("in-stationery-qty"+fin_num)[0].value = null;
+	document.getElementsByName("in-stationery-totaleach"+fin_num)[0].value = 0;
+	calcTotalAll(null);
+	paid_obj = document.getElementsByName("in-amountpaid")[0];
+	calcChange(paid_obj);	
+}
+
 function changeJug(x) {
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-chemical-jugtype"); 
@@ -436,16 +531,18 @@ function calcItem(x) {
 					baseprice_item = 0;
 					break;
 				case "13":
-					baseprice_item = 10000;
+					baseprice_item = 20000;
 					break;				
 				case "14":
 					baseprice_item = 15000;
 					break;									
 			}
-			calcSection(fin_service_val);			
+			calcSection(fin_service_val);
+			var totall = document.getElementsByName("in-laundry-totalall")[0].value;
+			totall = convMoney(totall);
 			if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6" || fin_item_val == "13" || fin_item_val == "14") {
-				if (qty < 3 && qty > 0 && fin_item_val != "13" && fin_item_val != "14") {
-					qty = 3;
+				if (qty < 1.5 && qty > 0 && fin_item_val != "13" && fin_item_val != "14") {
+					qty = 1.5;
 				}
 			} else {
 				qty = Math.floor(qty);
@@ -512,6 +609,39 @@ function calcItem(x) {
 			tot = tot.toLocaleString();
 			document.forms["main-form"]["in-chemical-totaleach"+fin_num].value = tot;			
 			break;
+		case 2:
+			var catch_num = get_num.split("in-stationery-qty"); 
+			var fin_num = catch_num[1];
+			var catch_item = document.getElementById("item-stat-type"+fin_num);
+			var fin_item_val = catch_item.options[catch_item.selectedIndex].value;
+			var fin_item_txt = catch_item.options[catch_item.selectedIndex].text;
+
+			switch(fin_item_val) {
+				case "1":
+					baseprice_item = 1000;
+					break;
+				case "2":
+					baseprice_item = 2000;
+					break;
+				case "3":
+					baseprice_item = 3000;
+					break;
+				case "4":
+					baseprice_item = 4000;
+					break;
+				case "5":
+					baseprice_item = 5000;
+					break;
+				case "6":
+					baseprice_item = 6000;
+					break;			
+			}
+
+			qty = Math.floor(qty);
+			var tot = qty * baseprice_item;
+			tot = tot.toLocaleString();
+			document.forms["main-form"]["in-stationery-totaleach"+fin_num].value = tot;			
+			break;
 	}
 
 	// buat looping, trycatch ?
@@ -564,7 +694,22 @@ function calcTotalAll(y) {
 			document.getElementsByName("in-chemical-totalall")[0].value = str_x;
 			break;
 		case 2: //stationary & lemineral		
-			var dump = 0;
+			var x = 0;
+			for (var j = 0; j <= ctr_stat; j++) {
+				try {
+					var each_tot = document.forms["main-form"]["in-stationery-totaleach"+j].value;
+					each_tot = convMoney(each_tot);
+					if (each_tot != NaN && j != y) {
+						x += parseInt(each_tot);
+					}
+					//alert(each_tot + " index " + j);
+				} catch(err) {
+					//alert("no index in " + j)
+					var dump = 0;
+				}
+			}
+			var str_x = x.toLocaleString();
+			document.getElementsByName("in-stationery-totalall")[0].value = str_x;
 			break;
 	}
 };
@@ -602,7 +747,7 @@ function calcChange(x) {
 				break;
 			case 2:
 				paid = convMoney(paid);
-				var totalall = document.getElementsByName("in-stationary-totalall")[0].value;
+				var totalall = document.getElementsByName("in-stationery-totalall")[0].value;
 				totalall = convMoney(totalall);
 				var totchange = paid - totalall;
 				//alert(totchange);

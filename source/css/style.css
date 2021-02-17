@@ -130,7 +130,7 @@ select {
 			.form-row.chem .form-wrapper.item:nth-child(4) {
 				margin-right: 18px; }				
 			.form-row .form-wrapper.item {
-				width: 30.3%; }
+				width: 30.4%; }
 			.form-row .form-wrapper.item.two {
 				width: 24%; } 
 			.form-row .form-wrapper.item.three {
@@ -147,6 +147,8 @@ select {
 				width: 16.4%; }
 			.form-row.chem .form-wrapper.item.five {
 				width: 15%; }
+			.form-row.stat .form-wrapper.item.one {
+				width: 57.25%; }				
 	.form-row.long {
 		width: 100%; }
 		.form-row.long .form-wrapper.long {
@@ -204,12 +206,14 @@ ul {
 		left: 37px; }
 	.small-icon.small-item.one.chem{
 		left: 41px; }
+	.small-icon.small-item.one.stat{
+		left: 41px; }		
 	.small-icon.small-item.two{
 		left: 41px; }  
 	.small-icon.small-item.two.chem{
 		left: 39px; }		
 	.small-icon.small-item.three, .small-icon.small-item.four {
-		left: 38px; }    
+		left: 39px; }    
 	.small-icon.small-item.long{
 		left: 145px; }		
 
@@ -253,6 +257,9 @@ ul {
 .parent-list.chem li:first-child .form-row .form-wrapper.item.one .small-icon.item {
 	color: #c1d3ff;
 	pointer-events: none; }	
+.parent-list.stat li:first-child .form-row .form-wrapper.item.one .small-icon.item {
+	color: #c1d3ff;
+	pointer-events: none; }		
 .parent-list .form-row {
 	margin-bottom: 0; }
 
