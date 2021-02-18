@@ -773,6 +773,30 @@ function showTooltips(x) {
 	}
 }
 
+function printForm(x) {
+	// https://stackoverflow.com/questions/51357990/html-css-print-out-pos-size
+
+	var receiptWindow = window.open('','Reciept','hieght=auto,width=58');
+	var catch_prod = document.getElementsByName("li-prodtype")[0];
+	var get_name = document.getElementsByName("in-custname")[0].value.toUpperCase();
+	var get_phone = document.getElementsByName("in-phonenum")[0].value;	
+	var datetime = new Date().toLocaleString();
+	var prod_name = catch_prod.options[catch_prod.selectedIndex].text.toUpperCase();
+	receiptWindow.document.write('<html><head>');
+	receiptWindow.document.write('<link rel="stylesheet" href="source/css/reciept-style.css"');
+	receiptWindow.document.write('</head><body>');
+	receiptWindow.document.write('<div id="logo" class="logo"><img src="asset/images/mama-laundry-reciept.svg"></div>');
+	receiptWindow.document.write('<h1 class="header">JL. SIAGA RAYA NO. 42C<br>PEJATEN BARAT, PS. MINGGU</h1>');
+	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+	receiptWindow.document.write('<h1>NAME : '+get_name+'<br>HP&nbsp&nbsp : '+get_phone+'<br>TIME : '+datetime+'</h1>');
+	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+	receiptWindow.document.write('<h1>PROD : '+prod_name+'</h1>');
+	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');	
+	receiptWindow.document.write('</body></html>');
+	receiptWindow.document.close();
+	receiptWindow.print();
+}
+
 /*
 parseFloat(n / 1.230769230769231).toFixed(0)
 --

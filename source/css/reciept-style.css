@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Muli-Regular";
+	src: url("../../asset/fonts/muli/Muli-Regular.ttf"); }
+@font-face {
+	font-family: "Muli-SemiBold";
+	src: url("../../asset/fonts/muli/Muli-SemiBold.ttf"); }
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url("../../asset/fonts/poppins/Poppins-Regular.ttf"); }
+@font-face {
+	font-family: "Poppins-Medium";
+	src: url("../../asset/fonts/poppins/Poppins-Medium.ttf"); }
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+body {
+	font-family: "Consolas";
+	font-size: 4px;
+	margin-top: 2em;	
+	padding: -5em 1em 1em 1em;
+	text-align: left; }
+.header {
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: -0.5em;
+}
+.logo {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center; }
+	.logo img{
+		max-width: 55%; }
+
