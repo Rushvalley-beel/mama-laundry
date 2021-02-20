@@ -18,15 +18,25 @@
 body {
 	font-family: "Consolas";
 	font-size: 4px;
-	margin-top: 2em;	
-	padding: -5em 1em 1em 1em;
+	margin-top: 0em;
+	margin-left: 0em;
+	padding: -7em 0em 1em 0em;
+	height: 0em;
 	text-align: left; }
 .header {
 	text-align: center;
 }
-
+.header.end {
+	margin-bottom: -3em;
+}
+.footer {
+	width:  auto;
+}
 h1 {
 	margin-bottom: -0.5em;
+}
+.qty {
+	margin-right: 5px;
 }
 .logo {
 	margin-right: auto;
@@ -34,4 +44,28 @@ h1 {
 	text-align: center; }
 	.logo img{
 		max-width: 55%; }
-
+.detail {
+	display: inline-block;
+}
+.detail.price {
+	position: fixed;
+	left: 8em;
+	margin-top: 1.769em;
+}
+.detail.toteach {
+	position: fixed;
+	left: 14em;
+	margin-top: 1.769em;
+}
+.detail.sign.one {
+	position: fixed;
+	left: 13.2em;
+	margin-top: -1.769em;	
+}
+.detail.sign.two {
+	position: fixed;
+	left: 13.2em;
+	margin-top: -0.6845em;	
+}
+.container {
+}

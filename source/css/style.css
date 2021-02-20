@@ -25,7 +25,7 @@ body {
 	box-sizing: border-box;
 	overflow-y: auto;
 	color: #FFF;
-	background-image: url("../../asset/images/memphis-light.png"); }
+	background-image: url("../../asset/images/memphis-light-3.png"); }
 
 input, textarea, select {
 	font-family: "Muli-Regular";
@@ -69,11 +69,11 @@ a {
 
 .inner {  
 	border-radius: 7px;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-	-ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-	-o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-ms-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 	background: url("../../asset/images/bg-inner.png") repeat;
 	padding: 10px;
 	margin-top: 5em;

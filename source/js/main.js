@@ -453,34 +453,127 @@ function changeSvc(x) {
 	calcChange(paid_obj);	
 }
 
+function calcSection(y,baseprice_item) {
+	switch(y) {
+		case "2":
+			baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);
+			break;
+		case "3":
+			baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0);
+			break;
+		case "4":
+			baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0); 
+			baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);			
+			break;
+		case "5":
+			baseprice_item = 20000;
+			break;
+		case "6":
+			baseprice_item = 20000;
+			baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);					
+			break;
+	}
+	return baseprice_item;
+}
+function basePrice_ldry(fin_item_val,fin_service_val,baseprice_item) {
+	switch(fin_item_val) {
+		case "1":
+			baseprice_item = 8000;
+			break;
+		case "2":
+			baseprice_item = 10000;
+			break;
+		case "3":
+			baseprice_item = 15000;
+			break;
+		case "4":
+			baseprice_item = 15000;
+			break;
+		case "5":
+			baseprice_item = 20000;
+			break;
+		case "6":
+			baseprice_item = 20000;
+			break;			
+		case "7":
+			baseprice_item = 25000;
+			break;
+		case "8":
+			baseprice_item = 15000;
+			break;
+		case "9":
+			baseprice_item = 30000;
+			break;
+		case "10":
+			baseprice_item = 40000;
+			break;			
+		case "11":
+			baseprice_item = 20000;
+			break;			
+		case "12":
+			baseprice_item = 0;
+			break;
+		case "13":
+			baseprice_item = 20000;
+			break;				
+		case "14":
+			baseprice_item = 15000;
+			break;									
+	}
+	baseprice_item = calcSection(fin_service_val,baseprice_item);	
+	return baseprice_item;
+}
+function basePrice_chem(fin_liquid_val,baseprice_item) {
+	switch(fin_liquid_val) {
+		case "1":
+			baseprice_item = 42000;
+			break;
+		case "2":
+			baseprice_item = 22000;
+			break;
+		case "3":
+			baseprice_item = 20000;
+			break;
+		case "4":
+			baseprice_item = 15000;
+			break;
+		case "5":
+			baseprice_item = 10000;
+			break;
+		case "6":
+			baseprice_item = 20000;
+			break;			
+	}	
+	return baseprice_item;
+}
+function basePrice_stat(fin_item_val,baseprice_item) {
+	switch(fin_item_val) {
+		case "1":
+			baseprice_item = 1000;
+			break;
+		case "2":
+			baseprice_item = 2000;
+			break;
+		case "3":
+			baseprice_item = 3000;
+			break;
+		case "4":
+			baseprice_item = 4000;
+			break;
+		case "5":
+			baseprice_item = 5000;
+			break;
+		case "6":
+			baseprice_item = 6000;
+			break;			
+	}
+	return baseprice_item;
+}
 function calcItem(x) {
 	var qty = x.value;	
 	var get_num = x.name;
 	var baseprice_item = 0;
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;
-
-	function calcSection(y) {
-		switch(y) {
-			case "2":
-				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);
-				break;
-			case "3":
-				baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0);
-				break;
-			case "4":
-				baseprice_item = parseFloat(baseprice_item / 1.230769230769231).toFixed(0); 
-				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);			
-				break;
-			case "5":
-				baseprice_item = 20000;
-				break;
-			case "6":
-				baseprice_item = 20000;
-				baseprice_item = parseFloat(baseprice_item * 1.625).toFixed(0);					
-				break;
-		}
-		return baseprice_item;
-	}
 
 	switch(prods) {
 		case 0:
@@ -493,51 +586,7 @@ function calcItem(x) {
 			var fin_service_val = catch_service.options[catch_service.selectedIndex].value;
 			var fin_service_txt = catch_service.options[catch_service.selectedIndex].text;
 
-			switch(fin_item_val) {
-				case "1":
-					baseprice_item = 8000;
-					break;
-				case "2":
-					baseprice_item = 10000;
-					break;
-				case "3":
-					baseprice_item = 15000;
-					break;
-				case "4":
-					baseprice_item = 15000;
-					break;
-				case "5":
-					baseprice_item = 20000;
-					break;
-				case "6":
-					baseprice_item = 20000;
-					break;			
-				case "7":
-					baseprice_item = 25000;
-					break;
-				case "8":
-					baseprice_item = 15000;
-					break;
-				case "9":
-					baseprice_item = 30000;
-					break;
-				case "10":
-					baseprice_item = 40000;
-					break;			
-				case "11":
-					baseprice_item = 20000;
-					break;			
-				case "12":
-					baseprice_item = 0;
-					break;
-				case "13":
-					baseprice_item = 20000;
-					break;				
-				case "14":
-					baseprice_item = 15000;
-					break;									
-			}
-			calcSection(fin_service_val);
+			baseprice_item = basePrice_ldry(fin_item_val,fin_service_val,baseprice_item);
 			var totall = document.getElementsByName("in-laundry-totalall")[0].value;
 			totall = convMoney(totall);
 			if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6" || fin_item_val == "13" || fin_item_val == "14") {
@@ -564,27 +613,7 @@ function calcItem(x) {
 			var catch_jug = document.getElementById("jug-chem-type"+fin_num);
 			var fin_jug_val = catch_jug.options[catch_jug.selectedIndex].value;
 
-			switch(fin_liquid_val) {
-				case "1":
-					baseprice_item = 42000;
-					break;
-				case "2":
-					baseprice_item = 22000;
-					break;
-				case "3":
-					baseprice_item = 20000;
-					break;
-				case "4":
-					baseprice_item = 15000;
-					break;
-				case "5":
-					baseprice_item = 10000;
-					break;
-				case "6":
-					baseprice_item = 20000;
-					break;			
-			}
-
+			baseprice_item = basePrice_chem(fin_liquid_val,baseprice_item);
 			qty = Math.floor(qty);
 			var jug_add = 0;
 			var get_ceil = 0;
@@ -616,27 +645,7 @@ function calcItem(x) {
 			var fin_item_val = catch_item.options[catch_item.selectedIndex].value;
 			var fin_item_txt = catch_item.options[catch_item.selectedIndex].text;
 
-			switch(fin_item_val) {
-				case "1":
-					baseprice_item = 1000;
-					break;
-				case "2":
-					baseprice_item = 2000;
-					break;
-				case "3":
-					baseprice_item = 3000;
-					break;
-				case "4":
-					baseprice_item = 4000;
-					break;
-				case "5":
-					baseprice_item = 5000;
-					break;
-				case "6":
-					baseprice_item = 6000;
-					break;			
-			}
-
+			baseprice_item = basePrice_stat(fin_item_val,baseprice_item);
 			qty = Math.floor(qty);
 			var tot = qty * baseprice_item;
 			tot = tot.toLocaleString();
@@ -778,21 +787,67 @@ function printForm(x) {
 
 	var receiptWindow = window.open('','Reciept','hieght=auto,width=58');
 	var catch_prod = document.getElementsByName("li-prodtype")[0];
+	var catch_trx = document.getElementById("payment-type");
+	var get_trx = catch_trx.options[catch_trx.selectedIndex].value;
+	var prod_name = catch_prod.options[catch_prod.selectedIndex].text.toUpperCase();
+	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
 	var get_name = document.getElementsByName("in-custname")[0].value.toUpperCase();
 	var get_phone = document.getElementsByName("in-phonenum")[0].value;	
+	var get_paid = document.getElementsByName("in-amountpaid")[0].value;
+	get_paid = parseInt(get_paid).toLocaleString();
+	var get_change = document.getElementsByName("in-amountchange")[0].value.toLocaleString();
 	var datetime = new Date().toLocaleString();
-	var prod_name = catch_prod.options[catch_prod.selectedIndex].text.toUpperCase();
+	var get_code = 1;
+	var code = ('0000'+get_code).slice(-5);
+
 	receiptWindow.document.write('<html><head>');
 	receiptWindow.document.write('<link rel="stylesheet" href="source/css/reciept-style.css"');
-	receiptWindow.document.write('</head><body>');
-	receiptWindow.document.write('<div id="logo" class="logo"><img src="asset/images/mama-laundry-reciept.svg"></div>');
-	receiptWindow.document.write('<h1 class="header">JL. SIAGA RAYA NO. 42C<br>PEJATEN BARAT, PS. MINGGU</h1>');
+	receiptWindow.document.write('</head><body><div class="container">');
+	receiptWindow.document.write('<div id="logo" class="logo"><img src="asset/images/mama-laundry-reciept.svg">&nbsp&nbsp</div>');
+	receiptWindow.document.write('<h1 class="header">JL. SIAGA RAYA NO. 42C&nbsp&nbsp<br>PEJATEN BARAT, PS. MINGGU&nbsp&nbsp</h1>');
 	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
-	receiptWindow.document.write('<h1>NAME : '+get_name+'<br>HP&nbsp&nbsp : '+get_phone+'<br>TIME : '+datetime+'</h1>');
+	receiptWindow.document.write('<h1>NAME&nbsp&nbsp : '+get_name+'<br>PHONE&nbsp : '+get_phone+'<br>TIME&nbsp&nbsp : '+datetime+'<br>INVCE&nbsp : #'+code+'</h1>');
 	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
-	receiptWindow.document.write('<h1>PROD : '+prod_name+'</h1>');
-	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');	
-	receiptWindow.document.write('</body></html>');
+	receiptWindow.document.write('<h1>PRODCT : '+prod_name);
+	if (prod_val == '1') {
+		var check_in = document.getElementsByName("in-laundry-checkin")[0].value.toUpperCase();
+		var check_out = document.getElementsByName("in-laundry-checkout")[0].value.toUpperCase();
+		var catch_totalall = document.getElementsByName("in-laundry-totalall")[0].value;
+		receiptWindow.document.write('<br>FINISH : '+check_in+' -- '+check_out);
+		receiptWindow.document.write('</h1><h1>-------------------------------------<br></h1>');
+		var x = 0;
+		for (var j = 0; j <= ctr_ldry; j++) {
+			try {
+				var baseprice_item = 0;
+				var get_item = document.getElementsByName("li-laundry-itemtype"+j)[0];
+				var get_srvc = document.getElementsByName("li-laundry-servicetype"+j)[0];				
+				var item_name = get_item.options[get_item.selectedIndex].text.toUpperCase();
+				var srvc_name = get_srvc.options[get_srvc.selectedIndex].text.toUpperCase();
+				var item_val = get_item.options[get_item.selectedIndex].value;
+				var srvc_val = get_srvc.options[get_srvc.selectedIndex].value;				
+				var baseprice_item = basePrice_ldry(item_val,srvc_val,baseprice_item);
+				baseprice_item = parseInt(baseprice_item).toLocaleString();
+				var tot_each = document.getElementsByName("in-laundry-totaleach"+j)[0].value.toLocaleString();
+				var qty_each = document.getElementsByName("in-laundry-qty"+j)[0].value;
+				++x;
+				var ctr = ('0'+x).slice(-2);				
+				receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' ('+srvc_name+')<br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><h1 class="detail toteach">: '+tot_each+'</h1>');
+							} catch(err) {
+				var dump = 0;
+			}
+		}
+		receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+		receiptWindow.document.write('<h1 class="footer">TOTAL&nbsp : Rp '+catch_totalall)
+		if (get_trx == "1") {
+			receiptWindow.document.write('<br>PAID&nbsp&nbsp : Rp '+get_paid+'<br>RETURN : Rp '+get_change)
+			receiptWindow.document.write('</h1><h1  class="detail sign one">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');			
+		} else {
+			receiptWindow.document.write('</h1><h1 class="detail sign two">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');		
+		}
+		receiptWindow.document.write('<h1>-------------------------------------</h1>');
+	}
+	receiptWindow.document.write('<h1 class="header end">(✿◠‿◠)&nbsp<br>CONTACT INFO : 08212-533-7746&nbsp<br>github.com/hotpotcookie/&nbsp</h1>')
+	receiptWindow.document.write('</div></body></html>');
 	receiptWindow.document.close();
 	receiptWindow.print();
 }
