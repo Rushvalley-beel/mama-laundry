@@ -54,8 +54,9 @@ h1 {
 }
 .detail.toteach {
 	position: fixed;
-	left: 14em;
+	left: 14.8em;
 	margin-top: 1.769em;
+	text-align: right;
 }
 .detail.sign.one {
 	position: fixed;
@@ -67,5 +68,12 @@ h1 {
 	left: 13.2em;
 	margin-top: -0.6845em;	
 }
-.container {
+.detail.jug {
+	position: fixed;
+	left: 9.2em;
+	margin-top: 1.769em;	
+}
+.indent {
+	text-align: right;
+	width: 10em;
 }

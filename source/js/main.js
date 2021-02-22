@@ -569,6 +569,19 @@ function basePrice_stat(fin_item_val,baseprice_item) {
 	}
 	return baseprice_item;
 }
+function basePrice_chem_jug_ceil(fin_jug_val,qty) {
+	var get_ceil = 0;	
+	switch(fin_jug_val) {
+		case "2":
+			get_ceil = qty / 1;
+			get_ceil = Math.ceil(get_ceil);
+			break;
+		case "3":
+			get_ceil = qty / 5;
+			get_ceil = Math.ceil(get_ceil);		
+	}
+	return get_ceil;
+}
 function basePrice_chem_jug(fin_jug_val,qty) {
 	var jug_add = 0;
 	var get_ceil = 0;	
@@ -577,18 +590,17 @@ function basePrice_chem_jug(fin_jug_val,qty) {
 			jug_add = 0;
 			break;
 		case "2":
-			get_ceil = qty / 1;
-			get_ceil = Math.ceil(get_ceil);
+			get_ceil = basePrice_chem_jug_ceil(fin_jug_val,qty);
 			jug_add = get_ceil * 7000;
 			break;
 		case "3":
-			get_ceil = qty / 5;
-			get_ceil = Math.ceil(get_ceil);
+			get_ceil = basePrice_chem_jug_ceil(fin_jug_val,qty);		
 			jug_add = get_ceil * 8000;
 			break;
 	}
 	return jug_add;
 }
+
 function calcItem(x) {
 	var qty = x.value;	
 	var get_num = x.name;
@@ -851,7 +863,7 @@ function printForm(x) {
 			receiptWindow.document.write('<h1>-------------------------------------</h1>');
 			break;
 		case "2":
-			var catch_totalall = document.getElementsByName("in-chemical-totalall")[0].value.toUpperCase();
+			var catch_totalall = document.getElementsByName("in-chemical-totalall")[0].value;
 			receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
 			var x = 0;
 			for (var j = 0; j <= ctr_chem; j++) {
@@ -865,29 +877,71 @@ function printForm(x) {
 					var jug_name = get_jug.options[get_jug.selectedIndex].text.toUpperCase();
 					var fin_liquid_val = get_liquid.options[get_liquid.selectedIndex].value;
 					var fin_jug_val = get_jug.options[get_jug.selectedIndex].value
-					if (fin_jug_val != "1") {
-						jug_name = "["+jug_name+"]";
-					} else {
-						jug_name = "";
-					}
 					baseprice_item = basePrice_chem(fin_liquid_val,baseprice_item);
 					baseprice_item = parseInt(baseprice_item).toLocaleString();
 					var tot_each = document.getElementsByName("in-chemical-totaleach"+j)[0].value;
 					var qty_each = document.getElementsByName("in-chemical-qty"+j)[0].value;
 					qty_each = Math.floor(qty_each);
 					var qty = qty_each;
-					var jug_add = basePrice_chem_jug(fin_jug_val,qty);
+					var jug_add = basePrice_chem_jug(fin_jug_val,qty).toLocaleString();
+					var get_ceil = basePrice_chem_jug_ceil(fin_jug_val,qty);
+					if (fin_jug_val != "1") {
+						get_ceil = "+ "+get_ceil;
+						jug_add = "+ "+jug_add;
+					} else {
+						jug_name = "";
+						jug_add = "";
+						get_ceil = "";			
+					}					
 					++x;
 					var ctr = ('0'+x).slice(-2);
-					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' ('+liquid_name+') '+jug_name+'<br></h1>');
+					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' ('+liquid_name+') '+get_ceil+' '+jug_name+'<br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><h1 class="detail jug"> '+jug_add+'</h1><span class="indent"><h1 class="detail toteach">: '+tot_each+'</h1></span>');
 				} catch(err) {
 					var dump = 0;
 				}
 			}
-			receiptWindow.document.write('<h1>-------------------------------------<br></h1>');			
+			receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+			receiptWindow.document.write('<h1 class="footer">TOTAL&nbsp : Rp '+catch_totalall)
+			if (get_trx == "1") {
+				receiptWindow.document.write('<br>PAID&nbsp&nbsp : Rp '+get_paid+'<br>RETURN : Rp '+get_change)
+				receiptWindow.document.write('</h1><h1  class="detail sign one">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');			
+			} else {
+				receiptWindow.document.write('</h1><h1 class="detail sign two">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');		
+			}
+			receiptWindow.document.write('<h1>-------------------------------------</h1>');
+			break;
+		case "3":
+			var catch_totalall = document.getElementsByName("in-stationery-totalall")[0].value;
+			receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+			var x = 0;
+			for (var j = 0; j <= ctr_stat; j++) {
+				try {
+					var baseprice_item = 0;
+					var get_item = document.getElementsByName("li-stationery-itemtype"+j)[0];
+					var item_name = get_item.options[get_item.selectedIndex].text.toUpperCase();
+					var fin_item_val = get_item.options[get_item.selectedIndex].value;
+					var qty_each = document.getElementsByName("in-stationery-qty"+j)[0].value;
+					var tot_each = document.getElementsByName("in-stationery-totaleach"+j)[0].value;
+					baseprice_item = basePrice_stat(fin_item_val,baseprice_item);
+					++x;
+					var ctr = ('0'+x).slice(-2);
+					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' <br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><span class="indent"><h1 class="detail toteach">: '+tot_each+'</h1></span>');
+				} catch(err) {
+					var dump = 0;
+				}
+			}
+			receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
+			receiptWindow.document.write('<h1 class="footer">TOTAL&nbsp : Rp '+catch_totalall)
+			if (get_trx == "1") {
+				receiptWindow.document.write('<br>PAID&nbsp&nbsp : Rp '+get_paid+'<br>RETURN : Rp '+get_change)
+				receiptWindow.document.write('</h1><h1  class="detail sign one">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');			
+			} else {
+				receiptWindow.document.write('</h1><h1 class="detail sign two">[&nbsp&nbsp&nbsp&nbspTTD&nbsp&nbsp&nbsp&nbsp]</h1>');		
+			}
+			receiptWindow.document.write('<h1>-------------------------------------</h1>');			
 			break;
 	}
-	receiptWindow.document.write('<h1 class="header end">(͡• ͜ʖ ͡•)&nbsp<br>CONTACT INFO : 08212-533-7746&nbsp<br>github.com/hotpotcookie/&nbsp</h1>')
+	receiptWindow.document.write('<h1 class="header end">.: (づ｡◕‿‿◕｡)づ :.&nbsp<br><br>CONTACT INFO : 08212-533-7746&nbsp<br>mama-laundry.io/dashboard/&nbsp</h1>')
 	receiptWindow.document.write('</div></body></html>');
 	receiptWindow.document.close();
 	receiptWindow.print();
