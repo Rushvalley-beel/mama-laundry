@@ -32,12 +32,12 @@
 					<div id="logo" class="logo"><img src="asset/images/mama-laundry.svg"></div>
 					<div class="border"><br></div>					
 					<div class="form-row">
-						<div class="form-wrapper">
+						<div class="form-wrapper cust">
 							<label for="">Customer</label>
 							<div class="small-icon"><i class="fas fa-user"></i></div>
 							<input name="in-custname" type="text" class="form-control" placeholder="Bapak / Ibu . . .">
 						</div>
-						<div class="form-wrapper">
+						<div class="form-wrapper phone">
 							<label for="">Phone</label>
 							<div class="small-icon"><i class="fas fa-phone"></i></div>							
 							<input name="in-phonenum" type="number" class="form-control" placeholder="0821 . . .">
@@ -267,14 +267,17 @@
 							<button id="add-item" type="button" data-text="ADD" onclick="addItem()">
 								<span><strong>ADD ITEM</strong></span>
 							</button>
+						</div>
+						<div class="form-wrapper long item trx mobile two">						
+							<label for="">Transaction Status</label>							
 							<div class="small-icon small-item long"><i class="fas fa-receipt"></i></div>							
 							<select name="li-laundry-trxtype" id="payment-type" class="form-control long">
 								<option value="1">Pembayaran Lunas ( Cash / Transfer )</option>
 								<option value="2">Pembayaran Nanti ( Barang Selesai )</option>
 								<option value="3">Pembayaran Rekap ( Bulanan )</option>								
 							</select>
-							<i class="zmdi zmdi-chevron-down"></i>							
-						</div>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>											
 						<div class="form-wrapper long item trx">
 							<label for="">Transaction Status</label>
 							<button id="add-item" type="button" data-text="ADD" onclick="addItem()">

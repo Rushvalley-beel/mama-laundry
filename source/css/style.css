@@ -416,15 +416,15 @@ span#prod {
 		width: auto;
 		background-image: none; 
 		overflow-x: hidden;
-		overflow-y: auto; }
+		overflow-y: auto; 
+		min-height: 50vh; }
 	.wrapper {
 		margin: 0em 0.7em 0em 0.7em;
 		padding-bottom: 0em;
+		min-height: 50vh;
 	}
 	.inner {
 		width: auto;
-		transform: translateY(0);
-		position: static;
 		padding: 0em;
 		margin-top: 0.7em;
 		box-shadow: none;
@@ -446,7 +446,22 @@ span#prod {
 		display: none;
 	}		
 	.form-row .form-wrapper.long.item.trx.mobile {
-		display: inline-block;
+		display: block;
+		width: 100%;
+	}
+	.form-row .form-wrapper.long.item.trx.mobile button {
+		top: 0.5em;
+	}
+	.form-row .form-wrapper.long.item.trx.mobile.two {
+		top: 4.5em;
+		margin-bottom: 6.5em;
+	}
+	.form-row .form-wrapper.long.item.trx.mobile.two .form-control, .form-row .form-wrapper.long.item.trx.mobile.two label {	
+		margin-left: 0px;
+	}
+	.small-icon.small-item.long{
+		left: 0px; }
+	.form-row .form-wrapper.cust .form-control, .form-row .form-wrapper.phone .form-control{
 		width: 100%;
 	}
 	button#add-item {
@@ -463,11 +478,8 @@ span#prod {
 	}
 	form {
 		padding: 30px 20px; }
-		.form-row {
-			display: block; }
 		.form-row .form-wrapper {
-			width: 100%;
-			margin-bottom: 25px; }
+			margin-bottom: 10px; }
 		.form-row .form-wrapper:first-child {
 			margin-right: 0; }}
 
