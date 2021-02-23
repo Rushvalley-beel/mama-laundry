@@ -452,11 +452,11 @@ span#prod {
 		width: 100%;
 	}
 	.form-row .form-wrapper.long.item.trx.mobile button {
-		top: 0.5em;
+		top: 1.5em;
 	}
 	.form-row .form-wrapper.long.item.trx.mobile.two {
-		top: 4.5em;
-		margin-bottom: 6.5em;
+		top: 5.5em;
+		margin-bottom: 7.5em;
 	}
 	.form-row .form-wrapper.long.item.trx.mobile.two .form-control, .form-row .form-wrapper.long.item.trx.mobile.two label {	
 		margin-left: 0px;
@@ -481,9 +481,13 @@ span#prod {
 			display: block; }
 		.form-row.combine {
 			display: flex; }
+		.form-row.combine .form-wrapper .form-control {
+			width: 100%;
+			border-radius: 0px;
+		}
 		.form-row .form-wrapper {
 			width: 100%;
-			margin-bottom: 25px; }
+			margin-bottom: 8px; }
 		.form-row .form-wrapper:first-child {
 			margin-right: 0; }}
 
