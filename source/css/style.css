@@ -482,11 +482,8 @@ span#prod {
 		.form-row.combine {
 			display: flex; }
 		.form-row.combine .form-wrapper.item {
-			margin-right: 11px;
+			margin-right: 5px;
 		}
-		.form-row .form-wrapper.item.one, .form-row .form-wrapper.item.two, .form-row .form-wrapper.item.three, .form-row .form-wrapper.item.four, .form-row .form-wrapper.item.five{
-			width: 90%;
-		}		
 		.form-row .form-wrapper.item .form-control {
 			margin-left: 40px; }		
 		.form-row.combine .form-wrapper .form-control {
