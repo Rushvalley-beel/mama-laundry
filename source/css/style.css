@@ -400,13 +400,8 @@ span#prod {
 		padding-bottom: 0.4em; }
 
 /* media query goes here lmao */
-@media (max-width: 1199px) {
-	.wrapper {
-		background-position: center center; } 
-	body {
-		padding: 0; }}
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
 	body {
 		height: 100vh;
 		background-image: none; }
@@ -420,18 +415,13 @@ span#prod {
 		-moz-box-shadow: none;
 		-ms-box-shadow: none;
 		-o-box-shadow: none; }
-	.wrapper {
-		display: none; }
-	.foot-logo {
-		display: none;
-	}
 	.splash-screen {
 		position: relative;
 		margin-right: auto;
 		margin-left: auto;
 		margin: 0em 3em 0em 3em;
 		padding-top: 5em;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		overflow: visible;
 		color: black; }
