@@ -481,9 +481,20 @@ span#prod {
 			display: block; }
 		.form-row.combine {
 			display: flex; }
+		.form-row.combine .form-wrapper.item {
+			margin-right: 11px;
+		}
+		.form-row .form-wrapper.item.one, .form-row .form-wrapper.item.two, .form-row .form-wrapper.item.three, .form-row .form-wrapper.item.four, .form-row .form-wrapper.item.five{
+			width: 90%;
+		}		
+		.form-row .form-wrapper.item .form-control {
+			margin-left: 40px; }		
 		.form-row.combine .form-wrapper .form-control {
 			width: 100%;
 			border-radius: 0px;
+		}		
+		.form-row.ldry.combine .form-control.item {
+			width: 100%;
 		}
 		.form-row .form-wrapper {
 			width: 100%;
