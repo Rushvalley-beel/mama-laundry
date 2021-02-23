@@ -406,7 +406,7 @@ span#prod {
 @media (max-width: 900px) {
 	/* 
 	0 kurangin padding
-	- tombol add item ada diatas, bukan sebelah. list dibikin long 100%
+	0 tombol add item ada diatas, bukan sebelah. list dibikin long 100%
 	- zmdi product type naikin
 	- service head, chem head, stat head perbaikin margin / padding nya
 	0 ukuran logo kecilin
@@ -425,6 +425,8 @@ span#prod {
 	}
 	.inner {
 		width: auto;
+		transform: translateY(0);
+		position: static;
 		padding: 0em;
 		margin-top: 0.7em;
 		box-shadow: none;
@@ -460,10 +462,7 @@ span#prod {
 		margin-left: 0px;
 	}
 	.small-icon.small-item.long{
-		left: 0px; }
-	.form-row .form-wrapper.cust .form-control, .form-row .form-wrapper.phone .form-control{
-		width: 100%;
-	}
+		left: 0px; }			
 	button#add-item {
 		width: 100%;
 	}  
@@ -478,8 +477,13 @@ span#prod {
 	}
 	form {
 		padding: 30px 20px; }
+		.form-row {
+			display: block; }
+		.form-row.combine {
+			display: flex; }
 		.form-row .form-wrapper {
-			margin-bottom: 10px; }
+			width: 100%;
+			margin-bottom: 25px; }
 		.form-row .form-wrapper:first-child {
 			margin-right: 0; }}
 
