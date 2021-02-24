@@ -482,11 +482,13 @@ span#prod {
 		.form-row.combine {
 			display: flex; }
 		.form-row.combine .form-wrapper.item {
-			margin-right: 5px;
+			margin-right: 0px;
 		}
-		.form-row .form-wrapper.item .form-control, .small-icon.small-item{
+		.form-row .form-wrapper.item .form-control {
 			margin-left: 0px; 
-			margin-top: 35px; }
+			margin-top: 0px; }
+		.form-row.ldry.combine .form-wrapper.item .form-control, .form-row.ldry.combine .form-wrapper.item .small-icon.small-item{
+			margin-left: 40px; }
 		.small-icon.small-item.one {
 			left: -3px; }
 		.small-icon.small-item.two {
