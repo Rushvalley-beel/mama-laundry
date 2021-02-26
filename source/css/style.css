@@ -497,11 +497,11 @@ span#prod {
 			border-radius: 0px;
 		}		
 		.form-row.ldry .form-wrapper.item {
-			min-width: 85%;
-			max-width: 85%;
+			min-width: 70%;
+			max-width: 70%;
 		}
 		.form-row.ldry {
-			margin-bottom: 1.5em;
+			margin-bottom: 2.5em;
 		}
 		.form-row .form-wrapper.item.two {
 			width: 70.4%; } 
