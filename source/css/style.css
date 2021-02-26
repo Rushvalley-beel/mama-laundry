@@ -416,13 +416,10 @@ span#prod {
 		width: auto;
 		background-image: none; 
 		overflow-x: hidden;
-		overflow-y: auto; 
-		min-height: 50vh; }
+		overflow-y: auto; }
 	.wrapper {
-		margin: 0em 0.7em 0em 0.7em;
-		padding-bottom: 0em;
-		min-height: 50vh;
-	}
+		margin: 0em 0.7em -4em 0.7em;
+		min-height: 0vh; }
 	.inner {
 		width: auto;
 		transform: translateY(0);
