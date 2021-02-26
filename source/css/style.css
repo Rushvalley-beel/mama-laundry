@@ -252,6 +252,8 @@ ul {
 		pointer-events: none; }
 	.form-control.datepicker-here {
 		padding-left: 25px; }
+	.form-row.combine.block {
+		display: flex !important; }		
 
 .parent-list.ldry li:first-child .form-row .form-wrapper.item.one .small-icon.item {
 	color: #c1d3ff;
@@ -441,6 +443,8 @@ span#prod {
 		flex-direction: column;
 		overflow: visible;
 		color: black; }		
+	.form-row.combine.block {
+		display: block !important; }		
 	.form-row .form-wrapper.long.item.trx {
 		display: none;
 	}		
@@ -496,9 +500,8 @@ span#prod {
 			width: 100%;
 			border-radius: 0px;
 		}		
-		.form-row.ldry .form-wrapper.item {
-			min-width: 100%;
-			max-width: 100%;
+		.form-row.ldry .form-wrapper.item, .form-row.chem .form-wrapper.item, .form-row.stat .form-wrapper.item{
+			min-width: 90%;
 		}
 		.form-row.ldry, .form-row.chem, .form-row.stat {
 			margin-top: 2.5em;
@@ -506,13 +509,30 @@ span#prod {
 		.parent-list.ldry li:first-child .form-row, .parent-list.chem li:first-child .form-row, .parent-list.stat li:first-child .form-row {
 			margin-top: 0em;
 		}
-		.form-row .form-wrapper.item.two {
-			width: 70.4%; } 
-		.form-row .form-wrapper.item.three {
-			width: 14.5%; }
-		.form-row .form-wrapper.item.four{
-			width: 15.85%; }		
 		.form-row .form-wrapper:first-child {
-			margin-right: 0; }}
+			margin-right: 0; }
+		.form-row.combine.block .form-wrapper {
+			width: 100%;
+		}
+
+	.tooltip .tooltiptext {
+		width: 310px;
+		top: 25px;
+		font-size: 10px;
+		z-index: 9000;
+	}	
+	.tooltip .tooltiptext.ldry {
+		left: -520%;
+	}	
+	.tooltip .tooltiptext.chem {
+		left: -590%;
+	}	
+	.tooltip .tooltiptext.stat {
+		left: -630%;
+	}		
+	.tooltip .tooltiptext::after {
+		display: none;
+	}
+}
 
 /*# sourceMappingURL=style.css.map */

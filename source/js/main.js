@@ -10,7 +10,12 @@ document.getElementById('prod-type').addEventListener('change', function(){
 	var tot_in = document.getElementsByName("in-amountpaid")[0];
 	switch(prods) {
 		case 0: //laundry
-			document.getElementById('calendar').style.display = 'flex'; 
+			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			if (vw < 900) {
+				document.getElementById('calendar').style.display = 'block'; 				
+			} else {				
+				document.getElementById('calendar').style.display = 'flex'; 
+			}
 			//document.getElementById('menu-laundry').style.display = 'flex';
 			document.getElementById('service-head').style.display = 'flex';
 			document.getElementById('chem-head').style.display = 'none';
