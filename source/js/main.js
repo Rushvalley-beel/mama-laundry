@@ -832,7 +832,7 @@ function showTooltips(x) {
 function printForm(x) {
 	// https://stackoverflow.com/questions/51357990/html-css-print-out-pos-size
 
-	var receiptWindow = window.open('','Reciept','hieght=auto,width=58');
+	var receiptWindow = window.open('','Reciept','height=auto,width=58,menubar=no,resizeable=no');
 	var catch_prod = document.getElementsByName("li-prodtype")[0];
 	var catch_trx = document.getElementById("payment-type");
 	var get_trx = catch_trx.options[catch_trx.selectedIndex].value;
