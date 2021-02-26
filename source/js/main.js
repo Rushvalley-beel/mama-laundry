@@ -4,6 +4,18 @@ $(function(){
 	var dp2 = $('#dp2').datepicker().data('datepicker');
 	dp2.selectDate(new Date());
 })
+window.onresize = function() {
+	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;	
+	switch(prods) {
+		case 0: //laundry
+			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			if (vw < 900) {
+				document.getElementById('calendar').style.setProperty('display','block'); 				
+			} else {				
+				document.getElementById('calendar').style.setProperty('display','flex'); 
+			}	
+	}
+}
 
 document.getElementById('prod-type').addEventListener('change', function(){
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;	
@@ -12,9 +24,9 @@ document.getElementById('prod-type').addEventListener('change', function(){
 		case 0: //laundry
 			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 			if (vw < 900) {
-				document.getElementById('calendar').style.display = 'block'; 				
+				document.getElementById('calendar').style.setProperty('display','block'); 				
 			} else {				
-				document.getElementById('calendar').style.display = 'flex'; 
+				document.getElementById('calendar').style.setProperty('display','flex'); 
 			}
 			//document.getElementById('menu-laundry').style.display = 'flex';
 			document.getElementById('service-head').style.display = 'flex';
@@ -44,7 +56,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			calcChange(tot_in);
 			break;
 		case 1: //chemical
-			document.getElementById('calendar').style.display = 'none';
+			document.getElementById('calendar').style.setProperty('display','none'); 
 			//document.getElementById('menu-laundry').style.display = 'none';
 			document.getElementById('service-head').style.display = 'none';
 			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
@@ -73,7 +85,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			calcChange(tot_in);			
 			break;
 		case 2: //chemical
-			document.getElementById('calendar').style.display = 'none';
+			document.getElementById('calendar').style.setProperty('display','none'); 
 			//document.getElementById('menu-laundry').style.display = 'none';
 			document.getElementById('service-head').style.display = 'none';
 			document.getElementById('service-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';

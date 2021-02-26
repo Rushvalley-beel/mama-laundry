@@ -253,7 +253,7 @@ ul {
 	.form-control.datepicker-here {
 		padding-left: 25px; }
 	.form-row.combine.block {
-		display: flex !important; }		
+		display: flex ; }		
 
 .parent-list.ldry li:first-child .form-row .form-wrapper.item.one .small-icon.item {
 	color: #c1d3ff;
@@ -444,7 +444,7 @@ span#prod {
 		overflow: visible;
 		color: black; }		
 	.form-row.combine.block {
-		display: block !important; }		
+		display: block ; }		
 	.form-row .form-wrapper.long.item.trx {
 		display: none;
 	}		
