@@ -479,28 +479,36 @@ span#prod {
 		.form-row.combine {
 			display: flex; }
 		.form-row.combine .form-wrapper.item {
-			margin-right: 0px;
+			margin-right: 2px;
 		}
+		.form-wrapper.item.trx i.zmdi-chevron-down {
+			right: 1.3px;
+			top: 34px; }				
+		.form-row.combine .form-wrapper.item .zmdi{
+			display: none;
+		}		
 		.form-row .form-wrapper.item .form-control {
-			margin-left: 0px; 
+			margin-left: 40px;
 			margin-top: 0px; }
 		.form-row.ldry.combine .form-wrapper.item .form-control, .form-row.ldry.combine .form-wrapper.item .small-icon.small-item{
 			margin-left: 0px; }
-		.small-icon.small-item.one {
-			left: -3px; }
-		.small-icon.small-item.two {
-			left: 0px;
-		}					
 		.form-row.combine .form-wrapper .form-control {
 			width: 100%;
 			border-radius: 0px;
 		}		
-		.form-row.ldry.combine .form-control.item {
-			width: 100%;
+		.form-row.ldry .form-wrapper.item {
+			min-width: 85%;
+			max-width: 85%;
 		}
-		.form-row .form-wrapper {
-			width: 100%;
-			margin-bottom: 8px; }
+		.form-row.ldry {
+			margin-bottom: 1.5em;
+		}
+		.form-row .form-wrapper.item.two {
+			width: 70.4%; } 
+		.form-row .form-wrapper.item.three {
+			width: 14.5%; }
+		.form-row .form-wrapper.item.four{
+			width: 15.85%; }		
 		.form-row .form-wrapper:first-child {
 			margin-right: 0; }}
 

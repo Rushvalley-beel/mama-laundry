@@ -630,6 +630,7 @@ function calcItem(x) {
 			}
 
 			var tot = qty * baseprice_item;
+			tot = parseInt(tot);
 			tot = tot.toLocaleString();
 			document.forms["main-form"]["in-laundry-totaleach"+fin_num].value = tot;			
 			break;
