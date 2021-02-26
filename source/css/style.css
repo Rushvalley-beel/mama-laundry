@@ -497,11 +497,14 @@ span#prod {
 			border-radius: 0px;
 		}		
 		.form-row.ldry .form-wrapper.item {
-			min-width: 70%;
-			max-width: 70%;
+			min-width: 100%;
+			max-width: 100%;
 		}
-		.form-row.ldry {
-			margin-bottom: 2.5em;
+		.form-row.ldry, .form-row.chem, .form-row.stat {
+			margin-top: 2.5em;
+		}
+		.parent-list.ldry li:first-child .form-row, .parent-list.chem li:first-child .form-row, .parent-list.stat li:first-child .form-row {
+			margin-top: 0em;
 		}
 		.form-row .form-wrapper.item.two {
 			width: 70.4%; } 
