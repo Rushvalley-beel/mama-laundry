@@ -535,4 +535,9 @@ span#prod {
 	}
 }
 
+@media (max-width: 350px) {
+	.form-row.ldry .form-wrapper.item, .form-row.chem .form-wrapper.item, .form-row.stat .form-wrapper.item{
+		min-width: 75%;
+	}	
+}
 /*# sourceMappingURL=style.css.map */

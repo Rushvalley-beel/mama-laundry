@@ -1,3 +1,9 @@
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);	
+if (vw < 350) {
+	document.getElementsByClassName('form-wrapper paid')[0].getElementsByTagName("label")[0].textContent = "Paid";
+	document.getElementsByClassName('form-wrapper change')[0].getElementsByTagName("label")[0].textContent = "Change";
+}
+
 $(function(){
 	var dp1 = $('#dp1').datepicker().data('datepicker');
 	dp1.selectDate(new Date());
@@ -6,14 +12,22 @@ $(function(){
 })
 window.onresize = function() {
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;	
+	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);	
 	switch(prods) {
 		case 0: //laundry
-			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			//alert(vw);
 			if (vw < 900) {
 				document.getElementById('calendar').style.setProperty('display','block'); 				
 			} else {				
 				document.getElementById('calendar').style.setProperty('display','flex'); 
-			}	
+			}
+	}
+	if (vw < 350) {
+		document.getElementsByClassName('form-wrapper paid')[0].getElementsByTagName("label")[0].textContent = "Paid";
+		document.getElementsByClassName('form-wrapper change')[0].getElementsByTagName("label")[0].textContent = "Change";
+	} else {
+		document.getElementsByClassName('form-wrapper paid')[0].getElementsByTagName("label")[0].textContent = "Amount of Paid";
+		document.getElementsByClassName('form-wrapper change')[0].getElementsByTagName("label")[0].textContent = "Amount of Change";	
 	}
 }
 
