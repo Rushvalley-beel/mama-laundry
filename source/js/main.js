@@ -848,9 +848,9 @@ function printForm(x) {
 	var code = ('0000'+get_code).slice(-5);
 
 	receiptWindow.document.write('<html><head>');
-	receiptWindow.document.write('<link rel="stylesheet" href="source/css/reciept-style.css"');
+	receiptWindow.document.write('<link rel="stylesheet" href="css/reciept-style.css"');
 	receiptWindow.document.write('</head><body><div class="container">');
-	receiptWindow.document.write('<div id="logo" class="logo"><img src="asset/images/mama-laundry-reciept.svg">&nbsp&nbsp</div>');
+	receiptWindow.document.write('<div id="logo" class="logo"><img src="images/mama-laundry-reciept.svg">&nbsp&nbsp</div>');
 	receiptWindow.document.write('<h1 class="header">JL. SIAGA RAYA NO. 42C&nbsp&nbsp<br>PEJATEN BARAT, PS. MINGGU&nbsp&nbsp</h1>');
 	receiptWindow.document.write('<h1>-------------------------------------<br></h1>');
 	receiptWindow.document.write('<h1>NAME&nbsp&nbsp : '+get_name+'<br>PHONE&nbsp : '+get_phone+'<br>TIME&nbsp&nbsp : '+datetime+'<br>INVCE&nbsp : #'+code+'</h1>');

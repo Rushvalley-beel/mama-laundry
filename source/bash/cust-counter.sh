@@ -33,5 +33,5 @@ if [[ $pass ]];then
 	get_ctr=$(cat "${db_counter[$idx]}")
 	get_ctr=$((++get_ctr))
 	echo "$get_ctr" > "${db_counter[$idx]}"
-	echo "${db_counter[$idx]}"
+	cat "${db_counter[$idx]}"
 fi

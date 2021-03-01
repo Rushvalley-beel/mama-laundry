@@ -1,0 +1,31 @@
+{
+  "name": "server-pkg",
+  "version": "2021.1.1",
+  "description": "routing Node.js to run Bash",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"nice\"",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotpotcookie/mama-laundry.git"
+  },
+  "keywords": [
+    "server-pkg"
+  ],
+  "author": "@hotpotcookie",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hotpotcookie/mama-laundry/issues"
+  },
+  "homepage": "https://github.com/hotpotcookie/mama-laundry#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

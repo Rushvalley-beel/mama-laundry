@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "Muli-Regular";
-	src: url("../../asset/fonts/muli/Muli-Regular.ttf"); }
+	src: url("fonts/muli/Muli-Regular.ttf"); }
 @font-face {
 	font-family: "Muli-SemiBold";
-	src: url("../../asset/fonts/muli/Muli-SemiBold.ttf"); }
+	src: url("fonts/muli/Muli-SemiBold.ttf"); }
 @font-face {
 	font-family: "Poppins-Regular";
-	src: url("../../asset/fonts/poppins/Poppins-Regular.ttf"); }
+	src: url("fonts/poppins/Poppins-Regular.ttf"); }
 @font-face {
 	font-family: "Poppins-Medium";
-	src: url("../../asset/fonts/poppins/Poppins-Medium.ttf"); }
+	src: url("fonts/poppins/Poppins-Medium.ttf"); }
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
