@@ -28,7 +28,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="inner">
-				<form action="/" name="main-form" method="post">
+				<form action="/login" name="main-form" method="post">
 					<div id="logo" class="logo"><img src="images/mama-laundry.svg"></div>
 					<div class="border"><br></div>					
 					<div class="form-row combine">
@@ -322,14 +322,14 @@
 							<span class="checkmark"></span>
 						</label>
 					</div>
-					<button formaction="/" name="commit-order" type="submit" id="commit" data-text="COMMIT ORDER" onclick="printForm(this);">
+					<button formaction="/login" name="commit-order" type="submit" id="commit" data-text="COMMIT ORDER" onclick="printForm(this);">
 						<span><strong>PLACE ORDER</strong></span>
-					</button>				
+					</button>
 					<div class="hidden-counter" style="visibility: hidden; position: inherit; color: black; height: 0px;">
 						<input name="ctr_ldry" value="0" type="number">
 						<input name="ctr_chem" value="0" type="number">
 						<input name="ctr_stat" value="0" type="number">
-					</div>												
+					</div>											
 				</form>
 			</div>
 		</div>

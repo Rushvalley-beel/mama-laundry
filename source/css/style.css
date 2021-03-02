@@ -25,7 +25,9 @@ body {
 	box-sizing: border-box;
 	overflow-y: auto;
 	color: #FFF;
-	background-image: url("../images/memphis-light-3.png"); }
+	background-image: url("../images/memphis-light-3.png"); 
+	background-attachment: fixed;
+	background-position: center; }
 
 input, textarea, select {
 	font-family: "Muli-Regular";

@@ -158,6 +158,9 @@ checker.onchange = function() {
 var ctr_ldry = 0;
 var ctr_chem = 0;
 var ctr_stat = 0;
+document.getElementsByName("ctr_ldry")[0].value = ctr_ldry;
+document.getElementsByName("ctr_chem")[0].value = ctr_chem;
+document.getElementsByName("ctr_stat")[0].value = ctr_stat;
 var pass_idx_ldry = 0;
 var pass_idx_chem = 0;
 var pass_idx_stat = 0;
@@ -177,12 +180,14 @@ function addItem() {
 			clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].setAttribute("id","service-ldry-type"+name);		
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-qty"+name);
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-totaleach"+name);
+			clone.getElementsByClassName("form-wrapper item hidden one")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-baseprice"+name);
+			clone.getElementsByClassName("form-wrapper item hidden two")[0].getElementsByTagName("input")[0].setAttribute("name","in-laundry-qty-conv"+name);
 
 			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;	
-
+			clone.getElementsByClassName("form-wrapper item hidden")[0].getElementsByTagName("input")[0].value = 0;	
 			document.getElementById("list-menu-ldry").appendChild(clone);
 
 			var catch_item = document.getElementById("item-ldry-type"+ctr_ldry);
@@ -199,6 +204,7 @@ function addItem() {
 				catch_service.add(option4);
 				catch_service.add(option5);				
 			}
+			document.getElementsByName("ctr_ldry")[0].value = ctr_ldry;			
 			break;
 		case 1:
 			var menuitem = document.getElementById("menu-chemical");
@@ -234,7 +240,8 @@ function addItem() {
 				optionall.text = arr_item_text[i];
 				optionall.value = arr_item_val[i];
 				catch_item.add(optionall);
-			}			
+			}
+			document.getElementsByName("ctr_chem")[0].value = ctr_chem;
 			break;
 		case 2:
 			var menuitem = document.getElementById("menu-stationery");
@@ -251,7 +258,8 @@ function addItem() {
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;
 
-			document.getElementById("list-menu-stat").appendChild(clone);			
+			document.getElementById("list-menu-stat").appendChild(clone);
+			document.getElementsByName("ctr_stat")[0].value = ctr_stat;						
 			break;
 
 	}
@@ -877,8 +885,14 @@ function printForm(x) {
 					baseprice_item = parseInt(baseprice_item).toLocaleString();
 					var tot_each = document.getElementsByName("in-laundry-totaleach"+j)[0].value.toLocaleString();
 					var qty_each = document.getElementsByName("in-laundry-qty"+j)[0].value;
+
+					document.getElementsByName('in-laundry-baseprice'+j)[0].value = baseprice_item;
+					var qty_conv = qty_each+' ';
+					var qty_conv = qty_conv.split('.').join(',');
+					document.getElementsByName('in-laundry-qty-conv'+j)[0].value = qty_conv;
+
 					++x;
-					var ctr = ('0'+x).slice(-2);				
+					var ctr = ('0'+x).slice(-2);
 					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' ('+srvc_name+')<br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><h1 class="detail toteach">: '+tot_each+'</h1>');
 				} catch(err) {
 					var dump = 0;

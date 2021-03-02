@@ -2,7 +2,7 @@
 #--------------------------------------------------
 # COUNTER : counts every complete-transaction order
 #--------------------------------------------------
-path_db="../../database"
+path_db="database"
 db_counter=("$path_db/counter_ldry" "$path_db/counter_chem" "$path_db/counter_stat")
 
 for file in ${db_counter[@]};do
@@ -33,5 +33,4 @@ if [[ $pass ]];then
 	get_ctr=$(cat "${db_counter[$idx]}")
 	get_ctr=$((++get_ctr))
 	echo "$get_ctr" > "${db_counter[$idx]}"
-	cat "${db_counter[$idx]}"
 fi
