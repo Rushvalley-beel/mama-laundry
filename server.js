@@ -10,6 +10,7 @@ const bash_exec = require('shelljs');
 const app = express();
 const route = require('route');
 const moment = require('moment');
+const exp = require('./server.js')
 
 // Load Sub-Directory
 //------------------------------------------
@@ -24,6 +25,7 @@ app.use('/fonts', express.static(__dirname + 'asset/fonts'));
 app.use('/vendor', express.static(__dirname + 'asset/vendor'));
 
 app.use(express.static('database'));
+app.use(express.static('node_modules'));
 
 // Set Page
 //------------------------------------------
@@ -43,6 +45,10 @@ app.get('/register', (req,res) => {
 	res.render('register');
 });
 
+app.get('/test', (req,res) => {
+	res.render('test')
+})
+
 app.post('/login', (req,res) => {
 
 });
@@ -57,9 +63,11 @@ app.post('/register', (req,res) => {
 	var cust_phone = req.body["in-phonenum"];
 	var prod_val = req.body["li-prodtype"];
 	var prod_name = prod_arr[prod_val].toUpperCase();
-	var order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
-	var order_no = order_no.split('\n');
-	var order_no = ('0000'+order_no[0]).slice(-5);		
+	global.order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
+	order_no = order_no.split('\n');
+	order_no = ('0000'+order_no[0]).slice(-5);
+	shared_order = {value: order_no};
+	console.log(shared_order.value)
 	console.log('');
 	console.log('[transct] order no. : #' + order_no);
 	console.log('[transct] timestamp : ' + timestamp);
@@ -86,12 +94,19 @@ app.post('/register', (req,res) => {
 					var srvc_name = srvc_ldry_arr[srvc_val].toUpperCase();
 					++x;
 					var ctr = ('0'+x).slice(-2);			
-					console.log('[transct] -- ' + ctr + ' --  : ' + item_name + ' (' + srvc_name + ') | ' + qty_val + 'x ' + baseprice + ' >> ' + toteach_val);
+					console.log('[transct] -- ' + ctr + ' --  : ' + item_name + ' (' + srvc_name + ') | ' + qty_val + 'x ' + baseprice + '  >>  ' + toteach_val);
 				} catch(err) {var dump = 0;}
 			}
+			var totall_val = req.body['in-laundry-totalall'];
+			console.log('[transct] --------  : --------');
+			console.log('[transct] total     : Rp ' + totall_val);				
 			break
 	}
-	console.log('[transct] --------  : --------');	
+	var paid_val = req.body['in-amountpaid'];
+	paid_val = parseInt(paid_val).toLocaleString();
+	var change_val = req.body['in-amountchange'];
+	console.log('[transct] paid      : Rp ' + paid_val);
+	console.log('[transct] change    : Rp ' + change_val);
 	console.log('');
 });
 

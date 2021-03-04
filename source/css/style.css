@@ -34,6 +34,13 @@ input, textarea, select {
 	font-size: 13px;
 	color: #FFF; }
 
+input:-webkit-autofill {
+	-webkit-text-fill-color: white !important;
+	-webkit-box-shadow: 0 0 0 30px #102F4D inset !important;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
 select option {
 	background: #FFF;
 	color: #44588c;
