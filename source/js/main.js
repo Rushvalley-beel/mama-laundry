@@ -4,6 +4,10 @@ if (vw < 350) {
 	document.getElementsByClassName('form-wrapper change')[0].getElementsByTagName("label")[0].textContent = "Change";
 }
 
+if (window.history.replaceState) {
+	window.history.replaceState(null,null,window.location.href);
+}
+
 $(function(){
 	var dp1 = $('#dp1').datepicker().data('datepicker');
 	dp1.selectDate(new Date());
@@ -144,9 +148,41 @@ var sendbtn = document.getElementById('commit');
 sendbtn.disabled = true;
 sendbtn.style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';
 checker.onchange = function() {
+	alert(this.checked);
 	if (this.checked) {
-		sendbtn.disabled = false;
-		sendbtn.style.background = 'linear-gradient(to right, rgba(85,128,233,1), rgba(132,206,235,1))';
+		var bool_check = validChecker();
+		if (bool_check == 1) {
+			vNotify.info({
+				text:'Order ready to be placed!', 
+				title:'',
+				fadeInDuration: 200,
+				fadeOutDuration: 1000,
+				fadeInterval: 50,
+				visibleDuration: 7000, // auto close after 5 seconds
+				postHoverVisibleDuration: 500,
+				position: "topRight", // topLeft, bottomLeft, bottomRight, center
+				sticky: false, // is sticky
+				showClose: true // show close button
+		  	});			
+			sendbtn.disabled = false;
+			sendbtn.style.background = 'linear-gradient(to right, rgba(85,128,233,1), rgba(132,206,235,1))';
+		}
+		else {
+			vNotify.warning({
+				text:'Please fill required inputs!', 
+				title:'',
+				fadeInDuration: 200,
+				fadeOutDuration: 1000,
+				fadeInterval: 50,
+				visibleDuration: 7000, // auto close after 5 seconds
+				postHoverVisibleDuration: 500,
+				position: "topRight", // topLeft, bottomLeft, bottomRight, center
+				sticky: false, // is sticky
+				showClose: true // show close button
+		  	});						
+			sendbtn.disabled = true;
+			sendbtn.style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';			
+		}
 	}
 	else {
 		sendbtn.disabled = true;
@@ -154,10 +190,39 @@ checker.onchange = function() {
 	}
 };
 
-// perbaikin variabel dari sini | ldry, chem, stat
 var ctr_ldry = 0;
 var ctr_chem = 0;
 var ctr_stat = 0;
+
+function validChecker() {
+	var bool_check = 0;
+	var catch_prod = document.getElementsByName("li-prodtype")[0];
+	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
+	var in_cust = document.getElementsByName('in-custname')[0].value.length;
+	switch(prod_val) {
+		case "1":
+			var check_in = document.getElementsByName('in-laundry-checkin')[0].value.length;
+			var check_out = document.getElementsByName('in-laundry-checkout')[0].value.length;
+			var item_state = 1;
+			for (var j = 0; j <= ctr_ldry; j++) {
+				var in_totaleach = document.getElementsByName('in-laundry-totaleach'+j)[0].value;
+				if (String(in_totaleach) == '0') {
+					item_state = 0;
+				}
+			}
+			if (in_cust > 4 && check_in > 5 && check_out > 5 && item_state == 1) { //checker goes on FROM HERE
+				bool_check = 1;
+			} else {
+				document.getElementById('check-verify').checked = false;
+				document.getElementsByName('commit-order')[0].disabled = true;
+				document.getElementsByName('commit-order')[0].style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';
+			}
+			break;
+	}
+	return bool_check;				
+}
+
+// perbaikin variabel dari sini | ldry, chem, stat
 document.getElementsByName("ctr_ldry")[0].value = ctr_ldry;
 document.getElementsByName("ctr_chem")[0].value = ctr_chem;
 document.getElementsByName("ctr_stat")[0].value = ctr_stat;
@@ -166,6 +231,18 @@ var pass_idx_chem = 0;
 var pass_idx_stat = 0;
 
 function addItem() {
+	vNotify.success({
+		text:'One item have been added!', 
+		title:'',
+		fadeInDuration: 200,
+		fadeOutDuration: 1000,
+		fadeInterval: 50,
+		visibleDuration: 7000, // auto close after 5 seconds
+		postHoverVisibleDuration: 500,
+		position: "topRight", // topLeft, bottomLeft, bottomRight, center
+		sticky: false, // is sticky
+		showClose: true // show close button
+  	});	
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;
 	switch(prods) {
 		case 0:
@@ -271,6 +348,18 @@ function convMoney(x) {
 };
 
 function removeItem(x) {
+	vNotify.error({
+		text:'One Item have been removed!', 
+		title:'',
+		fadeInDuration: 200,
+		fadeOutDuration: 1000,
+		fadeInterval: 50,
+		visibleDuration: 7000, // auto close after 5 seconds
+		postHoverVisibleDuration: 500,
+		position: "topRight", // topLeft, bottomLeft, bottomRight, center
+		sticky: false, // is sticky
+		showClose: true // show close button
+  	});		
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;
 	switch(prods) {	
 		case 0:
@@ -836,8 +925,24 @@ function showTooltips(x) {
 		text.visibility = "hidden";
 	}
 }
+function CreateGuid() {  
+   function _p8(s) {  
+      var p = (Math.random().toString(16)+"000000000").substr(2,8);  
+      return s ? "-" + p.substr(0,4) + "-" + p.substr(4,4) : p ;  
+   }  
+   return _p8() + _p8(true) + _p8(true) + _p8();  
+}
+
+function sleep(milliseconds) {
+	const date = Date.now();
+	let currentDate = null;
+	do {
+		currentDate = Date.now();
+	} while (currentDate - date < milliseconds);
+}
 
 function printForm(x) {
+
 	var receiptWindow = window.open('','Reciept','height=auto,width=58,menubar=no,resizeable=no');
 	var catch_prod = document.getElementsByName("li-prodtype")[0];
 	var catch_trx = document.getElementById("payment-type");
@@ -850,8 +955,8 @@ function printForm(x) {
 	get_paid = parseInt(get_paid).toLocaleString();
 	var get_change = document.getElementsByName("in-amountchange")[0].value.toLocaleString();
 	var datetime = new Date().toLocaleString();
-	var get_code = shared_order.value;
-	var code = ('0000'+get_code).slice(-5);
+	var code = ('0000'+CreateGuid()).slice(-7).toUpperCase();
+	document.getElementsByName('invoice_ctr')[0].value = code;
 
 	receiptWindow.document.write('<html><head>');
 	receiptWindow.document.write('<link rel="stylesheet" href="css/reciept-style.css"');

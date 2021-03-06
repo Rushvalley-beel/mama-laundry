@@ -23,6 +23,7 @@ app.use(express.static('asset'));
 app.use('/images', express.static(__dirname + 'asset/images'));
 app.use('/fonts', express.static(__dirname + 'asset/fonts'));
 app.use('/vendor', express.static(__dirname + 'asset/vendor'));
+app.use('/notifyjs', express.static(__dirname + 'asset/notifyjs'));
 
 app.use(express.static('database'));
 app.use(express.static('node_modules'));
@@ -63,13 +64,10 @@ app.post('/register', (req,res) => {
 	var cust_phone = req.body["in-phonenum"];
 	var prod_val = req.body["li-prodtype"];
 	var prod_name = prod_arr[prod_val].toUpperCase();
-	global.order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
-	order_no = order_no.split('\n');
-	order_no = ('0000'+order_no[0]).slice(-5);
-	shared_order = {value: order_no};
-	console.log(shared_order.value)
+	//global.order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
+	var order_no = req.body["invoice_ctr"];
 	console.log('');
-	console.log('[transct] order no. : #' + order_no);
+	console.log('[transct] invoice   : #' + order_no);
 	console.log('[transct] timestamp : ' + timestamp);
 	console.log('[transct] customer  : ' + cust_name);
 	console.log('[transct] phone     : ' + cust_phone);
@@ -108,6 +106,7 @@ app.post('/register', (req,res) => {
 	console.log('[transct] paid      : Rp ' + paid_val);
 	console.log('[transct] change    : Rp ' + change_val);
 	console.log('');
+	res.render('register');
 });
 
 /*app.post('/home', (req,res) => {

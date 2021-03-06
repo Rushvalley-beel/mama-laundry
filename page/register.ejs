@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 		<link rel="icon" href="images/tab.ico">
 		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
-		<link rel="stylesheet" href="css/style.css">		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="notifyjs/dist/vanilla-notify.css">
 	</head>
 	<!-- ## name selector
 	main-form :
@@ -35,7 +36,7 @@
 						<div class="form-wrapper">
 							<label for="">Customer</label>
 							<div class="small-icon"><i class="fas fa-user"></i></div>
-							<input name="in-custname" type="text" class="form-control" placeholder="Bapak / Ibu . . .">
+							<input name="in-custname" type="text" class="form-control" placeholder="Bapak / Ibu . . ." onchange="validChecker();">
 						</div>
 						<div class="form-wrapper">
 							<label for="">Phone</label>
@@ -60,12 +61,12 @@
 						<div class="form-wrapper">
 							<label for="">Check-in</label>
 							<div class="small-icon"><i class="fas fa-calendar-alt"></i></div>
-							<input name="in-laundry-checkin" type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1">
+							<input name="in-laundry-checkin" type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1" onchange="validChecker();">
 						</div>
 						<div class="form-wrapper">
 							<label for="">Check-out</label>
 							<div class="small-icon"><i class="fas fa-calendar-check"></i></div>
-							<input name="in-laundry-checkout" type="text" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2">
+							<input name="in-laundry-checkout" type="text" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2" onchange="validChecker();">
 						</div>
 					</div>
 					<!-- Laundry -->					
@@ -139,7 +140,7 @@
 								</div>
 								<div class="form-wrapper item hidden two" style="visibility: hidden; height: 0px; position: fixed;">
 									<input name="in-laundry-qty-conv0" type="text">									
-								</div>																	
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -335,7 +336,10 @@
 						<input name="ctr_ldry" value="0" type="number">
 						<input name="ctr_chem" value="0" type="number">
 						<input name="ctr_stat" value="0" type="number">
-					</div>						
+					</div>
+					<div class="hidden-counter" style="visibility: hidden; position: inherit; color: black; height: 0px;">
+						<input name="invoice_ctr" value="1" type="text" step="any">
+					</div>											
 				</form>
 			</div>
 		</div>
@@ -363,7 +367,8 @@
 
 			<script src="vendor/date-picker/js/datepicker.js"></script>
 			<script src="vendor/date-picker/js/datepicker.en.js"></script>
-			
+			<script src="notifyjs/dist/vanilla-notify.js"></script>
+
 			<script src="js/main.js"></script>
 	</body>
 </html>
