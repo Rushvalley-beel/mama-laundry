@@ -134,21 +134,23 @@ document.getElementById('prod-type').addEventListener('change', function(){
 	}
 })
 
-document.getElementById('payment-type').addEventListener('change', function(){
-	if (this.value == 1 ) {
+function togglePayment(x) {
+	disableCommit();
+	if (x.value == 1 ) {
 		document.getElementById('last-nocash').style.display = 'flex';
 	}
 	else {
 		document.getElementById('last-nocash').style.display = 'none';		
 	}
-});
+	return x.value;
+};
 
 var checker = document.getElementById('check-verify');
 var sendbtn = document.getElementById('commit');
 sendbtn.disabled = true;
 sendbtn.style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';
 checker.onchange = function() {
-	alert(this.checked);
+	//alert(this.checked);
 	if (this.checked) {
 		var bool_check = validChecker();
 		if (bool_check == 1) {
@@ -194,32 +196,92 @@ var ctr_ldry = 0;
 var ctr_chem = 0;
 var ctr_stat = 0;
 
+function disableCommit() {
+	document.getElementById('check-verify').checked = false;
+	document.getElementsByName('commit-order')[0].disabled = true;
+	document.getElementsByName('commit-order')[0].style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';	
+}
+
 function validChecker() {
-	var bool_check = 0;
 	var catch_prod = document.getElementsByName("li-prodtype")[0];
 	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
 	var in_cust = document.getElementsByName('in-custname')[0].value.length;
+	var in_paid = document.getElementsByName('in-amountpaid')[0].value.length;
+	var li_trxt = document.getElementsByName('li-laundry-trxtype')[0];
+	//var trxt_state = togglePayment(li_trxt);
 	switch(prod_val) {
 		case "1":
 			var check_in = document.getElementsByName('in-laundry-checkin')[0].value.length;
 			var check_out = document.getElementsByName('in-laundry-checkout')[0].value.length;
+			var bool_check = 0;			
 			var item_state = 1;
+			var totall = document.getElementsByName("in-laundry-totalall")[0].value;
+			var totpaid = document.getElementsByName('in-amountpaid')[0].value;			
+			totall = convMoney(totall);
 			for (var j = 0; j <= ctr_ldry; j++) {
-				var in_totaleach = document.getElementsByName('in-laundry-totaleach'+j)[0].value;
-				if (String(in_totaleach) == '0') {
-					item_state = 0;
+				try {
+					var in_totaleach = document.getElementsByName('in-laundry-totaleach'+j)[0].value;
+					if (String(in_totaleach) == '0') {
+						item_state = 0;
+					}
+				} catch(err) {
+					var dump = 0;
 				}
 			}
 			if (in_cust > 4 && check_in > 5 && check_out > 5 && item_state == 1) { //checker goes on FROM HERE
 				bool_check = 1;
 			} else {
-				document.getElementById('check-verify').checked = false;
-				document.getElementsByName('commit-order')[0].disabled = true;
-				document.getElementsByName('commit-order')[0].style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';
+				disableCommit();
 			}
+			return bool_check;							
+			break;
+		case "2":
+			var bool_check = 0;			
+			var item_state = 1;
+			var totall = document.getElementsByName("in-chemical-totalall")[0].value;
+			var totpaid = document.getElementsByName('in-amountpaid')[0].value;			
+			totall = convMoney(totall);			
+			for (var j = 0; j <= ctr_chem; j++) {
+				try {
+					var in_totaleach = document.getElementsByName('in-chemical-totaleach'+j)[0].value;
+					if (String(in_totaleach) == '0') {
+						item_state = 0;
+					}
+				} catch(err) {
+					var dump = 0;
+				}
+			}
+			if (in_cust > 4 && item_state == 1 && in_paid > 1 && totpaid >= totall) { //checker goes on FROM HERE
+				bool_check = 1;
+			} else {
+				disableCommit();
+			}
+			return bool_check;
+			break;
+		case"3":
+			var bool_check = 0;			
+			var item_state = 1;
+			var totall = document.getElementsByName("in-stationery-totalall")[0].value;
+			var totpaid = document.getElementsByName('in-amountpaid')[0].value;			
+			totall = convMoney(totall);			
+			for (var j = 0; j <= ctr_stat; j++) {
+				try {
+					var in_totaleach = document.getElementsByName('in-stationery-totaleach'+j)[0].value;
+					if (String(in_totaleach) == '0') {
+						item_state = 0;
+					}
+				} catch(err) {
+					var dump = 0;
+				}
+			}
+			if (in_cust > 4 && item_state == 1 && in_paid > 1 && totpaid >= totall) { //checker goes on FROM HERE
+				bool_check = 1;
+			} else {
+				disableCommit();
+			}
+			return bool_check;		
 			break;
 	}
-	return bool_check;				
 }
 
 // perbaikin variabel dari sini | ldry, chem, stat
@@ -231,6 +293,7 @@ var pass_idx_chem = 0;
 var pass_idx_stat = 0;
 
 function addItem() {
+	disableCommit();
 	vNotify.success({
 		text:'One item have been added!', 
 		title:'',
@@ -348,6 +411,7 @@ function convMoney(x) {
 };
 
 function removeItem(x) {
+	disableCommit();
 	vNotify.error({
 		text:'One Item have been removed!', 
 		title:'',
@@ -443,6 +507,7 @@ function removeItem(x) {
 };
 
 function changeLqd(x) {
+	disableCommit();
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-chemical-liquidtype"); 
 	var fin_num = catch_num[1];
@@ -507,6 +572,7 @@ function changeLqd(x) {
 }
 
 function changeItem(x) {
+	disableCommit();
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-laundry-itemtype"); 
 	var fin_num = catch_num[1];
@@ -538,6 +604,7 @@ function changeItem(x) {
 }
 
 function changeItem2(x) {
+	disableCommit();
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-chemical-itemtype"); 
 	var fin_num = catch_num[1];
@@ -560,6 +627,7 @@ function changeItem3(x) {
 }
 
 function changeJug(x) {
+	disableCommit();
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-chemical-jugtype"); 
 	var fin_num = catch_num[1];
@@ -571,6 +639,7 @@ function changeJug(x) {
 }
 
 function changeSvc(x) {
+	disableCommit();
 	var get_num = x.name;	
 	var catch_num = get_num.split("li-laundry-servicetype"); 
 	var fin_num = catch_num[1];

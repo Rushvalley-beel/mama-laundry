@@ -48,7 +48,7 @@
 						<div class="form-wrapper long">
 							<label for="">Product Type</label>
 							<div class="small-icon"><i class="fas fa-clone"></i></div>				
-							<select name="li-prodtype" id="prod-type" class="form-control long">
+							<select name="li-prodtype" id="prod-type" class="form-control long" onchange="disableCommit();">
 								<option value="1">Laundry & Dry Cleaning</option>
 								<option value="2">Super Chemical Laundry</option>
 								<option value="3">Stationery & Le Mineral</option>
@@ -129,7 +129,7 @@
 								</div>
 								<div class="form-wrapper item three">
 									<div class="small-icon small-item three"><i class="fas fa-balance-scale"></i></div>
-									<input name="in-laundry-qty0" type="number" class="form-control" placeholder="Qty" step="any" oninput="calcItem(this);">
+									<input name="in-laundry-qty0" type="number" class="form-control" placeholder="Qty" step="any" oninput="calcItem(this);" onchange="validChecker();">
 								</div>
 								<div class="form-wrapper item four">
 									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
@@ -214,7 +214,7 @@
 								</div>								
 								<div class="form-wrapper item three">
 									<div class="small-icon small-item three"><i class="fas fa-balance-scale"></i></div>
-									<input name="in-chemical-qty0" type="number" class="form-control" placeholder="Qty" oninput="calcItem(this);">
+									<input name="in-chemical-qty0" type="number" class="form-control" placeholder="Qty" oninput="calcItem(this);" onchange="validChecker();">
 								</div>
 								<div class="form-wrapper item four">
 									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
@@ -259,7 +259,7 @@
 								</div>
 								<div class="form-wrapper item three">
 									<div class="small-icon small-item three"><i class="fas fa-balance-scale"></i></div>
-									<input name="in-stationery-qty0" type="number" class="form-control" placeholder="Qty" oninput="calcItem(this);">
+									<input name="in-stationery-qty0" type="number" class="form-control" placeholder="Qty" oninput="calcItem(this);" onchange="validChecker();">
 								</div>
 								<div class="form-wrapper item four">
 									<div class="small-icon small-item four"><i class="fas fa-money-bill-wave-alt"></i></div>
@@ -278,7 +278,7 @@
 						<div class="form-wrapper long item trx mobile two">						
 							<label for="">Transaction Status</label>							
 							<div class="small-icon small-item long"><i class="fas fa-receipt"></i></div>							
-							<select name="li-laundry-trxtype" id="payment-type" class="form-control long">
+							<select name="li-laundry-trxtype" id="payment-type" class="form-control long" onchange="togglePayment(this);">
 								<option value="1">Pembayaran Lunas ( Cash / Trans )</option>
 								<option value="2">Pembayaran Nanti ( Barang Selesai )</option>
 								<option value="3">Pembayaran Rekap ( Bulanan )</option>								
@@ -291,7 +291,7 @@
 								<span><strong>ADD ITEM</strong></span>
 							</button>												
 							<div class="small-icon small-item long"><i class="fas fa-receipt"></i></div>							
-							<select name="li-laundry-trxtype" id="payment-type" class="form-control long">
+							<select name="li-laundry-trxtype" id="payment-type" class="form-control long" onchange="togglePayment(this);">
 								<option value="1">Pembayaran Lunas ( Cash / Transfer )</option>
 								<option value="2">Pembayaran Nanti ( Barang Selesai )</option>
 								<option value="3">Pembayaran Rekap ( Bulanan )</option>								
@@ -315,7 +315,7 @@
 						<div class="form-wrapper paid">
 							<label for="">Amount of Paid</label>
 							<div class="small-icon"><i class="fas fa-money-bill-wave-alt"></i></div>
-							<input name="in-amountpaid" type="number" class="form-control" placeholder="0" oninput="calcChange(this);">
+							<input name="in-amountpaid" type="number" class="form-control" placeholder="0" oninput="calcChange(this);" onchange="validChecker();">
 						</div>
 						<div class="form-wrapper change">
 							<label for="">Amount of Change</label>
