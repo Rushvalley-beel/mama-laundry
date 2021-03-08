@@ -135,6 +135,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 })
 
 function togglePayment(x) {
+	validChecker();
 	disableCommit();
 	if (x.value == 1 ) {
 		document.getElementById('last-nocash').style.display = 'flex';
@@ -207,8 +208,10 @@ function validChecker() {
 	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
 	var in_cust = document.getElementsByName('in-custname')[0].value.length;
 	var in_paid = document.getElementsByName('in-amountpaid')[0].value.length;
-	var li_trxt = document.getElementsByName('li-laundry-trxtype')[0];
-	//var trxt_state = togglePayment(li_trxt);
+	var li_trxt1 = document.getElementsByName('li-laundry-trxtype')[1];
+	var li_trxt2 = document.getElementsByName('li-laundry-trxtype')[0];	
+	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);		
+	//alert(li_trxt1.value + ' -- ' + li_trxt2.value);
 	switch(prod_val) {
 		case "1":
 			var check_in = document.getElementsByName('in-laundry-checkin')[0].value.length;
@@ -228,7 +231,22 @@ function validChecker() {
 					var dump = 0;
 				}
 			}
-			if (in_cust > 4 && check_in > 5 && check_out > 5 && item_state == 1) { //checker goes on FROM HERE
+			//alert(li_trxt1.value + ' ' + li_trxt2.value);
+			var trx_pass = 1;
+			if (vw < 900) {
+				if (li_trxt2.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}
+			} else {
+				if (li_trxt1.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}					
+			}	
+			if (in_cust > 4 && check_in > 5 && check_out > 5 && item_state == 1 && trx_pass == 1) { //checker goes on FROM HERE
 				bool_check = 1;
 			} else {
 				disableCommit();
@@ -251,7 +269,21 @@ function validChecker() {
 					var dump = 0;
 				}
 			}
-			if (in_cust > 4 && item_state == 1 && in_paid > 1 && totpaid >= totall) { //checker goes on FROM HERE
+			var trx_pass = 1;
+			if (vw < 900) {
+				if (li_trxt2.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}
+			} else {
+				if (li_trxt1.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}					
+			}				
+			if (in_cust > 4 && item_state == 1 && trx_pass == 1) { //checker goes on FROM HERE
 				bool_check = 1;
 			} else {
 				disableCommit();
@@ -274,7 +306,21 @@ function validChecker() {
 					var dump = 0;
 				}
 			}
-			if (in_cust > 4 && item_state == 1 && in_paid > 1 && totpaid >= totall) { //checker goes on FROM HERE
+			var trx_pass = 1;
+			if (vw < 900) {
+				if (li_trxt2.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}
+			} else {
+				if (li_trxt1.value == '1') {
+					if (totpaid < totall) {
+						trx_pass = 0;
+					}
+				}					
+			}				
+			if (in_cust > 4 && item_state == 1 && trx_pass == 1) { //checker goes on FROM HERE
 				bool_check = 1;
 			} else {
 				disableCommit();
@@ -1014,8 +1060,14 @@ function printForm(x) {
 
 	var receiptWindow = window.open('','Reciept','height=auto,width=58,menubar=no,resizeable=no');
 	var catch_prod = document.getElementsByName("li-prodtype")[0];
-	var catch_trx = document.getElementById("payment-type");
+	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);	
+	if (vw < 900) {
+		var catch_trx = document.getElementsByName("li-laundry-trxtype")[0];
+	} else {
+		var catch_trx = document.getElementsByName("li-laundry-trxtype")[1];
+	}
 	var get_trx = catch_trx.options[catch_trx.selectedIndex].value;
+	alert(get_trx);
 	var prod_name = catch_prod.options[catch_prod.selectedIndex].text.toUpperCase();
 	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
 	var get_name = document.getElementsByName("in-custname")[0].value.toUpperCase();
