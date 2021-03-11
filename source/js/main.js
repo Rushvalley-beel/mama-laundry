@@ -159,9 +159,9 @@ checker.onchange = function() {
 				text:'Order ready to be placed!', 
 				title:'',
 				fadeInDuration: 200,
-				fadeOutDuration: 1000,
-				fadeInterval: 50,
-				visibleDuration: 7000, // auto close after 5 seconds
+				fadeOutDuration: 1500,
+				fadeInterval: 1500,
+				visibleDuration: 5000, // auto close after 5 seconds
 				postHoverVisibleDuration: 500,
 				position: "topRight", // topLeft, bottomLeft, bottomRight, center
 				sticky: false, // is sticky
@@ -175,9 +175,9 @@ checker.onchange = function() {
 				text:'Please fill required inputs!', 
 				title:'',
 				fadeInDuration: 200,
-				fadeOutDuration: 1000,
-				fadeInterval: 50,
-				visibleDuration: 7000, // auto close after 5 seconds
+				fadeOutDuration: 1500,
+				fadeInterval: 1500,
+				visibleDuration: 5000, // auto close after 5 seconds
 				postHoverVisibleDuration: 500,
 				position: "topRight", // topLeft, bottomLeft, bottomRight, center
 				sticky: false, // is sticky
@@ -344,10 +344,10 @@ function addItem() {
 		text:'One item have been added!', 
 		title:'',
 		fadeInDuration: 200,
-		fadeOutDuration: 1000,
-		fadeInterval: 50,
-		visibleDuration: 7000, // auto close after 5 seconds
-		postHoverVisibleDuration: 500,
+		fadeOutDuration: 1500,
+		fadeInterval: 1500,
+		visibleDuration: 5000, // auto close after 5 seconds
+		postHoverVisibleDuration: 0,
 		position: "topRight", // topLeft, bottomLeft, bottomRight, center
 		sticky: false, // is sticky
 		showClose: true // show close button
@@ -406,12 +406,17 @@ function addItem() {
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-totaleach"+name);
 			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].setAttribute("name","li-chemical-jugtype"+name);
 			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].setAttribute("id","jug-chem-type"+name);
+			clone.getElementsByClassName("form-wrapper item hidden one")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-baseprice"+name);
+			clone.getElementsByClassName("form-wrapper item hidden two")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-qty-conv"+name);
+			clone.getElementsByClassName("form-wrapper item hidden three")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-ceil"+name);
+			clone.getElementsByClassName("form-wrapper item hidden four")[0].getElementsByTagName("input")[0].setAttribute("name","in-chemical-jugadd"+name);
 
 			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item two")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;
 			clone.getElementsByClassName("form-wrapper item five")[0].getElementsByTagName("select")[0].selectedIndex = 0;
+			clone.getElementsByClassName("form-wrapper item hidden")[0].getElementsByTagName("input")[0].value = 0;
 
 			document.getElementById("list-menu-chem").appendChild(clone);
 			var catch_item = document.getElementById("item-chem-type"+ctr_chem);
@@ -439,10 +444,13 @@ function addItem() {
 			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].setAttribute("id","item-stat-type"+name);
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-qty"+name);
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-totaleach"+name);
+			clone.getElementsByClassName("form-wrapper item hidden one")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-baseprice"+name);
+			clone.getElementsByClassName("form-wrapper item hidden two")[0].getElementsByTagName("input")[0].setAttribute("name","in-stationery-qty-conv"+name);
 
 			clone.getElementsByClassName("form-wrapper item one")[0].getElementsByTagName("select")[0].selectedIndex = 0;
 			clone.getElementsByClassName("form-wrapper item three")[0].getElementsByTagName("input")[0].value = null;
 			clone.getElementsByClassName("form-wrapper item four")[0].getElementsByTagName("input")[0].value = 0;
+			clone.getElementsByClassName("form-wrapper item hidden")[0].getElementsByTagName("input")[0].value = 0;
 
 			document.getElementById("list-menu-stat").appendChild(clone);
 			document.getElementsByName("ctr_stat")[0].value = ctr_stat;						
@@ -462,9 +470,9 @@ function removeItem(x) {
 		text:'One Item have been removed!', 
 		title:'',
 		fadeInDuration: 200,
-		fadeOutDuration: 1000,
-		fadeInterval: 50,
-		visibleDuration: 7000, // auto close after 5 seconds
+		fadeOutDuration: 1500,
+		fadeInterval: 1500,
+		visibleDuration: 5000, // auto close after 5 seconds
 		postHoverVisibleDuration: 500,
 		position: "topRight", // topLeft, bottomLeft, bottomRight, center
 		sticky: false, // is sticky
@@ -1163,7 +1171,13 @@ function printForm(x) {
 						jug_add = "";
 						get_ceil = "";			
 					}					
+					var qty_conv = qty_each+' ';
+					var qty_conv = qty_conv.split('.').join(',');
+					document.getElementsByName('in-chemical-qty-conv'+j)[0].value = qty_conv;
 					++x;
+					document.getElementsByName('in-chemical-ceil'+j)[0].value = get_ceil;
+					document.getElementsByName('in-chemical-jugadd'+j)[0].value = jug_add;
+					document.getElementsByName('in-chemical-baseprice'+j)[0].value = baseprice_item;
 					var ctr = ('0'+x).slice(-2);
 					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' ('+liquid_name+') '+get_ceil+' '+jug_name+'<br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><h1 class="detail jug"> '+jug_add+'</h1><span class="indent"><h1 class="detail toteach">: '+tot_each+'</h1></span>');
 				} catch(err) {
@@ -1194,6 +1208,10 @@ function printForm(x) {
 					var tot_each = document.getElementsByName("in-stationery-totaleach"+j)[0].value;
 					baseprice_item = basePrice_stat(fin_item_val,baseprice_item);
 					++x;
+					var qty_conv = qty_each+' ';
+					var qty_conv = qty_conv.split('.').join(',');
+					document.getElementsByName('in-stationery-qty-conv'+j)[0].value = qty_conv;
+					document.getElementsByName('in-stationery-baseprice'+j)[0].value = baseprice_item;
 					var ctr = ('0'+x).slice(-2);
 					receiptWindow.document.write('<h1 class="detail">'+ctr+' | '+item_name+' <br>&nbsp&nbsp | '+qty_each+' x '+baseprice_item+'</h1><span class="indent"><h1 class="detail toteach">: '+tot_each+'</h1></span>');
 				} catch(err) {

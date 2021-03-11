@@ -412,6 +412,10 @@ span#prod {
 		padding-left: 0.7em;
 		padding-bottom: 0.4em; }
 
+.custom_fc_frame {
+	right: 30px !important;
+	bottom: 50px !important; }
+
 /* media query goes here lmao */
 
 @media (max-width: 900px) {
