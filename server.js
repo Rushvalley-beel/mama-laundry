@@ -47,7 +47,9 @@ app.get('/register', (req,res) => {
 });
 
 app.post('/', (req,res) => {
-	const timestamp = moment().format('l') + ', ' + moment().format('LTS');
+	var timestamp = moment().format('l') + ', ' + moment().format('LTS'); 
+	timestamp = ('00'+timestamp).slice(-23);
+	var datestamp = timestamp.split(',');
 	const prod_arr = {'1':'Laundry & Dry Cleaning','2':'Super Chemical Laundry','3':'Stationery & Le Mineral'};	
 	const item_ldry_arr = {'1':'Pakaian','2':'Sprei S','3':'Sprei S Full-set','4':'Sprei M','5':'Sprei M Full-set','6':'Sprei XL','7':'Sprei XL Full-set','8':'Bedcover S','9':'Bedcover M','10':'Bedcover XL','11':'Jas / Kebaya','12':'Invent. Mushola','13':'Hordeng','14':'Vitrase'};
 	const srvc_ldry_arr = {'1':'Cuci Reg','2':'Cuci Exp','3':'Setrika Reg','4':'Setrika Exp','5':'Dry Clean Reg','6':'Dry Clean Exp'};
@@ -57,26 +59,32 @@ app.post('/', (req,res) => {
 	const item_stat_arr = {'1':'Buku Tulis Campus','2':'Pensil Warna Faber-Castelle','3':'Cat Warna Acrylic','4':'Perangko Rp 6.000','5':'Karton / Kertas Kado Roll','6':'Kanvas 40 x 60 cm'};
 
 	var cust_name = req.body["in-custname"].toUpperCase();
+	var prefix_name = cust_name;
+	prefix_name = prefix_name.split(' ').join('.');	
+	while (prefix_name.length < 15) {
+		prefix_name += '_';
+	}
 	var cust_phone = req.body["in-phonenum"];
 	var prod_val = req.body["li-prodtype"];
 	var prod_name = prod_arr[prod_val].toUpperCase();
 	//global.order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
+	//var curdate = bash_exec.exec('date +'"%d_%b_%Y"', { silent: true});
 	var order_no = req.body["invoice_ctr"];
 	console.log('');
-	console.log('[transct] invoice   : #' + order_no);
-	console.log('[transct] timestamp : ' + timestamp);
-	console.log('[transct] customer  : ' + cust_name);
-	console.log('[transct] phone     : ' + cust_phone);
-	console.log('[transct] --------  : --------');			
-	console.log('[transct] product   : ' + prod_name);
+	console.log('['+prefix_name+' '+datestamp[0]+'] invoice   : #' + order_no);
+	console.log('['+prefix_name+' '+datestamp[0]+'] timestamp : ' + timestamp);
+	console.log('['+prefix_name+' '+datestamp[0]+'] customer  : ' + cust_name);
+	console.log('['+prefix_name+' '+datestamp[0]+'] phone     : ' + cust_phone);
+	console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');			
+	console.log('['+prefix_name+' '+datestamp[0]+'] product   : ' + prod_name);
 	switch(prod_val) {
 		case '1':
 			var check_in = req.body["in-laundry-checkin"].toUpperCase();
 			var check_out = req.body["in-laundry-checkout"].toUpperCase();
 			var countr_item = req.body["ctr_ldry"];
 			var x = 0;
-			console.log('[transct] deadline  : ' + check_in + ' -- ' + check_out);
-			console.log('[transct] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] deadline  : ' + check_in + ' -- ' + check_out);
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
 			for (var j = 0; j <= countr_item; j++) {
 				try {
 					var baseprice = req.body['in-laundry-baseprice'+j];					
@@ -88,17 +96,17 @@ app.post('/', (req,res) => {
 					var srvc_name = srvc_ldry_arr[srvc_val].toUpperCase();
 					++x;
 					var ctr = ('0'+x).slice(-2);			
-					console.log('[transct] -- ' + ctr + ' --  : ' + item_name + ' (' + srvc_name + ') | ' + qty_val + 'x ' + baseprice + '  >>  ' + toteach_val);
+					console.log('['+prefix_name+' '+datestamp[0]+'] -- ' + ctr + ' --  : ' + item_name + ' (' + srvc_name + ') | ' + qty_val + 'x ' + baseprice + '  >>  ' + toteach_val);
 				} catch(err) {var dump = 0;}
 			}
 			var totall_val = req.body['in-laundry-totalall'];
-			console.log('[transct] --------  : --------');
-			console.log('[transct] total     : Rp ' + totall_val);				
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] total     : Rp ' + totall_val);				
 			break;
 		case '2':
 			var countr_item = req.body["ctr_chem"];
 			var x = 0;
-			console.log('[transct] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
 			for (var j = 0; j <= countr_item; j++) {
 				try {
 					var baseprice = req.body['in-chemical-baseprice'+j];
@@ -114,17 +122,17 @@ app.post('/', (req,res) => {
 					var jug_name = jugg_chem_arr[jug_val].toUpperCase();
 					++x;
 					var ctr = ('0'+x).slice(-2);			
-					console.log('[transct] -- ' + ctr + ' --  : ' + liquid_name + ' (' + item_name +') ' + ceil_val + ' ' + jug_name + ' | ' + qty_val + 'x ' + baseprice + ' ' + jugadd_val + ' >> ' + toteach_val);
+					console.log('['+prefix_name+' '+datestamp[0]+'] -- ' + ctr + ' --  : ' + liquid_name + ' (' + item_name +') ' + ceil_val + ' ' + jug_name + ' | ' + qty_val + 'x ' + baseprice + ' ' + jugadd_val + ' >> ' + toteach_val);
 				} catch(err) {var dump = 0;}
 			}
 			var totall_val = req.body['in-chemical-totalall'];
-			console.log('[transct] --------  : --------');
-			console.log('[transct] total     : Rp ' + totall_val);							
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] total     : Rp ' + totall_val);							
 			break;
 		case '3':
 			var countr_item = req.body["ctr_stat"];
 			var x = 0;
-			console.log('[transct] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
 			for (var j = 0; j <= countr_item; j++) {
 				try {
 					var baseprice = req.body['in-stationery-baseprice'+j];
@@ -134,20 +142,20 @@ app.post('/', (req,res) => {
 					var item_name = item_stat_arr[item_val];
 					++x;
 					var ctr = ('0'+x).slice(-2);								
-					console.log('[transct] -- ' + ctr + ' --  : ' + item_name + ' | ' + qty_val + 'x ' + baseprice + ' >> ' + toteach_val)
+					console.log('['+prefix_name+' '+datestamp[0]+'] -- ' + ctr + ' --  : ' + item_name + ' | ' + qty_val + 'x ' + baseprice + ' >> ' + toteach_val)
 				} catch(err) {var dump = 0;}
 			}
 			var totall_val = req.body['in-stationery-totalall'];
-			console.log('[transct] --------  : --------');
-			console.log('[transct] total     : Rp ' + totall_val);					
+			console.log('['+prefix_name+' '+datestamp[0]+'] --------  : --------');
+			console.log('['+prefix_name+' '+datestamp[0]+'] total     : Rp ' + totall_val);					
 			break;
 	}
 	var paid_val = req.body['in-amountpaid'];
 	paid_val = parseInt(paid_val).toLocaleString();
 	var change_val = req.body['in-amountchange'];
-	console.log('[transct] paid      : Rp ' + paid_val);
-	console.log('[transct] change    : Rp ' + change_val);
-	console.log('[transct] ==================================================');				
+	console.log('['+prefix_name+' '+datestamp[0]+'] paid      : Rp ' + paid_val);
+	console.log('['+prefix_name+' '+datestamp[0]+'] change    : Rp ' + change_val);
+	console.log('['+prefix_name+' '+datestamp[0]+'] ==================================================');				
 	console.log('');
 	res.render('index');
 });

@@ -1,0 +1,189 @@
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[IRSYAD 03/13/2021] invoice   : #8B5F1CF
+[IRSYAD 03/13/2021] timestamp : 03/13/2021, 8:32:40 PM
+[IRSYAD 03/13/2021] customer  : IRSYAD
+[IRSYAD 03/13/2021] phone     : 
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] product   : LAUNDRY & DRY CLEANING
+[IRSYAD 03/13/2021] deadline  : 13 MAR 2021 -- 13 MAR 2021
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  12,000
+[IRSYAD 03/13/2021] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] total     : Rp 28,000
+[IRSYAD 03/13/2021] paid      : Rp 30,000
+[IRSYAD 03/13/2021] change    : Rp 2,000
+[IRSYAD 03/13/2021] ==================================================
+
+
+[WINDA 03/13/2021] invoice   : #D34C62B
+[WINDA 03/13/2021] timestamp : 03/13/2021, 8:35:09 PM
+[WINDA 03/13/2021] customer  : WINDA
+[WINDA 03/13/2021] phone     : 
+[WINDA 03/13/2021] --------  : --------
+[WINDA 03/13/2021] product   : SUPER CHEMICAL LAUNDRY
+[WINDA 03/13/2021] --------  : --------
+[WINDA 03/13/2021] -- 01 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[WINDA 03/13/2021] -- 02 --  : MOLTO B (PEMB. NODA)   | 2 x 42,000  >> 84,000
+[WINDA 03/13/2021] --------  : --------
+[WINDA 03/13/2021] total     : Rp 133,000
+[WINDA 03/13/2021] paid      : Rp 200,000
+[WINDA 03/13/2021] change    : Rp 67,000
+[WINDA 03/13/2021] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[IRSYAD_________ 03/13/2021] invoice   : #7039EC9
+[IRSYAD 03/13/2021] timestamp : 03/13/2021, 8:39:16 PM
+[IRSYAD 03/13/2021] customer  : IRSYAD
+[IRSYAD 03/13/2021] phone     : 
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] product   : LAUNDRY & DRY CLEANING
+[IRSYAD 03/13/2021] deadline  : 13 MAR 2021 -- 13 MAR 2021
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IRSYAD 03/13/2021] --------  : --------
+[IRSYAD 03/13/2021] total     : Rp 16,000
+[IRSYAD 03/13/2021] paid      : Rp 50,000
+[IRSYAD 03/13/2021] change    : Rp 34,000
+[IRSYAD 03/13/2021] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO....... 3/13/2021] invoice   : #2C23A08
+[BU.RETNO....... 3/13/2021] timestamp : 3/13/2021, 10:21:01 PM
+[BU.RETNO....... 3/13/2021] customer  : BU RETNO
+[BU.RETNO....... 3/13/2021] phone     : 
+[BU.RETNO....... 3/13/2021] --------  : --------
+[BU.RETNO....... 3/13/2021] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO....... 3/13/2021] deadline  : 13 MAR 2021 -- 13 MAR 2021
+[BU.RETNO....... 3/13/2021] --------  : --------
+[BU.RETNO....... 3/13/2021] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[BU.RETNO....... 3/13/2021] --------  : --------
+[BU.RETNO....... 3/13/2021] total     : Rp 24,000
+[BU.RETNO....... 3/13/2021] paid      : Rp 50,000
+[BU.RETNO....... 3/13/2021] change    : Rp 26,000
+[BU.RETNO....... 3/13/2021] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO        3/13/2021] invoice   : #F654FC6
+[BU.RETNO        3/13/2021] timestamp : 3/13/2021, 10:23:45 PM
+[BU.RETNO        3/13/2021] customer  : BU RETNO
+[BU.RETNO        3/13/2021] phone     : 
+[BU.RETNO        3/13/2021] --------  : --------
+[BU.RETNO        3/13/2021] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO        3/13/2021] deadline  : 13 MAR 2021 -- 13 MAR 2021
+[BU.RETNO        3/13/2021] --------  : --------
+[BU.RETNO        3/13/2021] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  12,000
+[BU.RETNO        3/13/2021] --------  : --------
+[BU.RETNO        3/13/2021] total     : Rp 12,000
+[BU.RETNO        3/13/2021] paid      : Rp 50,000
+[BU.RETNO        3/13/2021] change    : Rp 38,000
+[BU.RETNO        3/13/2021] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[IRSYAD_________ 03/13/2021] invoice   : #68CF069
+[IRSYAD_________ 03/13/2021] timestamp : 03/13/2021, 10:26:26 PM
+[IRSYAD_________ 03/13/2021] customer  : IRSYAD
+[IRSYAD_________ 03/13/2021] phone     : 
+[IRSYAD_________ 03/13/2021] --------  : --------
+[IRSYAD_________ 03/13/2021] product   : LAUNDRY & DRY CLEANING
+[IRSYAD_________ 03/13/2021] deadline  : 13 MAR 2021 -- 13 MAR 2021
+[IRSYAD_________ 03/13/2021] --------  : --------
+[IRSYAD_________ 03/13/2021] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  12,000
+[IRSYAD_________ 03/13/2021] --------  : --------
+[IRSYAD_________ 03/13/2021] total     : Rp 12,000
+[IRSYAD_________ 03/13/2021] paid      : Rp 20,000
+[IRSYAD_________ 03/13/2021] change    : Rp 8,000
+[IRSYAD_________ 03/13/2021] ==================================================
+
+
+[BU.RETNO_______ 03/13/2021] invoice   : #3ED4DAA
+[BU.RETNO_______ 03/13/2021] timestamp : 03/13/2021, 10:27:53 PM
+[BU.RETNO_______ 03/13/2021] customer  : BU RETNO
+[BU.RETNO_______ 03/13/2021] phone     : 
+[BU.RETNO_______ 03/13/2021] --------  : --------
+[BU.RETNO_______ 03/13/2021] product   : SUPER CHEMICAL LAUNDRY
+[BU.RETNO_______ 03/13/2021] --------  : --------
+[BU.RETNO_______ 03/13/2021] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[BU.RETNO_______ 03/13/2021] --------  : --------
+[BU.RETNO_______ 03/13/2021] total     : Rp 42,000
+[BU.RETNO_______ 03/13/2021] paid      : Rp 50,000
+[BU.RETNO_______ 03/13/2021] change    : Rp 8,000
+[BU.RETNO_______ 03/13/2021] ==================================================
+

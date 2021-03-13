@@ -1084,6 +1084,7 @@ function printForm(x) {
 	get_paid = parseInt(get_paid).toLocaleString();
 	var get_change = document.getElementsByName("in-amountchange")[0].value.toLocaleString();
 	var datetime = new Date().toLocaleString();
+	datetime = ('00'+datetime).slice(-22);
 	var code = ('0000'+CreateGuid()).slice(-7).toUpperCase();
 	document.getElementsByName('invoice_ctr')[0].value = code;
 
