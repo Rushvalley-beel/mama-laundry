@@ -768,3 +768,55 @@
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node server.js`[39m
 [nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[MAS.IRSYAD_____ 03/14/2021] invoice   : #171AC07
+[MAS.IRSYAD_____ 03/14/2021] timestamp : 03/14/2021, 11:38:06 PM
+[MAS.IRSYAD_____ 03/14/2021] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 03/14/2021] phone     : 
+[MAS.IRSYAD_____ 03/14/2021] --------  : --------
+[MAS.IRSYAD_____ 03/14/2021] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 03/14/2021] deadline  : 14 MAR 2021 -- 14 MAR 2021
+[MAS.IRSYAD_____ 03/14/2021] --------  : --------
+[MAS.IRSYAD_____ 03/14/2021] -- 01 --  : PAKAIAN (CUCI REG) | 4,121 x 8,000  >>  32,968
+[MAS.IRSYAD_____ 03/14/2021] --------  : --------
+[MAS.IRSYAD_____ 03/14/2021] total     : Rp 32,968
+[MAS.IRSYAD_____ 03/14/2021] paid      : Rp 50,000
+[MAS.IRSYAD_____ 03/14/2021] change    : Rp 17,032
+[=============== 03/14/2021] ==================================================
+
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[MAS.IRSYAD_____ 03/15/2021] invoice   : #AB96210
+[MAS.IRSYAD_____ 03/15/2021] timestamp : 03/15/2021, 12:02:00 AM
+[MAS.IRSYAD_____ 03/15/2021] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 03/15/2021] phone     : 
+[MAS.IRSYAD_____ 03/15/2021] --------  : --------
+[MAS.IRSYAD_____ 03/15/2021] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 03/15/2021] deadline  : 15 MAR 2021 -- 15 MAR 2021
+[MAS.IRSYAD_____ 03/15/2021] --------  : --------
+[MAS.IRSYAD_____ 03/15/2021] -- 01 --  : PAKAIAN (CUCI REG) | 4,121 x 8,000  >>  32,968
+[MAS.IRSYAD_____ 03/15/2021] --------  : --------
+[MAS.IRSYAD_____ 03/15/2021] total     : Rp 32,968
+[MAS.IRSYAD_____ 03/15/2021] paid      : Rp 50,000
+[MAS.IRSYAD_____ 03/15/2021] change    : Rp 17,032
+[=============== 03/15/2021] ==================================================
+

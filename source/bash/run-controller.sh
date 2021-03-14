@@ -28,7 +28,7 @@ do
 		echo $get_customer > "${db_path[1]}/${db_file[3]}"		
 		while IFS= read -r get_line_customer; do
 			touch "${db_path[2]}/$get_line_customer.rcd"
-			catch_log_cust=$(cat "*.log" | grep -E "$get_line_customer|==" | uniq)
+			catch_log_cust=$(cat ${db_path[0]}/*/*.log | grep -E "$get_line_customer|==" | uniq)
 			echo "$catch_log_cust" > "${db_path[2]}/$get_line_customer.rcd"
 		done < "${db_path[1]}/${db_file[3]}"
 	fi
