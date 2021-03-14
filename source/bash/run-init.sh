@@ -3,7 +3,7 @@
 node_port=$(cat server.js | grep "const port" | cut -d '=' -f 2 | cut -c 2- | cut -d ';' -f 1)
 tmp_file=$(mktemp --suffix ".tmp")
 db_path=("database" "database/__fetch" "database/__user")
-db_file=("fetch-cache.tmp" "fetch-raw.log" )
+db_file=("fetch-cache.tmp" "fetch-raw.tmp" "fetch-raw.md5" "fetch-user.tmp")
 curdate=$(date +'[%x %X]')
 for dir in ${db_path[@]}; do
 	if [[ ! -d $dir ]]; then
