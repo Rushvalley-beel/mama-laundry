@@ -49,11 +49,12 @@ app.get('/register', (req,res) => {
 app.post('/', (req,res) => {
 	var timestamp = moment().format('L') + ', ' + moment().format('LTS'); 
 	var datestamp = moment().format('L');
+	var datestamp_border = datestamp;
 	const prod_arr = {'1':'Laundry & Dry Cleaning','2':'Super Chemical Laundry','3':'Stationery & Le Mineral'};	
 	const item_ldry_arr = {'1':'Pakaian','2':'Sprei S','3':'Sprei S Full-set','4':'Sprei M','5':'Sprei M Full-set','6':'Sprei XL','7':'Sprei XL Full-set','8':'Bedcover S','9':'Bedcover M','10':'Bedcover XL','11':'Jas / Kebaya','12':'Invent. Mushola','13':'Hordeng','14':'Vitrase'};
 	const srvc_ldry_arr = {'1':'Cuci Reg','2':'Cuci Exp','3':'Setrika Reg','4':'Setrika Exp','5':'Dry Clean Reg','6':'Dry Clean Exp'};
 	const item_chem_arr = {'1':'Parfum','2':'Pelicin','3':'Pelembut','4':'Deterjen','5':'Pemutih','6':'Pemb. Noda'};
-	const liqd_chem_arr = {'1':'Molto B','2':'Ocean F','3':'GGS','4':'Snappy','5':'Paris H','6':'G Rose','7':'Daily'};
+	const liqd_chem_arr = {'1':'Molto B','2':'Ocean F','3':'GGS','4':'Snappy','5':'Paris H','6':'G Rose','7':'Daily','8':'Heavy D','9':'Sour','10':'Emulsifr','11':'Oxpot'};
 	const jugg_chem_arr = {'1':'','2':'Jug 1L','3':'Jug 5L'}
 	const item_stat_arr = {'1':'Buku Tulis Campus','2':'Pensil Warna Faber-Castelle','3':'Cat Warna Acrylic','4':'Perangko Rp 6.000','5':'Karton / Kertas Kado Roll','6':'Kanvas 40 x 60 cm'};
 
@@ -65,6 +66,20 @@ app.post('/', (req,res) => {
 	}
 	var cust_phone = req.body["in-phonenum"];
 	var prod_val = req.body["li-prodtype"];
+	var prod_alias = "";
+	switch(prod_val) {
+		case '1':
+			prod_alias = 'LDRY';
+			break;
+		case '2':
+			prod_alias = 'CHEM';
+			break;
+		case '3':
+			prod_alias = 'STAT';
+			break;
+	}
+	datestamp += ' ' + prod_alias;
+
 	var prod_name = prod_arr[prod_val].toUpperCase();
 	//global.order_no = bash_exec.exec('cat database/counter_ldry', { silent: true});
 	//var curdate = bash_exec.exec('date +'"%d_%b_%Y"', { silent: true});
@@ -116,12 +131,12 @@ app.post('/', (req,res) => {
 					var jug_val = req.body['li-chemical-jugtype'+j];
 					var ceil_val = req.body['in-chemical-ceil'+j];
 					var jugadd_val = req.body['in-chemical-jugadd'+j];
-					var item_name = item_chem_arr[item_val].toUpperCase();
-					var liquid_name = liqd_chem_arr[liquid_val].toUpperCase();
+					var item_name = liqd_chem_arr[item_val].toUpperCase();
+					var liquid_name = item_chem_arr[liquid_val].toUpperCase();
 					var jug_name = jugg_chem_arr[jug_val].toUpperCase();
 					++x;
 					var ctr = ('0'+x).slice(-2);			
-					console.log('['+prefix_name+' '+datestamp+'] -- ' + ctr + ' --  : ' + liquid_name + ' (' + item_name +') ' + ceil_val + ' ' + jug_name + ' | ' + qty_val + 'x ' + baseprice + ' ' + jugadd_val + ' >> ' + toteach_val);
+					console.log('['+prefix_name+' '+datestamp+'] -- ' + ctr + ' --  : ' + item_name + ' (' + liquid_name +') ' + ceil_val + ' ' + jug_name + ' | ' + qty_val + 'x ' + baseprice + ' ' + jugadd_val + ' >> ' + toteach_val);
 				} catch(err) {var dump = 0;}
 			}
 			var totall_val = req.body['in-chemical-totalall'];
@@ -154,7 +169,7 @@ app.post('/', (req,res) => {
 	var change_val = req.body['in-amountchange'];
 	console.log('['+prefix_name+' '+datestamp+'] paid      : Rp ' + paid_val);
 	console.log('['+prefix_name+' '+datestamp+'] change    : Rp ' + change_val);
-	console.log('[=============== '+datestamp+'] ==================================================');				
+	console.log('[............... '+datestamp_border+' ....] ==================================================');				
 	console.log('');
 	res.render('index');
 });
