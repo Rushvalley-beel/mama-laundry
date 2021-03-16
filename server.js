@@ -47,7 +47,7 @@ app.get('/register', (req,res) => {
 });
 
 app.post('/', (req,res) => {
-	var timestamp = moment().format('L') + ', ' + moment().format('LTS'); 
+	var timestamp = moment().format('L') + ', ' + ('0'+moment().format('LTS')).slice(-11); 
 	var datestamp = moment().format('L');
 	var datestamp_border = datestamp;
 	const prod_arr = {'1':'Laundry & Dry Cleaning','2':'Super Chemical Laundry','3':'Stationery & Le Mineral'};	

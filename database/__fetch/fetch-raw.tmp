@@ -1446,3 +1446,310 @@ SyntaxError: Unexpected token }
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node server.js`[39m
 [nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 LDRY] invoice   : #2C0AD6B
+[BU.RETNO_______ 03/16/2021 LDRY] timestamp : 03/16/2021, 4:30:41 PM
+[BU.RETNO_______ 03/16/2021 LDRY] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 LDRY] phone     : 
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO_______ 03/16/2021 LDRY] deadline  : 16 MAR 2021 -- 16 MAR 2021
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] total     : Rp 16,000
+[BU.RETNO_______ 03/16/2021 LDRY] paid      : Rp NaN
+[BU.RETNO_______ 03/16/2021 LDRY] change    : Rp 0
+[............... 03/16/2021 ....] ==================================================
+
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/cookie/gitrepo/hotpotcookie/mama-laundry/server.js:48
+10:54:53 AM
+  ^
+
+SyntaxError: Unexpected token :
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 LDRY] invoice   : #0A08BD5
+[BU.RETNO_______ 03/16/2021 LDRY] timestamp : 03/16/2021, 04:49:22 PM
+[BU.RETNO_______ 03/16/2021 LDRY] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 LDRY] phone     : 
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO_______ 03/16/2021 LDRY] deadline  : 16 MAR 2021 -- 16 MAR 2021
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] total     : Rp 16,000
+[BU.RETNO_______ 03/16/2021 LDRY] paid      : Rp 30,000
+[BU.RETNO_______ 03/16/2021 LDRY] change    : Rp 14,000
+[............... 03/16/2021 ....] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 LDRY] invoice   : #BE55DA7
+[BU.RETNO_______ 03/16/2021 LDRY] timestamp : 03/16/2021, 05:25:51 PM
+[BU.RETNO_______ 03/16/2021 LDRY] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 LDRY] phone     : 
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO_______ 03/16/2021 LDRY] deadline  : 16 MAR 2021 -- 16 MAR 2021
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] total     : Rp 24,000
+[BU.RETNO_______ 03/16/2021 LDRY] paid      : Rp NaN
+[BU.RETNO_______ 03/16/2021 LDRY] change    : Rp 0
+[............... 03/16/2021 ....] ==================================================
+
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 LDRY] invoice   : #62BF88F
+[BU.RETNO_______ 03/16/2021 LDRY] timestamp : 03/16/2021, 05:32:09 PM
+[BU.RETNO_______ 03/16/2021 LDRY] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 LDRY] phone     : 
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[BU.RETNO_______ 03/16/2021 LDRY] deadline  : 16 MAR 2021 -- 16 MAR 2021
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  12,000
+[BU.RETNO_______ 03/16/2021 LDRY] --------  : --------
+[BU.RETNO_______ 03/16/2021 LDRY] total     : Rp 12,000
+[BU.RETNO_______ 03/16/2021 LDRY] paid      : Rp 0
+[BU.RETNO_______ 03/16/2021 LDRY] change    : Rp 0
+[............... 03/16/2021 ....] ==================================================
+
+
+[MAS.IRSYAD_____ 03/16/2021 LDRY] invoice   : #7ABB3B6
+[MAS.IRSYAD_____ 03/16/2021 LDRY] timestamp : 03/16/2021, 05:37:32 PM
+[MAS.IRSYAD_____ 03/16/2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 03/16/2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 03/16/2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 03/16/2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 03/16/2021 LDRY] deadline  : 16 MAR 2021 -- 16 MAR 2021
+[MAS.IRSYAD_____ 03/16/2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 03/16/2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 03/16/2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 03/16/2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 03/16/2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 03/16/2021 LDRY] change    : Rp 0
+[............... 03/16/2021 ....] ==================================================
+
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 CHEM] invoice   : #4A1818B
+[BU.RETNO_______ 03/16/2021 CHEM] timestamp : 03/16/2021, 05:58:40 PM
+[BU.RETNO_______ 03/16/2021 CHEM] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 CHEM] phone     : 
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] -- 01 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] total     : Rp 49,000
+[BU.RETNO_______ 03/16/2021 CHEM] paid      : Rp 100,000
+[BU.RETNO_______ 03/16/2021 CHEM] change    : Rp 51,000
+[............... 03/16/2021 ....] ==================================================
+
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[BU.RETNO_______ 03/16/2021 CHEM] invoice   : #A25AA5C
+[BU.RETNO_______ 03/16/2021 CHEM] timestamp : 03/16/2021, 06:53:59 PM
+[BU.RETNO_______ 03/16/2021 CHEM] customer  : BU RETNO
+[BU.RETNO_______ 03/16/2021 CHEM] phone     : 
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 4 x 42,000  >> 168,000
+[BU.RETNO_______ 03/16/2021 CHEM] --------  : --------
+[BU.RETNO_______ 03/16/2021 CHEM] total     : Rp 168,000
+[BU.RETNO_______ 03/16/2021 CHEM] paid      : Rp 200,000
+[BU.RETNO_______ 03/16/2021 CHEM] change    : Rp 32,000
+[............... 03/16/2021 ....] ==================================================
+

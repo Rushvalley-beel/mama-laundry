@@ -1074,8 +1074,11 @@ function printForm(x) {
 	} else {
 		var catch_trx = document.getElementsByName("li-laundry-trxtype")[1];
 	}
+
+	if ((document.getElementsByName("in-amountpaid")[0].value.length) == 0) {
+		document.getElementsByName("in-amountpaid")[0].value = 0;
+	} 
 	var get_trx = catch_trx.options[catch_trx.selectedIndex].value;
-	alert(get_trx);
 	var prod_name = catch_prod.options[catch_prod.selectedIndex].text.toUpperCase();
 	var prod_val = 	catch_prod.options[catch_prod.selectedIndex].value;
 	var get_name = document.getElementsByName("in-custname")[0].value.toUpperCase();
