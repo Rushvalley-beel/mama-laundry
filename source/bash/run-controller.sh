@@ -69,27 +69,25 @@ do
 
 			list_cust=$(ls -l "${db_path[2]}/" | grep "^d" | cut -d ":" -f 2 | cut -d ' ' -f 2) 
 			echo "$list_cust" > "${db_path[1]}/${db_file[12]}"
-			while IFS= read -r get_line_customer; do
-				while IFS= read -r rule_saved; do
-					while IFS= read -r rule_based; do
-						saved_ivc=$(echo "$rule_saved" | cut -d ' ' -f 1)
-						saved_sts=$(echo "$rule_saved" | cut -d ' ' -f 2)						
-						get_rule=$(echo "$rule_based" | grep "$saved_ivc")
-						if [[ "$get_rule" ]]; then
-							IFS=$'|'
-							read -a arr_rule <<< "$get_rule"
-							arr_rule[7]=$saved_sts
-							#echo -e "\n$get_rule"
-							#echo -e "|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |"
-							sudo sed -i "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |/" "${db_path[2]}/$dir_cust/$dir_cust.csv.$2"
-						fi
-					done < "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
-				done < "${db_path[2]}/$get_line_customer/$get_line_customer.saved"
-				touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn
-				touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn
-				touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn
-				touch ${db_path[2]}/$get_line_customer/$get_line_customer.savedn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.savedn			
-			done < "${db_path[1]}/${db_file[12]}"
+			while IFS= read -r rule_saved; do
+				while IFS= read -r rule_based; do
+					saved_ivc=$(echo "$rule_saved" | cut -d ' ' -f 1)
+					saved_sts=$(echo "$rule_saved" | cut -d ' ' -f 2)						
+					get_rule=$(echo "$rule_based" | grep "$saved_ivc")
+					if [[ "$get_rule" ]]; then
+						IFS=$'|'
+						read -a arr_rule <<< "$get_rule"
+						arr_rule[7]=$saved_sts
+						#echo -e "\n$get_rule"
+						#echo -e "|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |"
+						sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |/" "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
+					fi
+				done < "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
+			done < "${db_path[2]}/$get_line_customer/$get_line_customer.saved"
+			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn
+			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn
+			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn
+			touch ${db_path[2]}/$get_line_customer/$get_line_customer.savedn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.savedn			
 
 		}
 
@@ -101,6 +99,9 @@ do
 			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldry"
 			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.chem"
 			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.stat"
+			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.ldry"
+			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.chem"
+			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.stat"			
 			touch "${db_path[2]}/$get_line_customer/$get_line_customer.saved"
 
 			catch_log_cust=$(cat ${db_path[0]}/*/*.log | grep -E "$get_line_customer|==" | uniq -s 36)
