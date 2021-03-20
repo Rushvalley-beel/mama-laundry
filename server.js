@@ -49,6 +49,8 @@ app.get('/register', (req,res) => {
 app.post('/', (req,res) => {
 	var timestamp = moment().format('L') + ', ' + ('0'+moment().format('LTS')).slice(-11); 
 	var datestamp = moment().format('L');
+	datestamp = datestamp.split('/').join('-');
+	timestamp = timestamp.split('/').join('-');
 	var datestamp_border = datestamp;
 	const prod_arr = {'1':'Laundry & Dry Cleaning','2':'Super Chemical Laundry','3':'Stationery & Le Mineral'};	
 	const item_ldry_arr = {'1':'Pakaian','2':'Sprei S','3':'Sprei S Full-set','4':'Sprei M','5':'Sprei M Full-set','6':'Sprei XL','7':'Sprei XL Full-set','8':'Bedcover S','9':'Bedcover M','10':'Bedcover XL','11':'Jas / Kebaya','12':'Invent. Mushola','13':'Hordeng','14':'Vitrase'};
@@ -166,9 +168,14 @@ app.post('/', (req,res) => {
 	}
 	var paid_val = req.body['in-amountpaid'];
 	paid_val = parseInt(paid_val).toLocaleString();
+	var stat_payment = 'SUCCESS';
+	if (paid_val == '0') {
+		stat_payment = 'PENDING';
+	}
 	var change_val = req.body['in-amountchange'];
 	console.log('['+prefix_name+' '+datestamp+'] paid      : Rp ' + paid_val);
 	console.log('['+prefix_name+' '+datestamp+'] change    : Rp ' + change_val);
+	console.log('['+prefix_name+' '+datestamp+'] status    : ' + stat_payment);
 	console.log('[............... '+datestamp_border+' ....] ==================================================');				
 	console.log('');
 	res.render('index');
