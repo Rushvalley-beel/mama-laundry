@@ -38,17 +38,27 @@ if [[ "$UID" -eq "0" ]];then
 			dir_cust=$(ls -l "${db_path[2]}/" | grep "^d" | grep "$get_cust" | cut -d ":" -f 2 | cut -d ' ' -f 2)
 			touch ${db_path[2]}/$dir_cust/$dir_cust.csv.ldryn; sudo rm ${db_path[2]}/$dir_cust/$dir_cust.csv.ldryn
 			touch ${db_path[2]}/$dir_cust/$dir_cust.csv.chemn; sudo rm ${db_path[2]}/$dir_cust/$dir_cust.csv.chemn
-			touch ${db_path[2]}/$dir_cust/$dir_cust.csv.statn; sudo rm ${db_path[2]}/$dir_cust/$dir_cust.csv.statn			
+			touch ${db_path[2]}/$dir_cust/$dir_cust.csv.statn; sudo rm ${db_path[2]}/$dir_cust/$dir_cust.csv.statn
+
+			IFS=$" "
+			read -a arr_invoice <<< $get_invoice
+			get_invoice=""
+			for i in ${arr_invoice[@]}; do
+				get_invoice+="$i|"
+			done
+			get_invoice=$(echo "${get_invoice::-1}")
+
 			ls -l "${db_path[2]}/$dir_cust/" | grep ".cmb." | cut -d ":" -f 2 | cut -d ' ' -f 2 > "${db_path[1]}/${db_file[12]}"
+
 			while IFS= read -r cmb_file; do
-				check_invoice=$(cat "${db_path[2]}/$dir_cust/$cmb_file" | grep "$get_invoice")
+				check_invoice=$(cat "${db_path[2]}/$dir_cust/$cmb_file" | grep -E "$get_invoice")
 				if [[ $check_invoice ]]; then
 					catch_csv="$cmb_file"
 					echo "---"
 					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep "\-\-\-" | uniq
 					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep "INVOICE" | uniq					
 					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep "\-\-\-" | uniq
-					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep "$get_invoice"					
+					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep -E "$get_invoice"					
 					cat ${db_path[2]}/$dir_cust/$dir_cust.csv.* | grep "\-\-\-" | uniq
 				fi
 			done < "${db_path[1]}/${db_file[12]}"
@@ -57,13 +67,17 @@ if [[ "$UID" -eq "0" ]];then
 			echo "---"			
 			if [[ $get_stat ]]; then
 				touch "${db_path[2]}/$dir_cust/$dir_cust.saved"
-				check_saved=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$get_invoice")
-				if [[ $check_saved ]]; then
-					last_stat=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$get_invoice" | cut -d ' ' -f 2)
-					sed -in "s/$get_invoice $last_stat/$get_invoice $get_stat/" "${db_path[2]}/$dir_cust/$dir_cust.saved"
-				else
-					echo "$get_invoice $get_stat" >> "${db_path[2]}/$dir_cust/$dir_cust.saved"
-				fi
+				IFS=$'|'
+				read -a arr_invoice2 <<< "$get_invoice"
+				for each_invoice in ${arr_invoice2[@]}; do
+					check_saved=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$each_invoice")
+					if [[ $check_saved ]]; then
+						last_stat=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$each_invoice" | cut -d ' ' -f 2)
+						sed -in "s/$each_invoice $last_stat/$each_invoice $get_stat/" "${db_path[2]}/$dir_cust/$dir_cust.saved"
+					else
+						echo "$each_invoice $get_stat" >> "${db_path[2]}/$dir_cust/$dir_cust.saved"
+					fi
+				done				
 				ext_csv=$(echo "$catch_csv" | cut -d '.' -f 4)
 				while IFS= read -r rule_saved; do
 					while IFS= read -r rule_based; do
