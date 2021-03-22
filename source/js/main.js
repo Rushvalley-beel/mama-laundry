@@ -873,8 +873,8 @@ function calcItem(x) {
 			var totall = document.getElementsByName("in-laundry-totalall")[0].value;
 			totall = convMoney(totall);
 			if (fin_item_val == "1" && fin_service_val != "5" && fin_service_val != "6" || fin_item_val == "13" || fin_item_val == "14") {
-				if (qty < 1.5 && qty > 0 && fin_item_val != "13" && fin_item_val != "14") {
-					qty = 1.5;
+				if (qty < 1.875 && qty > 0 && fin_item_val != "13" && fin_item_val != "14") {
+					qty = 1.875;
 				}
 			} else {
 				qty = Math.floor(qty);

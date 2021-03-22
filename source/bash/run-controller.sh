@@ -22,7 +22,7 @@ do
 		IFS='\n'
 		echo "$checkmd5_raw" > "${db_path[1]}/${db_file[2]}"
 		md5_raw=$(cat "${db_path[1]}/${db_file[2]}")
-		echo "[=============== $curdate_rgx ====] ==================================================" > "${db_path[0]}/$curmonth/$curdate.log" 
+		echo "[............... $curdate_rgx ....] ==================================================" > "${db_path[0]}/$curmonth/$curdate.log" 
 		cat "${db_path[1]}/${db_file[1]}" | grep "$curdate_rgx" >> "${db_path[0]}/$curmonth/$curdate.log"
 		get_customer=$(cat "${db_path[0]}/$curmonth/$curdate.log" | cut -d ']' -f 1 | cut -d ' ' -f 1 | cut -c 2- | grep '_' | sort | uniq)
 		echo $get_customer > "${db_path[1]}/${db_file[3]}"		

@@ -175,6 +175,7 @@ app.post('/', (req,res) => {
 	var change_val = req.body['in-amountchange'];
 	console.log('['+prefix_name+' '+datestamp+'] paid      : Rp ' + paid_val);
 	console.log('['+prefix_name+' '+datestamp+'] change    : Rp ' + change_val);
+	console.log('['+prefix_name+' '+datestamp+'] --------  : --------');	
 	console.log('['+prefix_name+' '+datestamp+'] status    : ' + stat_payment);
 	console.log('[............... '+datestamp_border+' ....] ==================================================');				
 	console.log('');
