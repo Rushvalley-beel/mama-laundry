@@ -72,15 +72,37 @@ do
 			while IFS= read -r rule_saved; do
 				while IFS= read -r rule_based; do
 					saved_ivc=$(echo "$rule_saved" | cut -d ' ' -f 1)
-					saved_sts=$(echo "$rule_saved" | cut -d ' ' -f 2)						
+					saved_paid=$(echo "$rule_saved" | cut -d ' ' -f 2)						
 					get_rule=$(echo "$rule_based" | grep "$saved_ivc")
 					if [[ "$get_rule" ]]; then
 						IFS=$'|'
 						read -a arr_rule <<< "$get_rule"
-						arr_rule[7]=$saved_sts
+						saved_paid=$(echo "$saved_paid" | tr -d '.')
+						save_tot=$(echo "${arr_rule[4]}" | tr -d '.')
+						saved_change=$(($saved_paid - $save_tot))
+						if [[ $saved_change -lt 0 ]]; then
+							saved_change="0"
+							saved_sts="PENDING"
+						else
+							saved_sts="SUCCESS"
+						fi
+						saved_paid=$(echo "$saved_paid"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
+						saved_change=$(echo "$saved_change"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
+						#echo "$saved_paid - $save_tot =  $saved_change"
+						#echo "${#saved_paid} ${#saved_change}"														
+						while [[ ${#saved_paid} -lt 7 ]]; do
+								saved_paid+=" "
+						done
+						while [[ ${#saved_change} -lt 7 ]]; do
+								saved_change+=" "
+						done
+						#echo "${#saved_paid} ${#saved_change}"							
+						arr_rule[5]=$saved_paid							
+						arr_rule[6]=$saved_change
+						arr_rule[7]=$saved_sts							
 						#echo -e "\n$get_rule"
 						#echo -e "|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |"
-						sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |/" "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
+						sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}| ${arr_rule[5]} | ${arr_rule[6]} | ${arr_rule[7]} |/" "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
 					fi
 				done < "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
 			done < "${db_path[2]}/$get_line_customer/$get_line_customer.saved"

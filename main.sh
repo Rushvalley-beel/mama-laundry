@@ -63,34 +63,56 @@ if [[ "$UID" -eq "0" ]];then
 				fi
 			done < "${db_path[1]}/${db_file[12]}"
 			echo "---"
-			read -p "CHANGE STATUS  : " get_stat
+			read -p "CHANGE PAID    : " get_paid
 			echo "---"			
-			if [[ $get_stat ]]; then
+			if [[ $get_paid ]]; then
 				touch "${db_path[2]}/$dir_cust/$dir_cust.saved"
 				IFS=$'|'
 				read -a arr_invoice2 <<< "$get_invoice"
 				for each_invoice in ${arr_invoice2[@]}; do
 					check_saved=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$each_invoice")
 					if [[ $check_saved ]]; then
-						last_stat=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$each_invoice" | cut -d ' ' -f 2)
-						sed -in "s/$each_invoice $last_stat/$each_invoice $get_stat/" "${db_path[2]}/$dir_cust/$dir_cust.saved"
+						last_paid=$(cat "${db_path[2]}/$dir_cust/$dir_cust.saved" | grep "$each_invoice" | cut -d ' ' -f 2)
+						sed -in "s/$each_invoice $last_paid/$each_invoice $get_paid/" "${db_path[2]}/$dir_cust/$dir_cust.saved"
 					else
-						echo "$each_invoice $get_stat" >> "${db_path[2]}/$dir_cust/$dir_cust.saved"
+						echo "$each_invoice $get_paid" >> "${db_path[2]}/$dir_cust/$dir_cust.saved"
 					fi
 				done				
 				ext_csv=$(echo "$catch_csv" | cut -d '.' -f 4)
 				while IFS= read -r rule_saved; do
 					while IFS= read -r rule_based; do
 						saved_ivc=$(echo "$rule_saved" | cut -d ' ' -f 1)
-						saved_sts=$(echo "$rule_saved" | cut -d ' ' -f 2)						
+						saved_paid=$(echo "$rule_saved" | cut -d ' ' -f 2)						
 						get_rule=$(echo "$rule_based" | grep "$saved_ivc")
 						if [[ "$get_rule" ]]; then
 							#echo "$get_rule" | cut -d ' ' -f 2
 							IFS=$'|'
 							read -a arr_rule <<< "$get_rule"
-							arr_rule[7]=$saved_sts
+							saved_paid=$(echo "$saved_paid" | tr -d '.')
+							save_tot=$(echo "${arr_rule[4]}" | tr -d '.')
+							saved_change=$(($saved_paid - $save_tot))
+							if [[ $saved_change -lt 0 ]]; then
+								saved_change="0"
+								saved_sts="PENDING"
+							else
+								saved_sts="SUCCESS"
+							fi
+							saved_paid=$(echo "$saved_paid"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
+							saved_change=$(echo "$saved_change"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
+							#echo "$saved_paid - $save_tot =  $saved_change"
+							#echo "${#saved_paid} ${#saved_change}"														
+							while [[ ${#saved_paid} -lt 7 ]]; do
+									saved_paid+=" "
+							done
+							while [[ ${#saved_change} -lt 7 ]]; do
+									saved_change+=" "
+							done
+							#echo "${#saved_paid} ${#saved_change}"							
+							arr_rule[5]=$saved_paid							
+							arr_rule[6]=$saved_change
+							arr_rule[7]=$saved_sts							
 							#echo -e "|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |"
-							sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |/" "${db_path[2]}/$dir_cust/$dir_cust.csv.$ext_csv"
+							sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}| ${arr_rule[5]} | ${arr_rule[6]} | ${arr_rule[7]} |/" "${db_path[2]}/$dir_cust/$dir_cust.csv.$ext_csv"
 						fi
 					done < "${db_path[2]}/$dir_cust/$dir_cust.csv.$ext_csv"
 				done < "${db_path[2]}/$dir_cust/$dir_cust.saved"
