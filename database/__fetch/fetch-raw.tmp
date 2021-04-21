@@ -402,3 +402,13 @@
 [MAS.IRSYAD_____ 03-25-2021 LDRY] status    : PENDING
 [............... 03-25-2021 ....] ==================================================
 
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
