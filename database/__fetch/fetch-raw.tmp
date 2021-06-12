@@ -86,3 +86,33 @@
 [33m[nodemon] watching extensions: js,mjs,json[39m
 [32m[nodemon] starting `node server.js`[39m
 [nodemon] listening on port 8080 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+
+[MAS.IRSYAD_____ 06-11-2021 LDRY] invoice   : #3BD6248
+[MAS.IRSYAD_____ 06-11-2021 LDRY] timestamp : 06-11-2021, 11:37:44 PM
+[MAS.IRSYAD_____ 06-11-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-11-2021 LDRY] phone     : 081318420901
+[MAS.IRSYAD_____ 06-11-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-11-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-11-2021 LDRY] deadline  : 11 JUN 2021 -- 14 JUN 2021
+[MAS.IRSYAD_____ 06-11-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-11-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 12 x 8,000  >>  96,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] -- 02 --  : SPREI S (CUCI REG) | 3 x 10,000  >>  30,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] -- 03 --  : SPREI M (CUCI REG) | 4 x 15,000  >>  60,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-11-2021 LDRY] total     : Rp 186,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] paid      : Rp 200,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] change    : Rp 14,000
+[MAS.IRSYAD_____ 06-11-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-11-2021 LDRY] status    : SUCCESS
+[............... 06-11-2021 ....] ==================================================
+
