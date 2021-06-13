@@ -51,7 +51,7 @@
 							<select name="li-prodtype" id="prod-type" class="form-control long" onchange="disableCommit();">
 								<option value="1">Laundry & Dry Cleaning</option>
 								<option value="2">Super Chemical Laundry</option>
-								<option value="3">Stationery & Le Mineral</option>
+								<option value="3">Stationery & LeMineral</option>
 							</select>
 							<i class="zmdi zmdi-chevron-down"></i>
 						</div>
@@ -61,12 +61,12 @@
 						<div class="form-wrapper">
 							<label for="">Check-in</label>
 							<div class="small-icon"><i class="fas fa-calendar-alt"></i></div>
-							<input name="in-laundry-checkin" type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1" onchange="validChecker();">
+							<input name="in-laundry-checkin" type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd-mm-yyyy" id="dp1" onchange="validChecker();">
 						</div>
 						<div class="form-wrapper">
 							<label for="">Check-out</label>
 							<div class="small-icon"><i class="fas fa-calendar-check"></i></div>
-							<input name="in-laundry-checkout" type="text" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2" onchange="validChecker();">
+							<input name="in-laundry-checkout" type="text" class="form-control datepicker-here" data-language='en'  data-date-format="dd-mm-yyyy" id="dp2" onchange="validChecker();">
 						</div>
 					</div>
 					<!-- Laundry -->					
@@ -299,7 +299,7 @@
 							<select name="li-laundry-trxtype" id="payment-type" class="form-control long" onchange="togglePayment(this);">
 								<option value="1">Pembayaran Lunas ( Cash / Trans )</option>
 								<option value="2">Pembayaran Nanti ( Barang Selesai )</option>
-								<option value="3">Pembayaran Rekap ( Bulanan )</option>								
+								<option value="3">Pembayaran Rekap ( Bulanan )</option>
 							</select>
 							<i class="zmdi zmdi-chevron-down"></i>
 						</div>											

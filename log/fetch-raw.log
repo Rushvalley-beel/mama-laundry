@@ -1,0 +1,60 @@
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-13-2021 LDRY] invoice   : #BD0127
+[MAS.IRSYAD_____ 06-13-2021 LDRY] timestamp : 06-13-2021, 03:11:30 PM
+[MAS.IRSYAD_____ 06-13-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-13-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-13-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-13-2021 LDRY] deadline  : 13-06-2021 -- 13-06-2021
+[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-13-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-13-2021 LDRY] -- 02 --  : BEDCOVER M (CUCI REG) | 3 x 30,000  >>  90,000
+[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-13-2021 LDRY] total     : Rp 114,968
+[MAS.IRSYAD_____ 06-13-2021 LDRY] paid      : Rp 150,000
+[MAS.IRSYAD_____ 06-13-2021 LDRY] change    : Rp 35,032
+[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-13-2021 LDRY] status    : SUCCESS
+[............... 06-13-2021 ....] ==================================================
+
+[ RowDataPacket { HASH: 'CD1BE48', NAME: 'MAS IRSYAD', PHONE: '081318420901' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }

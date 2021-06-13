@@ -38,6 +38,8 @@ window.onresize = function() {
 document.getElementById('prod-type').addEventListener('change', function(){
 	var prods = document.getElementsByName("li-prodtype")[0].selectedIndex;	
 	var tot_in = document.getElementsByName("in-amountpaid")[0];
+	document.getElementsByName('in-amountpaid')[0].value = null;
+	document.getElementsByName('in-amountchange')[0].value = 0;	
 	switch(prods) {
 		case 0: //laundry
 			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -54,7 +56,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			document.getElementById('stat-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
-				elem[i].style.display = 'flex'
+				elem[i].style.display = 'block'
 			};
 			var elem2 = document.getElementsByClassName("menu-laundry-cls");
 			for (var i = 0; i < elem2.length; i++) {
@@ -83,7 +85,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			document.getElementById('stat-head').getElementsByClassName("tooltiptext")[0].style.visibility = 'hidden';			
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
-				elem[i].style.display = 'flex'
+				elem[i].style.display = 'block'
 			}
 			var elem2 = document.getElementsByClassName("menu-laundry-cls");
 			for (var i = 0; i < elem2.length; i++) {
@@ -112,7 +114,7 @@ document.getElementById('prod-type').addEventListener('change', function(){
 			document.getElementById('stat-head').style.display = 'flex';
 			var elem = document.getElementsByClassName("border menu");
 			for (var i = 0; i < elem.length; i++) {
-				elem[i].style.display = 'flex'
+				elem[i].style.display = 'block'
 			}
 			var elem2 = document.getElementsByClassName("menu-laundry-cls");
 			for (var i = 0; i < elem2.length; i++) {
@@ -139,9 +141,13 @@ function togglePayment(x) {
 	disableCommit();
 	if (x.value == 1 ) {
 		document.getElementById('last-nocash').style.display = 'flex';
+		document.getElementsByName("in-amountpaid")[0].value = null;
+		document.getElementsByName("in-amountchange")[0].value = 0;
 	}
 	else {
-		document.getElementById('last-nocash').style.display = 'none';		
+		document.getElementById('last-nocash').style.display = 'none';
+		document.getElementsByName("in-amountpaid")[0].value = null;
+		document.getElementsByName("in-amountchange")[0].value = 0;
 	}
 	return x.value;
 };
@@ -200,7 +206,7 @@ var ctr_stat = 0;
 function disableCommit() {
 	document.getElementById('check-verify').checked = false;
 	document.getElementsByName('commit-order')[0].disabled = true;
-	document.getElementsByName('commit-order')[0].style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';	
+	document.getElementsByName('commit-order')[0].style.background = 'linear-gradient(to right, rgba(129,134,150,1), rgba(185,189,201,1))';		
 }
 
 function validChecker() {
@@ -1088,7 +1094,7 @@ function printForm(x) {
 	var get_change = document.getElementsByName("in-amountchange")[0].value.toLocaleString();
 	var datetime = new Date().toLocaleString();
 	datetime = ('00'+datetime).slice(-22);
-	var code = ('0000'+CreateGuid()).slice(-7).toUpperCase();
+	var code = ('0000'+CreateGuid()).slice(-6).toUpperCase();
 	document.getElementsByName('invoice_ctr')[0].value = code;
 
 	receiptWindow.document.write('<html><head>');

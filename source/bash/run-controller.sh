@@ -23,11 +23,12 @@ do
 		echo "$checkmd5_raw" > "${db_path[1]}/${db_file[2]}"
 		md5_raw=$(cat "${db_path[1]}/${db_file[2]}")
 		echo "[............... $curdate_rgx ....] ==================================================" > "${db_path[0]}/$curmonth/$curdate.log" 
-		cat "${db_path[1]}/${db_file[1]}" | grep "$curdate_rgx" >> "${db_path[0]}/$curmonth/$curdate.log"
-		get_customer=$(cat "${db_path[0]}/$curmonth/$curdate.log" | cut -d ']' -f 1 | cut -d ' ' -f 1 | cut -c 2- | grep '_' | sort | uniq)
-		echo $get_customer > "${db_path[1]}/${db_file[3]}"		
+		cat "${db_path[1]}/${db_file[1]}" | grep "$curdate_rgx" > "${db_path[0]}/$curmonth/$curdate.log"
+		get_customer=$(cat "${db_path[0]}/$curmonth/$curdate.log" | cut -d ']' -f 1 | cut -c 2- | grep "_" | cut -d ' ' -f 1 | cut -d '_' -f 1 | sort | uniq)
 
-		## $1 = LDRY, $2 = ldry
+
+
+		######
 		add-csv() {
 			get_invoice=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "invoice" | cut -d ':' -f 2 | cut -d ' ' -f 2)
 			get_date=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "timestamp" | cut -d ':' -f 2 | cut -d ',' -f 1 | cut -c 2-)			
