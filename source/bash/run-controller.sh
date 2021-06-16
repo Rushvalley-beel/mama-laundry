@@ -1,144 +1,108 @@
 #!/bin/bash
 #---------------
-db_path=("database" "database/__fetch" "database/__user")
-db_file=("fetch-cache.tmp" "fetch-raw.tmp" "fetch-raw.md5" "fetch-user.tmp" "fetch-data-invoice.tmp" "fetch-data-date.tmp" "fetch-data-time.tmp" "fetch-data-total.tmp" "fetch-data-paid.tmp" "fetch-data-change.tmp" "fetch-data-zjoin.tmp" "fetch-data-zstatus.tmp" "fetch-zuser.tmp")
-cache_file=$(cat ${db_path[1]}/${db_file[0]} | tail -n 1 | cut -d ']' -f 2 | cut -c 2-)
-md5_raw=$(cat "${db_path[1]}/${db_file[2]}")
-while : 
+db_path=("log")
+db_file=("fetch-cache.log" "fetch-raw.log" "fetch-tablehash.md5" "fetch-whatsapp.txt" "fetch-numberdest.txt" "fetch-trxdetail.tmp")
+saved_hash=$(cat ${db_path[0]}/${db_file[2]})
+counter=1
+while :
 do
-	curmonth=$(date +'%B_%Y')
-	curdate=$(date +'%d_%B_%Y')
-	curdate_rgx=$(date +'%m-%d-%Y')
-	checkmonth=$(ls ${db_path[0]}/ | grep $curmonth)
-	checkdate=$(ls ${db_path[0]}/$checkmonth | grep $curdate)	
-	checkmd5_raw=$(md5sum ${db_path[1]}/${db_file[1]} | cut -d ' ' -f 1)
-	if [[ ! "$checkmonth" ]] ;then 				## check directory
-		mkdir "${db_path[0]}/$curmonth"
-	fi
-	if [[ ! "$checkdate" ]] ;then
-		touch "${db_path[0]}/$curmonth/$curdate.log"
-	fi
-	if [[ $checkmd5_raw != $md5_raw ]] ;then	## 
-		IFS='\n'
-		echo "$checkmd5_raw" > "${db_path[1]}/${db_file[2]}"
-		md5_raw=$(cat "${db_path[1]}/${db_file[2]}")
-		echo "[............... $curdate_rgx ....] ==================================================" > "${db_path[0]}/$curmonth/$curdate.log" 
-		cat "${db_path[1]}/${db_file[1]}" | grep "$curdate_rgx" > "${db_path[0]}/$curmonth/$curdate.log"
-		get_customer=$(cat "${db_path[0]}/$curmonth/$curdate.log" | cut -d ']' -f 1 | cut -c 2- | grep "_" | cut -d ' ' -f 1 | cut -d '_' -f 1 | sort | uniq)
+	current_hash=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "CHECKSUM TABLE TRX" --silent 2>&1 | cut -d 'X' -f 2 | tr -s '\t' ' ' | cut -d ' ' -f 2 | sed -n '2p')
+	if [[ $current_hash != $saved_hash ]]; then
+		echo $current_hash > ${db_path[0]}/${db_file[2]}
+		saved_hash=$(cat ${db_path[0]}/${db_file[2]})
+		hash_t=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 1)
+		hash_c=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 2)		
+		trx_curdate=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 3 | tr -s '-' '/')
+		trx_check_in=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 4 | tr -s '-' '/')
+		trx_check_out=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 5 | tr -s '-' '/')
+		trx_product=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 6)
+		trx_total=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 7 | tr -s '.' ',')
+		trx_paid=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 8 | tr -s '.' ',')
+		trx_changes=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 9 | tr -s '.' ',')
+		trx_status=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM TRX ORDER BY CURDATE DESC LIMIT 1" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 10)
 
+		trx_total=$(echo "$trx_total" | sed 's/......$/.&/;t;s/^.$/.0&/')
+		trx_paid=$(echo "$trx_paid" | sed 's/......$/.&/;t;s/^.$/.0&/')
+		trx_changes=$(echo "$trx_changes" | sed 's/......$/.&/;t;s/^.$/.0&/')
 
-
-		######
-		add-csv() {
-			get_invoice=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "invoice" | cut -d ':' -f 2 | cut -d ' ' -f 2)
-			get_date=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "timestamp" | cut -d ':' -f 2 | cut -d ',' -f 1 | cut -c 2-)			
-			get_time=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "timestamp" | cut -d ',' -f 2 | cut -c 2-)
-			get_total=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "total" | cut -d ':' -f 2 | cut -d ' ' -f 3 | tr -s ',' '.')
-			get_paid=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "paid" | cut -d ':' -f 2 | cut -d ' ' -f 3 | tr -s ',' '.')
-			get_change=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "change" | cut -d ':' -f 2 | cut -d ' ' -f 3 | tr -s ',' '.')
-			get_status=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.rcd" | grep "$1" | grep "status" | cut -d ':' -f 2 | cut -c 2-)
-
-			echo "$get_invoice" > "${db_path[1]}/${db_file[4]}"
-			echo "$get_date" > "${db_path[1]}/${db_file[5]}"
-			echo "$get_time" > "${db_path[1]}/${db_file[6]}"
-			echo "$get_total" > "${db_path[1]}/${db_file[7]}"
-			echo "$get_paid" > "${db_path[1]}/${db_file[8]}"
-			echo "$get_change" > "${db_path[1]}/${db_file[9]}"
-			echo "$get_status" > "${db_path[1]}/${db_file[11]}"
-
-			paste ${db_path[1]}/fetch-data-* > "${db_path[1]}/${db_file[10]}"
-
-			header="-------------------------------------------------------------------------------\n"
-			footer="-------------------------------------------------------------------------------"
-			header+="| INVOICE  | DATE       | TIME        | TOTAL   | PAID    | CHANGE  | PAYMENT |\n"
-			header+="-------------------------------------------------------------------------------"
-			echo -e "$header" > "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
-
-			while IFS= read -r get_line; do
-
-				IFS=$'\t'
-				read -a data_arr <<< "$get_line"
-				## 0: change, 1: date, 2: invoice, 3: paid, 4: time, 5: total, 6: status
-				if [[ ${data_arr[0]} && ${data_arr[1]} && ${data_arr[2]} && ${data_arr[3]} && ${data_arr[4]} && ${data_arr[5]} ]]; then
-					printf "| %-7s | %-10s | %-11s | %-7s | %-7s | %-7s | %-7s |\n" "${data_arr[2]}" "${data_arr[1]}" "${data_arr[4]}" "${data_arr[5]}" "${data_arr[3]}" "${data_arr[0]}" "${data_arr[6]}" >> "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
-					echo -e "${data_arr[2]}\t${data_arr[6]}" >> "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.$2"
-				fi
-			done < "${db_path[1]}/${db_file[10]}"
-			echo -e "$footer" >> "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
-			get_comb=$(cat "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.$2" | sort | tr -s '\t' ' ' | uniq)
-			echo "$get_comb" > "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.$2"
-
-			list_cust=$(ls -l "${db_path[2]}/" | grep "^d" | cut -d ":" -f 2 | cut -d ' ' -f 2) 
-			echo "$list_cust" > "${db_path[1]}/${db_file[12]}"
-			while IFS= read -r rule_saved; do
-				while IFS= read -r rule_based; do
-					saved_ivc=$(echo "$rule_saved" | cut -d ' ' -f 1)
-					saved_paid=$(echo "$rule_saved" | cut -d ' ' -f 2)						
-					get_rule=$(echo "$rule_based" | grep "$saved_ivc")
-					if [[ "$get_rule" ]]; then
-						IFS=$'|'
-						read -a arr_rule <<< "$get_rule"
-						saved_paid=$(echo "$saved_paid" | tr -d '.')
-						save_tot=$(echo "${arr_rule[4]}" | tr -d '.')
-						saved_change=$(($saved_paid - $save_tot))
-						if [[ $saved_change -lt 0 ]]; then
-							saved_change="0"
-							saved_sts="PENDING"
-						else
-							saved_sts="SUCCESS"
-						fi
-						saved_paid=$(echo "$saved_paid"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
-						saved_change=$(echo "$saved_change"/ | awk '{gsub(/[0-9][0-9][0-9]\//, ".&")} 1' | cut -d '/' -f 1)
-						#echo "$saved_paid - $save_tot =  $saved_change"
-						#echo "${#saved_paid} ${#saved_change}"														
-						while [[ ${#saved_paid} -lt 7 ]]; do
-								saved_paid+=" "
-						done
-						while [[ ${#saved_change} -lt 7 ]]; do
-								saved_change+=" "
-						done
-						#echo "${#saved_paid} ${#saved_change}"							
-						arr_rule[5]=$saved_paid							
-						arr_rule[6]=$saved_change
-						arr_rule[7]=$saved_sts							
-						#echo -e "\n$get_rule"
-						#echo -e "|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}|${arr_rule[5]}|${arr_rule[6]}| ${arr_rule[7]} |"
-						sed -in "s/$get_rule/|${arr_rule[1]}|${arr_rule[2]}|${arr_rule[3]}|${arr_rule[4]}| ${arr_rule[5]} | ${arr_rule[6]} | ${arr_rule[7]} |/" "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
+		cust_name=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM CUST WHERE HASH = '$hash_c';" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 2)
+		cust_phone=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM CUST WHERE HASH = '$hash_c';" --silent 2>&1 | sed -n '2p' | tr -s '\t' '@' | cut -d '@' -f 3)
+		form_phone=$(echo "$cust_phone" | cut -c 2-)
+		detail_message=""
+		sleep 20
+		case $trx_product in
+			"LAUNDRY & DRY CLEANING")
+				trx_product="LAUNDRY"
+				trx_detail_count=$(mysql -u root -pirsyadndu1ABC mama_laundry -e "SELECT COUNT(HASH_T) FROM SUB_TRX_LDRY WHERE HASH_T = '$hash_t'" --silent 2>&1 | tail -n -1)
+				counter=1
+				#detail_message="$counter / $trx_detail_count%0a"
+				while [[ $counter -le $trx_detail_count ]]; do
+					no_item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 1); sleep 3
+					item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 3); sleep 3
+					service=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 4); sleep 3
+					baseprice=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 5 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					qty=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 6); sleep 3
+					total=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_LDRY WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 7 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					detail_message+="$no_item |$item ($service)%0a  |$qty x $baseprice : $total%0a"
+					counter=$(($counter + 1))
+					sleep 5
+				done
+				;;
+			"SUPER CHEMICAL LAUNDRY")
+				trx_product="CHEMICAL"
+				trx_detail_count=$(mysql -u root -pirsyadndu1ABC mama_laundry -e "SELECT COUNT(HASH_T) FROM SUB_TRX_CHEM WHERE HASH_T = '$hash_t'" --silent 2>&1 | tail -n -1)
+				counter=1
+				#detail_message="$counter / $trx_detail_count%0a"
+				while [[ $counter -le $trx_detail_count ]]; do
+					no_item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 1); sleep 3
+					item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 3); sleep 3
+					parfume=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 4); sleep 3
+					baseprice=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 5 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					qty=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 6); sleep 3
+					container=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 7); sleep 3
+					ctr_price=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 8 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					ctr_qty=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 9); sleep 3
+					total=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_CHEM WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 10 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					detail_message+="$no_item |$parfume ($item)"
+					if [[ "$container" != "BOTTLE" ]]; then
+						detail_message+=" %2b $ctr_qty $container"
 					fi
-				done < "${db_path[2]}/$get_line_customer/$get_line_customer.csv.$2"
-			done < "${db_path[2]}/$get_line_customer/$get_line_customer.saved"
-			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldryn
-			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.chemn
-			touch ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.csv.statn
-			touch ${db_path[2]}/$get_line_customer/$get_line_customer.savedn; sudo rm ${db_path[2]}/$get_line_customer/$get_line_customer.savedn			
+					detail_message+="%0a  |$qty x $baseprice : $total"
+					if [[ "$container" != "BOTTLE" ]]; then
+						detail_message+="%0a  |(%2b $ctr_price)"
+					fi
+					detail_message+="%0a"
+					counter=$(($counter + 1))
+					sleep 5
+				done
+				;;
+			"STATIONERY & LEMINERAL")
+				trx_product="STATIONERY"
+				trx_detail_count=$(mysql -u root -pirsyadndu1ABC mama_laundry -e "SELECT COUNT(HASH_T) FROM SUB_TRX_STAT WHERE HASH_T = '$hash_t'" --silent 2>&1 | tail -n -1)
+				counter=1
+				##
+				#detail_message="$counter / $trx_detail_count%0a"
+				while [[ $counter -le $trx_detail_count ]]; do
+					no_item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_STAT WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 1); sleep 3
+					item=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_STAT WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 3); sleep 3
+					baseprice=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_STAT WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 4 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					qty=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_STAT WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 5); sleep 3
+					total=$(mysql -u bash -pirsyadndu1ABC mama_laundry -e "SELECT * FROM SUB_TRX_STAT WHERE NO_ITEM = $counter" --silent 2>&1 | grep "$hash_t" | tr -s '\t' '@' | cut -d '@' -f 6 | tr -s '.' ',' | sed 's/......$/.&/;t;s/^.$/.0&/'); sleep 3
+					detail_message+="$no_item |$item%0a  |$qty x $baseprice : $total%0a"
+					counter=$(($counter + 1))
+					sleep 5
+				done
+				;;
+		esac
 
-		}
-
-		while IFS= read -r get_line_customer; do
-			if [[ ! -d "${db_path[2]}/$get_line_customer" ]]; then
-				mkdir "${db_path[2]}/$get_line_customer"
-			fi
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.rcd"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.ldry"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.chem"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.csv.stat"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.ldry"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.chem"
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.cmb.stat"			
-			touch "${db_path[2]}/$get_line_customer/$get_line_customer.saved"
-
-			catch_log_cust=$(cat ${db_path[0]}/*/*.log | grep -E "$get_line_customer|==" | uniq -s 36)
-			echo "$catch_log_cust" > "${db_path[2]}/$get_line_customer/$get_line_customer.rcd"
-
-			add-csv "LDRY" "ldry"
-			add-csv "CHEM" "chem"
-			add-csv "STAT" "stat"
-
-		done < "${db_path[1]}/${db_file[3]}"
-
+		message="*[ MAMA LAUNDRY ]*\`\`\`%0a-----%0aNAME: $cust_name%0aHP  : $cust_phone%0aTIME: $trx_curdate%0aINVC: $hash_t%0a-----%0aPROD: $trx_product%0aEST : $trx_check_in -- $trx_check_out%0a-----%0a"
+		message+="$detail_message"
+		message+="-----%0aTOT : Rp $trx_total%0aPAID: Rp $trx_paid%0aRTRN: Rp $trx_changes%0a-----%0aSTAT: $trx_status%0a-----%0aJL. SIAGA RAYA NO. 42C%0aPEJATEN BARAT, PS. MINGGU 12520%0aINFO (08212-533-7746)\`\`\`"
+		echo "+62$form_phone" > "${db_path[0]}/${db_file[4]}"
+		echo "$message" > "${db_path[0]}/${db_file[3]}" &
+		wait
+		sleep 10
+		nohup sudo su - cookie -c 'export DISPLAY=:0 && python3 Git/main/mama-laundry/source/python/send-wa.py' >> "${db_path[0]}/${db_file[1]}" 2>> "${db_path[0]}/${db_file[1]}.err"
+		wait
 	fi
 done
-
-# cat 13_March_2021.log | grep "customer" | cut -d ':' -f 2 | cut -c 2- | tr -s ' ' '.' | sort | uniq | head -n 2 | tail -n 1
-# cat 13_March_2021.log | grep "customer" | cut -d ':' -f 2 | cut -c 2- | tr -s ' ' '.' | sort | uniq | wc -l
-# cat BU.RETNO_______.rcd | grep "LDRY" | grep "total" | cut -d ':' -f 2 | cut -d ' ' -f 3 | tr -s ',' '.'

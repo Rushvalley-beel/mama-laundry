@@ -28,6 +28,7 @@
     "moment": "^2.29.1",
     "mysql": "^2.18.1",
     "poker-hands": "^1.0.2",
+    "python-shell": "^3.0.0",
     "ramda": "^0.27.1",
     "route": "^0.2.5",
     "shelljs": "^0.8.4"

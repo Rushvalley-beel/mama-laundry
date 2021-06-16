@@ -1,0 +1,33 @@
+1623654462893	geckodriver	INFO	Listening on 127.0.0.1:52403
+1623654462901	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBZtwvg"
+1623654466663	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBZtwvg/search.json.mozlz4", (void 0)))
+1623654472790	Marionette	INFO	Listening on port 46103
+1623654473077	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1623654481122	Marionette	INFO	Stopped listening on port 46103
+1623654558888	geckodriver	INFO	Listening on 127.0.0.1:39723
+1623654558895	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehO5D8U"
+1623654561807	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehO5D8U/search.json.mozlz4", (void 0)))
+1623654566671	Marionette	INFO	Listening on port 37179
+1623654566813	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623654574644	Marionette	INFO	Stopped listening on port 37179
+1623654626571	geckodriver	INFO	Listening on 127.0.0.1:60625
+1623654626581	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUEpcXT"
+1623654629478	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUEpcXT/search.json.mozlz4", (void 0)))
+1623654634255	Marionette	INFO	Listening on port 33857
+1623654634421	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1623654640076	Marionette	INFO	Stopped listening on port 33857
+1623654865336	geckodriver	INFO	Listening on 127.0.0.1:56333
+1623654865346	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7xl5m3"
+1623654868237	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7xl5m3/search.json.mozlz4", (void 0)))
+1623654872832	Marionette	INFO	Listening on port 40183
+1623654873098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.9a2bebd8f0c9b5068d2c.js, line 17: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/bootstrap_qr.9a2bebd8f0c9b5068d2c.js, line 17: unreachable code after return statement
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1623654880899	Marionette	INFO	Stopped listening on port 40183

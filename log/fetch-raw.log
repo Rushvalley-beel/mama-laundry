@@ -1,3 +1,4 @@
+[nodemon] inserting item details from #T64D9AF
 
 > server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
 > nodemon server.js
@@ -10,51 +11,2880 @@
 [nodemon] listening on port 8080 ...
 [nodemon] mysql is running ...
 
-[MAS.IRSYAD_____ 06-13-2021 LDRY] invoice   : #BD0127
-[MAS.IRSYAD_____ 06-13-2021 LDRY] timestamp : 06-13-2021, 03:11:30 PM
-[MAS.IRSYAD_____ 06-13-2021 LDRY] customer  : MAS IRSYAD
-[MAS.IRSYAD_____ 06-13-2021 LDRY] phone     : 
-[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
-[MAS.IRSYAD_____ 06-13-2021 LDRY] product   : LAUNDRY & DRY CLEANING
-[MAS.IRSYAD_____ 06-13-2021 LDRY] deadline  : 13-06-2021 -- 13-06-2021
-[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
-[MAS.IRSYAD_____ 06-13-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
-[MAS.IRSYAD_____ 06-13-2021 LDRY] -- 02 --  : BEDCOVER M (CUCI REG) | 3 x 30,000  >>  90,000
-[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
-[MAS.IRSYAD_____ 06-13-2021 LDRY] total     : Rp 114,968
-[MAS.IRSYAD_____ 06-13-2021 LDRY] paid      : Rp 150,000
-[MAS.IRSYAD_____ 06-13-2021 LDRY] change    : Rp 35,032
-[MAS.IRSYAD_____ 06-13-2021 LDRY] --------  : --------
-[MAS.IRSYAD_____ 06-13-2021 LDRY] status    : SUCCESS
-[............... 06-13-2021 ....] ==================================================
+[IBU.WINDA______ 06-14-2021 LDRY] invoice   : #9018CF
+[IBU.WINDA______ 06-14-2021 LDRY] timestamp : 06-14-2021, 03:00:52 PM
+[IBU.WINDA______ 06-14-2021 LDRY] customer  : IBU WINDA
+[IBU.WINDA______ 06-14-2021 LDRY] phone     : 
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.WINDA______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] total     : Rp 24,000
+[IBU.WINDA______ 06-14-2021 LDRY] paid      : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] change    : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
 
-[ RowDataPacket { HASH: 'CD1BE48', NAME: 'MAS IRSYAD', PHONE: '081318420901' } ]
-OkPacket {
-  fieldCount: 0,
-  affectedRows: 1,
-  insertId: 0,
-  serverStatus: 2,
-  warningCount: 0,
-  message: '',
-  protocol41: true,
-  changedRows: 0 }
-null
-OkPacket {
-  fieldCount: 0,
-  affectedRows: 1,
-  insertId: 0,
-  serverStatus: 2,
-  warningCount: 0,
-  message: '',
-  protocol41: true,
-  changedRows: 0 }
-null
-OkPacket {
-  fieldCount: 0,
-  affectedRows: 1,
-  insertId: 0,
-  serverStatus: 2,
-  warningCount: 0,
-  message: '',
-  protocol41: true,
-  changedRows: 0 }
+[nodemon] issuing new transaction at 06-14-2021, 03:00:52 PM
+[nodemon] inserting transaction details on #T9018CF by IBU WINDA
+[nodemon] inserting item details from #T9018CF
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.WINDA______ 06-14-2021 LDRY] invoice   : #5BE57D
+[IBU.WINDA______ 06-14-2021 LDRY] timestamp : 06-14-2021, 03:33:46 PM
+[IBU.WINDA______ 06-14-2021 LDRY] customer  : IBU WINDA
+[IBU.WINDA______ 06-14-2021 LDRY] phone     : 
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.WINDA______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] total     : Rp 16,000
+[IBU.WINDA______ 06-14-2021 LDRY] paid      : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] change    : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 03:33:46 PM
+[nodemon] inserting transaction details on #T5BE57D by IBU WINDA
+[nodemon] inserting item details from #T5BE57D
+
+[MAS.DIKA_______ 06-14-2021 LDRY] invoice   : #11EB29
+[MAS.DIKA_______ 06-14-2021 LDRY] timestamp : 06-14-2021, 03:52:29 PM
+[MAS.DIKA_______ 06-14-2021 LDRY] customer  : MAS DIKA
+[MAS.DIKA_______ 06-14-2021 LDRY] phone     : 
+[MAS.DIKA_______ 06-14-2021 LDRY] --------  : --------
+[MAS.DIKA_______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.DIKA_______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[MAS.DIKA_______ 06-14-2021 LDRY] --------  : --------
+[MAS.DIKA_______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.DIKA_______ 06-14-2021 LDRY] --------  : --------
+[MAS.DIKA_______ 06-14-2021 LDRY] total     : Rp 16,000
+[MAS.DIKA_______ 06-14-2021 LDRY] paid      : Rp 0
+[MAS.DIKA_______ 06-14-2021 LDRY] change    : Rp 0
+[MAS.DIKA_______ 06-14-2021 LDRY] --------  : --------
+[MAS.DIKA_______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 03:52:29 PM
+[nodemon] inserting transaction details on #T11EB29 by MAS DIKA
+[nodemon] inserting item details from #T11EB29
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-14-2021 LDRY] invoice   : #23D7B1
+[MAS.IRSYAD_____ 06-14-2021 LDRY] timestamp : 06-14-2021, 09:42:13 PM
+[MAS.IRSYAD_____ 06-14-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-14-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 09:42:13 PM
+[nodemon] inserting transaction details on #T23D7B1 by MAS IRSYAD
+[nodemon] inserting item details from #T23D7B1
+
+[IBU.WINDA______ 06-14-2021 LDRY] invoice   : #2C6CCB
+[IBU.WINDA______ 06-14-2021 LDRY] timestamp : 06-14-2021, 09:58:16 PM
+[IBU.WINDA______ 06-14-2021 LDRY] customer  : IBU WINDA
+[IBU.WINDA______ 06-14-2021 LDRY] phone     : 
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.WINDA______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] total     : Rp 16,000
+[IBU.WINDA______ 06-14-2021 LDRY] paid      : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] change    : Rp 0
+[IBU.WINDA______ 06-14-2021 LDRY] --------  : --------
+[IBU.WINDA______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 09:58:16 PM
+[nodemon] inserting transaction details on #T2C6CCB by IBU WINDA
+[nodemon] inserting item details from #T2C6CCB
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-14-2021 LDRY] invoice   : #AFBD7B
+[MAS.IRSYAD_____ 06-14-2021 LDRY] timestamp : 06-14-2021, 10:53:45 PM
+[MAS.IRSYAD_____ 06-14-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-14-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 10:53:45 PM
+[nodemon] inserting transaction details on #TAFBD7B by MAS IRSYAD
+[nodemon] inserting item details from #TAFBD7B
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MBA.AYU.R______ 06-14-2021 LDRY] invoice   : #90BA96
+[MBA.AYU.R______ 06-14-2021 LDRY] timestamp : 06-14-2021, 10:56:35 PM
+[MBA.AYU.R______ 06-14-2021 LDRY] customer  : MBA AYU R
+[MBA.AYU.R______ 06-14-2021 LDRY] phone     : 
+[MBA.AYU.R______ 06-14-2021 LDRY] --------  : --------
+[MBA.AYU.R______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MBA.AYU.R______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[MBA.AYU.R______ 06-14-2021 LDRY] --------  : --------
+[MBA.AYU.R______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MBA.AYU.R______ 06-14-2021 LDRY] --------  : --------
+[MBA.AYU.R______ 06-14-2021 LDRY] total     : Rp 24,000
+[MBA.AYU.R______ 06-14-2021 LDRY] paid      : Rp 0
+[MBA.AYU.R______ 06-14-2021 LDRY] change    : Rp 0
+[MBA.AYU.R______ 06-14-2021 LDRY] --------  : --------
+[MBA.AYU.R______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 10:56:35 PM
+[nodemon] inserting transaction details on #T90BA96 by MBA AYU R
+[nodemon] inserting item details from #T90BA96
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-14-2021 LDRY] invoice   : #636A26
+[MAS.IRSYAD_____ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:00:03 PM
+[MAS.IRSYAD_____ 06-14-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-14-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 14-06-2021
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:00:03 PM
+[nodemon] inserting transaction details on #T636A26 by MAS IRSYAD
+[nodemon] inserting item details from #T636A26
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-14-2021 LDRY] invoice   : #DB4E68
+[MAS.IRSYAD_____ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:03:52 PM
+[MAS.IRSYAD_____ 06-14-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-14-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 17-06-2021
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] total     : Rp 32,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] paid      : Rp 50,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] change    : Rp 18,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] status    : SUCCESS
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:03:52 PM
+[nodemon] inserting transaction details on #TDB4E68 by MAS IRSYAD
+[nodemon] inserting item details from #TDB4E68
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-14-2021 LDRY] invoice   : #0292AA
+[MAS.IRSYAD_____ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:05:41 PM
+[MAS.IRSYAD_____ 06-14-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-14-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 17-06-2021
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 06-14-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-14-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:05:41 PM
+[nodemon] inserting transaction details on #T0292AA by MAS IRSYAD
+[nodemon] inserting item details from #T0292AA
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] invoice   : #AFBE34
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:08:37 PM
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 16-06-2021
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] total     : Rp 24,000
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:08:37 PM
+[nodemon] inserting transaction details on #TAFBE34 by IBU NURWULAN K
+[nodemon] inserting item details from #TAFBE34
+
+[PAK.NASER______ 06-14-2021 LDRY] invoice   : #A93B88
+[PAK.NASER______ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:09:36 PM
+[PAK.NASER______ 06-14-2021 LDRY] customer  : PAK NASER
+[PAK.NASER______ 06-14-2021 LDRY] phone     : 
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.NASER______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 16-06-2021
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] total     : Rp 15,000
+[PAK.NASER______ 06-14-2021 LDRY] paid      : Rp 0
+[PAK.NASER______ 06-14-2021 LDRY] change    : Rp 0
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:09:36 PM
+[nodemon] inserting transaction details on #TA93B88 by PAK NASER
+[nodemon] inserting item details from #TA93B88
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.NASER______ 06-14-2021 LDRY] invoice   : #59CFE5
+[PAK.NASER______ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:16:01 PM
+[PAK.NASER______ 06-14-2021 LDRY] customer  : PAK NASER
+[PAK.NASER______ 06-14-2021 LDRY] phone     : 
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.NASER______ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 17-06-2021
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] total     : Rp 24,000
+[PAK.NASER______ 06-14-2021 LDRY] paid      : Rp 0
+[PAK.NASER______ 06-14-2021 LDRY] change    : Rp 0
+[PAK.NASER______ 06-14-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:16:01 PM
+[nodemon] inserting transaction details on #T59CFE5 by PAK NASER
+[nodemon] inserting item details from #T59CFE5
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] invoice   : #E64CBE
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] timestamp : 06-14-2021, 11:21:40 PM
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] deadline  : 14-06-2021 -- 16-06-2021
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] total     : Rp 24,000
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-14-2021 LDRY] status    : PENDING
+[............... 06-14-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-14-2021, 11:21:40 PM
+[nodemon] inserting transaction details on #TE64CBE by IBU NURWULAN K
+[nodemon] inserting item details from #TE64CBE
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.NASER______ 06-15-2021 LDRY] invoice   : #26F22D
+[PAK.NASER______ 06-15-2021 LDRY] timestamp : 06-15-2021, 07:58:54 AM
+[PAK.NASER______ 06-15-2021 LDRY] customer  : PAK NASER
+[PAK.NASER______ 06-15-2021 LDRY] phone     : 
+[PAK.NASER______ 06-15-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.NASER______ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[PAK.NASER______ 06-15-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[PAK.NASER______ 06-15-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-15-2021 LDRY] total     : Rp 32,000
+[PAK.NASER______ 06-15-2021 LDRY] paid      : Rp 0
+[PAK.NASER______ 06-15-2021 LDRY] change    : Rp 0
+[PAK.NASER______ 06-15-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 07:58:54 AM
+[nodemon] inserting transaction details on #T26F22D by PAK NASER
+[nodemon] inserting item details from #T26F22D
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] invoice   : #1C7CAB
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:09:03 AM
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] total     : Rp 24,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:09:03 AM
+[nodemon] inserting transaction details on #T1C7CAB by IBU NURWULAN K
+[nodemon] inserting item details from #T1C7CAB
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] invoice   : #FDF8DD
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:11:24 AM
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] total     : Rp 15,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:11:24 AM
+[nodemon] inserting transaction details on #TFDF8DD by IBU NURWULAN K
+[nodemon] inserting item details from #TFDF8DD
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #277AA1
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:14:11 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5 x 8,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:14:11 AM
+[nodemon] inserting transaction details on #T277AA1 by MAS IRSYAD
+[nodemon] inserting item details from #T277AA1
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #F30666
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:18:09 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:18:09 AM
+[nodemon] inserting transaction details on #TF30666 by MAS IRSYAD
+[nodemon] inserting item details from #TF30666
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #762D99
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:20:05 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:20:05 AM
+[nodemon] inserting transaction details on #T762D99 by MAS IRSYAD
+[nodemon] inserting item details from #T762D99
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #8D8B3B
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:21:19 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 8 x 8,000  >>  64,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 64,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:21:19 AM
+[nodemon] inserting transaction details on #T8D8B3B by MAS IRSYAD
+[nodemon] inserting item details from #T8D8B3B
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #552A65
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:27:21 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:27:21 AM
+[nodemon] inserting transaction details on #T552A65 by MAS IRSYAD
+[nodemon] inserting item details from #T552A65
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] invoice   : #BB26E9
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:29:53 AM
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] total     : Rp 16,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:29:53 AM
+[nodemon] inserting transaction details on #TBB26E9 by IBU NURWULAN K
+[nodemon] inserting item details from #TBB26E9
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #C7FB35
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:36:09 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:36:09 AM
+[nodemon] inserting transaction details on #TC7FB35 by MAS IRSYAD
+[nodemon] inserting item details from #TC7FB35
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #07BE1B
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:06:02 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 17-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:06:02 AM
+[nodemon] inserting transaction details on #T07BE1B by MAS IRSYAD
+[nodemon] inserting item details from #T07BE1B
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #F90FF1
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:11:22 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:11:22 AM
+[nodemon] inserting transaction details on #TF90FF1 by MAS IRSYAD
+[nodemon] inserting item details from #TF90FF1
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #3AA63C
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:16:37 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 9 x 8,000  >>  72,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 72,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:16:37 AM
+[nodemon] inserting transaction details on #T3AA63C by MAS IRSYAD
+[nodemon] inserting item details from #T3AA63C
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #BBC69A
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:19:58 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:19:58 AM
+[nodemon] inserting transaction details on #TBBC69A by MAS IRSYAD
+[nodemon] inserting item details from #TBBC69A
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #CDA825
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:31:42 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:31:42 AM
+[nodemon] inserting transaction details on #TCDA825 by MAS IRSYAD
+[nodemon] inserting item details from #TCDA825
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #A0E458
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:37:28 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5,312 x 8,000  >>  42,496
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 42,496
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 7,504
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:37:28 AM
+[nodemon] inserting transaction details on #TA0E458 by MAS IRSYAD
+[nodemon] inserting item details from #TA0E458
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #DC121F
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:40:08 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4,121 x 8,000  >>  32,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 32,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 67,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:40:08 AM
+[nodemon] inserting transaction details on #TDC121F by MAS IRSYAD
+[nodemon] inserting item details from #TDC121F
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #B58AEA
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:48:14 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 26,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:48:14 AM
+[nodemon] inserting transaction details on #TB58AEA by MAS IRSYAD
+[nodemon] inserting item details from #TB58AEA
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #A98BD7
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 09:52:41 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 26,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:52:41 AM
+[nodemon] inserting transaction details on #TA98BD7 by MAS IRSYAD
+[nodemon] inserting item details from #TA98BD7
+
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] invoice   : #74A019
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] timestamp : 06-15-2021, 09:53:59 AM
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 4 x 42,000  >> 168,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] total     : Rp 168,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] paid      : Rp 200,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] change    : Rp 32,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:53:59 AM
+[nodemon] inserting transaction details on #T74A019 by IBU NURWULAN K
+[nodemon] inserting item details from #T74A019 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] invoice   : #388624
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] timestamp : 06-15-2021, 09:56:32 AM
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 3 x 42,000  >> 126,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] total     : Rp 126,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] paid      : Rp 150,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] change    : Rp 24,000
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 CHEM] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 09:56:32 AM
+[nodemon] inserting transaction details on #T388624 by IBU NURWULAN K
+[nodemon] inserting item details from #T388624 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] invoice   : #391C3A
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:05:54 AM
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 8 x 8,000  >>  64,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] total     : Rp 64,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] paid      : Rp 70,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] change    : Rp 6,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:05:54 AM
+[nodemon] inserting transaction details on #T391C3A by IBU NURWULAN K
+[nodemon] inserting item details from #T391C3A
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #9B946C
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:12:00 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4,121 x 8,000  >>  32,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI XL FULL-SET (CUCI REG) | 2 x 25,000  >>  50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER M (CUCI REG) | 1 x 30,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 112,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:12:00 AM
+[nodemon] inserting transaction details on #T9B946C by MAS IRSYAD
+[nodemon] inserting item details from #T9B946C
+[nodemon] inserting item details from #T9B946C
+[nodemon] inserting item details from #T9B946C
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #F2F130
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:33:24 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI S FULL-SET (CUCI REG) | 2 x 15,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER S (CUCI REG) | 1 x 15,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 69,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 30,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:33:24 AM
+[nodemon] inserting transaction details on #TF2F130 by MAS IRSYAD
+[nodemon] inserting item details from #TF2F130
+[nodemon] inserting item details from #TF2F130
+[nodemon] inserting item details from #TF2F130
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #07D899
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:47:48 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI XL FULL-SET (CUCI REG) | 1 x 25,000  >>  25,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : SPREI M (CUCI REG) | 2 x 15,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 79,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 21,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:47:48 AM
+[nodemon] inserting transaction details on #T07D899 by MAS IRSYAD
+[nodemon] inserting item details from #T07D899
+[nodemon] inserting item details from #T07D899
+[nodemon] inserting item details from #T07D899
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #41E54A
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:51:06 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI XL FULL-SET (CUCI REG) | 2 x 25,000  >>  50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER M (CUCI REG) | 1 x 30,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 104,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 110,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 5,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:51:06 AM
+[nodemon] inserting transaction details on #T41E54A by MAS IRSYAD
+[nodemon] inserting item details from #T41E54A
+[nodemon] inserting item details from #T41E54A
+[nodemon] inserting item details from #T41E54A
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #6E6231
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:53:53 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : BEDCOVER XL (CUCI REG) | 1 x 40,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : SPREI XL FULL-SET (CUCI REG) | 2 x 25,000  >>  50,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 114,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 150,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 36,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:53:53 AM
+[nodemon] inserting transaction details on #T6E6231 by MAS IRSYAD
+[nodemon] inserting item details from #T6E6231
+[nodemon] inserting item details from #T6E6231
+[nodemon] inserting item details from #T6E6231
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #7A1C93
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:59:10 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI M FULL-SET (CUCI REG) | 2 x 20,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER M (CUCI REG) | 1 x 30,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 94,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 5,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:59:10 AM
+[nodemon] inserting transaction details on #T7A1C93 by MAS IRSYAD
+[nodemon] inserting item details from #T7A1C93
+[nodemon] inserting item details from #T7A1C93
+[nodemon] inserting item details from #T7A1C93
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #19A3D6
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 11:03:19 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 72,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 28,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 11:03:19 AM
+[nodemon] inserting transaction details on #T19A3D6 by MAS IRSYAD
+[nodemon] inserting item details from #T19A3D6
+[nodemon] inserting item details from #T19A3D6
+[nodemon] inserting item details from #T19A3D6
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #05DF09
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 11:08:28 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 11:08:28 AM
+[nodemon] inserting transaction details on #T05DF09 by MAS IRSYAD
+[nodemon] inserting item details from #T05DF09
+[nodemon] inserting item details from #T05DF09
+[nodemon] inserting item details from #T05DF09
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #08419F
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 11:12:11 AM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 11:12:11 AM
+[nodemon] inserting transaction details on #T08419F by MAS IRSYAD
+[nodemon] inserting item details from #T08419F
+[nodemon] inserting item details from #T08419F
+[nodemon] inserting item details from #T08419F
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #2A118D
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:02:19 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI XL (CUCI REG) | 2 x 20,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER S (CUCI REG) | 3 x 15,000  >>  45,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 109,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 150,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 40,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:02:19 PM
+[nodemon] inserting transaction details on #T2A118D by MAS IRSYAD
+[nodemon] inserting item details from #T2A118D
+[nodemon] inserting item details from #T2A118D
+[nodemon] inserting item details from #T2A118D
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #19FB47
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:05:47 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 47,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:05:47 PM
+[nodemon] inserting transaction details on #T19FB47 by MAS IRSYAD
+[nodemon] inserting item details from #T19FB47
+[nodemon] inserting item details from #T19FB47
+[nodemon] inserting item details from #T19FB47
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #439408
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:09:56 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:09:56 PM
+[nodemon] inserting transaction details on #T439408 by MAS IRSYAD
+[nodemon] inserting item details from #T439408
+[nodemon] inserting item details from #T439408
+[nodemon] inserting item details from #T439408
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] invoice   : #9A5E5E
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:15:34 PM
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] -- 04 --  : PAKAIAN (CUCI REG) | 5 x 8,000  >>  40,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] total     : Rp 103,000
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] paid      : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] change    : Rp 0
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:15:34 PM
+[nodemon] inserting transaction details on #T9A5E5E by IBU NURWULAN K
+[nodemon] inserting item details from #T9A5E5E
+[nodemon] inserting item details from #T9A5E5E
+[nodemon] inserting item details from #T9A5E5E
+[nodemon] inserting item details from #T9A5E5E
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #426A71
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:18:29 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:18:29 PM
+[nodemon] inserting transaction details on #T426A71 by MAS IRSYAD
+[nodemon] inserting item details from #T426A71
+[nodemon] inserting item details from #T426A71
+[nodemon] inserting item details from #T426A71
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #A8186B
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:26:57 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:26:57 PM
+[nodemon] inserting transaction details on #TA8186B by MAS IRSYAD
+[nodemon] inserting item details from #TA8186B
+[nodemon] inserting item details from #TA8186B
+[nodemon] inserting item details from #TA8186B
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #4C48E3
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:28:59 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:28:59 PM
+[nodemon] inserting transaction details on #T4C48E3 by MAS IRSYAD
+[nodemon] inserting item details from #T4C48E3
+[nodemon] inserting item details from #T4C48E3
+[nodemon] inserting item details from #T4C48E3
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #7B7EEB
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:30:36 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:30:36 PM
+[nodemon] inserting transaction details on #T7B7EEB by MAS IRSYAD
+[nodemon] inserting item details from #T7B7EEB
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #72D715
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:31:53 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 31,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:31:53 PM
+[nodemon] inserting transaction details on #T72D715 by MAS IRSYAD
+[nodemon] inserting item details from #T72D715
+[nodemon] inserting item details from #T72D715
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #26C6AB
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:32:46 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 45,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:32:46 PM
+[nodemon] inserting transaction details on #T26C6AB by MAS IRSYAD
+[nodemon] inserting item details from #T26C6AB
+[nodemon] inserting item details from #T26C6AB
+[nodemon] inserting item details from #T26C6AB
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #8AB0F2
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:35:34 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:35:34 PM
+[nodemon] inserting transaction details on #T8AB0F2 by MAS IRSYAD
+[nodemon] inserting item details from #T8AB0F2
+[nodemon] inserting item details from #T8AB0F2
+[nodemon] inserting item details from #T8AB0F2
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #49AF76
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:40:28 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 04 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 87,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:40:28 PM
+[nodemon] inserting transaction details on #T49AF76 by MAS IRSYAD
+[nodemon] inserting item details from #T49AF76
+[nodemon] inserting item details from #T49AF76
+[nodemon] inserting item details from #T49AF76
+[nodemon] inserting item details from #T49AF76
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #CBB1B6
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:42:16 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 04 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 87,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:42:16 PM
+[nodemon] inserting transaction details on #TCBB1B6 by MAS IRSYAD
+[nodemon] inserting item details from #TCBB1B6
+[nodemon] inserting item details from #TCBB1B6
+[nodemon] inserting item details from #TCBB1B6
+[nodemon] inserting item details from #TCBB1B6
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #4E394F
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:44:50 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 04 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 87,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:44:50 PM
+[nodemon] inserting transaction details on #T4E394F by MAS IRSYAD
+[nodemon] inserting item details from #T4E394F
+[nodemon] inserting item details from #T4E394F
+[nodemon] inserting item details from #T4E394F
+[nodemon] inserting item details from #T4E394F
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #7C2671
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:55:55 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 45,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:55:55 PM
+[nodemon] inserting transaction details on #T7C2671 by MAS IRSYAD
+[nodemon] inserting item details from #T7C2671
+[nodemon] inserting item details from #T7C2671
+[nodemon] inserting item details from #T7C2671
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #B88ADE
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 04:59:12 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 55,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 04:59:12 PM
+[nodemon] inserting transaction details on #TB88ADE by MAS IRSYAD
+[nodemon] inserting item details from #TB88ADE
+[nodemon] inserting item details from #TB88ADE
+[nodemon] inserting item details from #TB88ADE
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #5FA12C
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 05:08:13 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : PAKAIAN (CUCI REG) | 2 x 8,000  >>  16,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : PAKAIAN (CUCI REG) | 3 x 8,000  >>  24,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 04 --  : PAKAIAN (CUCI REG) | 4 x 8,000  >>  32,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 87,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 05:08:13 PM
+[nodemon] inserting transaction details on #T5FA12C by MAS IRSYAD
+[nodemon] inserting item details from #T5FA12C
+[nodemon] inserting item details from #T5FA12C
+[nodemon] inserting item details from #T5FA12C
+[nodemon] inserting item details from #T5FA12C
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #1CAAEA
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 06:45:41 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI M FULL-SET (CUCI REG) | 2 x 20,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER XL (CUCI REG) | 1 x 40,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 104,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 120,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 15,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 06:45:41 PM
+[nodemon] inserting transaction details on #T1CAAEA by MAS IRSYAD
+[nodemon] inserting item details from #T1CAAEA
+[nodemon] inserting item details from #T1CAAEA
+[nodemon] inserting item details from #T1CAAEA
+
+[PAK.HASPUL.N___ 06-15-2021 LDRY] invoice   : #00CE6C
+[PAK.HASPUL.N___ 06-15-2021 LDRY] timestamp : 06-15-2021, 06:50:23 PM
+[PAK.HASPUL.N___ 06-15-2021 LDRY] customer  : PAK HASPUL N
+[PAK.HASPUL.N___ 06-15-2021 LDRY] phone     : 085161415804
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.HASPUL.N___ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 6,612 x 8,000  >>  52,896
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 02 --  : JAS / KEBAYA (CUCI REG) | 3 x 20,000  >>  60,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] total     : Rp 112,896
+[PAK.HASPUL.N___ 06-15-2021 LDRY] paid      : Rp 120,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] change    : Rp 7,104
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 06:50:23 PM
+[nodemon] inserting new customer, PAK HASPUL N
+[nodemon] inserting transaction details on #T00CE6C by PAK HASPUL N
+[nodemon] inserting item details from #T00CE6C
+[nodemon] inserting item details from #T00CE6C
+
+[PAK.HASPUL.N___ 06-15-2021 LDRY] invoice   : #2B10AD
+[PAK.HASPUL.N___ 06-15-2021 LDRY] timestamp : 06-15-2021, 06:52:05 PM
+[PAK.HASPUL.N___ 06-15-2021 LDRY] customer  : PAK HASPUL N
+[PAK.HASPUL.N___ 06-15-2021 LDRY] phone     : 
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.HASPUL.N___ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 6,121 x 8,000  >>  48,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] total     : Rp 48,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] paid      : Rp 50,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] change    : Rp 1,032
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 06:52:05 PM
+[nodemon] inserting transaction details on #T2B10AD by PAK HASPUL N
+[nodemon] inserting item details from #T2B10AD
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.HASPUL.N___ 06-15-2021 LDRY] invoice   : #3412CA
+[PAK.HASPUL.N___ 06-15-2021 LDRY] timestamp : 06-15-2021, 06:58:30 PM
+[PAK.HASPUL.N___ 06-15-2021 LDRY] customer  : PAK HASPUL N
+[PAK.HASPUL.N___ 06-15-2021 LDRY] phone     : 
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.HASPUL.N___ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 3,121 x 8,000  >>  24,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 02 --  : BEDCOVER XL (SETRIKA REG) | 2 x 32,500  >>  65,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] total     : Rp 89,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] paid      : Rp 100,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] change    : Rp 10,032
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 06:58:30 PM
+[nodemon] inserting transaction details on #T3412CA by PAK HASPUL N
+[nodemon] inserting item details from #T3412CA
+[nodemon] inserting item details from #T3412CA
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #3D7313
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 07:01:39 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 19-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 13,121 x 8,000  >>  104,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI S FULL-SET (CUCI REG) | 1 x 15,000  >>  15,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : SPREI XL (CUCI REG) | 2 x 20,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 159,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 200,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 40,032
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 07:01:39 PM
+[nodemon] inserting transaction details on #T3D7313 by MAS IRSYAD
+[nodemon] inserting item details from #T3D7313
+[nodemon] inserting item details from #T3D7313
+[nodemon] inserting item details from #T3D7313
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #41B11E
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 08:01:47 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5,312 x 8,000  >>  42,496
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : SPREI XL (CUCI REG) | 2 x 20,000  >>  40,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 03 --  : BEDCOVER M (CUCI REG) | 1 x 30,000  >>  30,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 112,496
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 150,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 37,504
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 08:01:47 PM
+[nodemon] inserting transaction details on #T41B11E by MAS IRSYAD
+[nodemon] inserting item details from #T41B11E
+[nodemon] inserting item details from #T41B11E
+[nodemon] inserting item details from #T41B11E
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.HASPUL.N___ 06-15-2021 LDRY] invoice   : #BBCBB3
+[PAK.HASPUL.N___ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:17:25 PM
+[PAK.HASPUL.N___ 06-15-2021 LDRY] customer  : PAK HASPUL N
+[PAK.HASPUL.N___ 06-15-2021 LDRY] phone     : 
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.HASPUL.N___ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 18-06-2021
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5,121 x 8,000  >>  40,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 02 --  : BEDCOVER XL (CUCI REG) | 2 x 40,000  >>  80,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] -- 03 --  : SPREI M FULL-SET (CUCI REG) | 1 x 20,000  >>  20,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] total     : Rp 140,968
+[PAK.HASPUL.N___ 06-15-2021 LDRY] paid      : Rp 200,000
+[PAK.HASPUL.N___ 06-15-2021 LDRY] change    : Rp 59,032
+[PAK.HASPUL.N___ 06-15-2021 LDRY] --------  : --------
+[PAK.HASPUL.N___ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:17:25 PM
+[nodemon] inserting transaction details on #TBBCBB3 by PAK HASPUL N
+[nodemon] inserting item details from #TBBCBB3
+[nodemon] inserting item details from #TBBCBB3
+[nodemon] inserting item details from #TBBCBB3
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #7E8DC8
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:20:21 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 19-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : SPREI XL FULL-SET (CUCI REG) | 3 x 25,000  >>  75,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 75,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 25,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : SUCCESS
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:20:21 PM
+[nodemon] inserting transaction details on #T7E8DC8 by MAS IRSYAD
+[nodemon] inserting item details from #T7E8DC8
+
+[MAS.IRSYAD_____ 06-15-2021 LDRY] invoice   : #08107C
+[MAS.IRSYAD_____ 06-15-2021 LDRY] timestamp : 06-15-2021, 10:22:49 PM
+[MAS.IRSYAD_____ 06-15-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-15-2021 LDRY] deadline  : 15-06-2021 -- 15-06-2021
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4,121 x 8,000  >>  32,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] -- 02 --  : BEDCOVER S (CUCI REG) | 3 x 15,000  >>  45,000
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] total     : Rp 77,968
+[MAS.IRSYAD_____ 06-15-2021 LDRY] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 LDRY] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:22:49 PM
+[nodemon] inserting transaction details on #T08107C by MAS IRSYAD
+[nodemon] inserting item details from #T08107C
+[nodemon] inserting item details from #T08107C
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-15-2021 CHEM] invoice   : #43B6D0
+[MAS.IRSYAD_____ 06-15-2021 CHEM] timestamp : 06-15-2021, 10:31:56 PM
+[MAS.IRSYAD_____ 06-15-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 3 x 42,000  >> 126,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] -- 02 --  : DAILY (DETERJEN)   | 1 x 15,000  >> 15,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] total     : Rp 141,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 CHEM] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:31:56 PM
+[nodemon] inserting transaction details on #T43B6D0 by MAS IRSYAD
+[nodemon] inserting item details from #T43B6D0 ...
+[nodemon] inserting item details from #T43B6D0 ...
+
+[MAS.IRSYAD_____ 06-15-2021 CHEM] invoice   : #B877D8
+[MAS.IRSYAD_____ 06-15-2021 CHEM] timestamp : 06-15-2021, 10:33:31 PM
+[MAS.IRSYAD_____ 06-15-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-15-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 2 x 42,000  >> 84,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] -- 02 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] -- 03 --  : MOLTO B (PARFUM) + 1 JUG 5L | 3 x 42,000 + 8,000 >> 134,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] total     : Rp 267,000
+[MAS.IRSYAD_____ 06-15-2021 CHEM] paid      : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 CHEM] change    : Rp 0
+[MAS.IRSYAD_____ 06-15-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-15-2021 CHEM] status    : PENDING
+[............... 06-15-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-15-2021, 10:33:31 PM
+[nodemon] inserting transaction details on #TB877D8 by MAS IRSYAD
+[nodemon] inserting item details from #TB877D8 ...
+[nodemon] inserting item details from #TB877D8 ...
+[nodemon] inserting item details from #TB877D8 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.NASER______ 06-16-2021 LDRY] invoice   : #3F24DA
+[PAK.NASER______ 06-16-2021 LDRY] timestamp : 06-16-2021, 07:06:44 AM
+[PAK.NASER______ 06-16-2021 LDRY] customer  : PAK NASER
+[PAK.NASER______ 06-16-2021 LDRY] phone     : 
+[PAK.NASER______ 06-16-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-16-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[PAK.NASER______ 06-16-2021 LDRY] deadline  : 16-06-2021 -- 19-06-2021
+[PAK.NASER______ 06-16-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-16-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5,541 x 8,000  >>  44,328
+[PAK.NASER______ 06-16-2021 LDRY] -- 02 --  : SPREI M (SETRIKA EXP) | 2 x 19,804  >>  39,608
+[PAK.NASER______ 06-16-2021 LDRY] -- 03 --  : BEDCOVER S (CUCI REG) | 2 x 15,000  >>  30,000
+[PAK.NASER______ 06-16-2021 LDRY] -- 04 --  : SPREI S FULL-SET (CUCI REG) | 1 x 15,000  >>  15,000
+[PAK.NASER______ 06-16-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-16-2021 LDRY] total     : Rp 128,936
+[PAK.NASER______ 06-16-2021 LDRY] paid      : Rp 150,000
+[PAK.NASER______ 06-16-2021 LDRY] change    : Rp 21,064
+[PAK.NASER______ 06-16-2021 LDRY] --------  : --------
+[PAK.NASER______ 06-16-2021 LDRY] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 07:06:44 AM
+[nodemon] inserting transaction details on #T3F24DA by PAK NASER
+[nodemon] inserting item details from #T3F24DA
+[nodemon] inserting item details from #T3F24DA
+[nodemon] inserting item details from #T3F24DA
+[nodemon] inserting item details from #T3F24DA
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 LDRY] invoice   : #C82C08
+[MAS.IRSYAD_____ 06-16-2021 LDRY] timestamp : 06-16-2021, 07:10:51 AM
+[MAS.IRSYAD_____ 06-16-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-16-2021 LDRY] deadline  : 16-06-2021 -- 19-06-2021
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 4,123 x 8,000  >>  32,984
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 02 --  : SPREI S (CUCI REG) | 2 x 10,000  >>  20,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 03 --  : SPREI XL (CUCI REG) | 1 x 20,000  >>  20,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 04 --  : BEDCOVER M (CUCI REG) | 1 x 30,000  >>  30,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] total     : Rp 102,984
+[MAS.IRSYAD_____ 06-16-2021 LDRY] paid      : Rp 110,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] change    : Rp 7,016
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 07:10:51 AM
+[nodemon] inserting transaction details on #TC82C08 by MAS IRSYAD
+[nodemon] inserting item details from #TC82C08
+[nodemon] inserting item details from #TC82C08
+[nodemon] inserting item details from #TC82C08
+[nodemon] inserting item details from #TC82C08
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 LDRY] invoice   : #D17D6D
+[MAS.IRSYAD_____ 06-16-2021 LDRY] timestamp : 06-16-2021, 07:17:32 AM
+[MAS.IRSYAD_____ 06-16-2021 LDRY] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 LDRY] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[MAS.IRSYAD_____ 06-16-2021 LDRY] deadline  : 16-06-2021 -- 19-06-2021
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 1 x 8,000  >>  15,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 02 --  : SPREI S (CUCI REG) | 2 x 10,000  >>  20,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 03 --  : SPREI M (CUCI REG) | 3 x 15,000  >>  45,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 04 --  : SPREI M FULL-SET (CUCI REG) | 4 x 20,000  >>  80,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 05 --  : SPREI XL FULL-SET (CUCI REG) | 5 x 25,000  >>  125,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] -- 06 --  : SPREI M (CUCI REG) | 6 x 15,000  >>  90,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] total     : Rp 375,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] paid      : Rp 400,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] change    : Rp 25,000
+[MAS.IRSYAD_____ 06-16-2021 LDRY] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 LDRY] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 07:17:32 AM
+[nodemon] inserting transaction details on #TD17D6D by MAS IRSYAD
+[nodemon] inserting item details from #TD17D6D
+[nodemon] inserting item details from #TD17D6D
+[nodemon] inserting item details from #TD17D6D
+[nodemon] inserting item details from #TD17D6D
+[nodemon] inserting item details from #TD17D6D
+[nodemon] inserting item details from #TD17D6D
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 CHEM] invoice   : #735AD2
+[MAS.IRSYAD_____ 06-16-2021 CHEM] timestamp : 06-16-2021, 10:10:27 AM
+[MAS.IRSYAD_____ 06-16-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 02 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 03 --  : MOLTO B (PARFUM) + 1 JUG 5L | 2 x 42,000 + 8,000 >> 92,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] total     : Rp 183,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] paid      : Rp 200,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] change    : Rp 17,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 10:10:27 AM
+[nodemon] inserting transaction details on #T735AD2 by MAS IRSYAD
+[nodemon] inserting item details from #T735AD2 ...
+[nodemon] inserting item details from #T735AD2 ...
+[nodemon] inserting item details from #T735AD2 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 CHEM] invoice   : #12FA56
+[MAS.IRSYAD_____ 06-16-2021 CHEM] timestamp : 06-16-2021, 11:22:06 AM
+[MAS.IRSYAD_____ 06-16-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 02 --  : SNAPPY (PELEMBUT)   | 2 x 20,000  >> 40,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] total     : Rp 82,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] paid      : Rp 100,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] change    : Rp 18,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 11:22:06 AM
+[nodemon] inserting transaction details on #T12FA56 by MAS IRSYAD
+[nodemon] inserting item details from #T12FA56 ...
+[nodemon] inserting item details from #T12FA56 ...
+
+[MAS.IRSYAD_____ 06-16-2021 CHEM] invoice   : #02EA73
+[MAS.IRSYAD_____ 06-16-2021 CHEM] timestamp : 06-16-2021, 11:24:54 AM
+[MAS.IRSYAD_____ 06-16-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 02 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 03 --  : MOLTO B (PARFUM) + 1 JUG 5L | 1 x 42,000 + 8,000 >> 50,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] total     : Rp 141,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] paid      : Rp 200,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] change    : Rp 59,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 11:24:54 AM
+[nodemon] inserting transaction details on #T02EA73 by MAS IRSYAD
+[nodemon] inserting item details from #T02EA73 ...
+[nodemon] inserting item details from #T02EA73 ...
+[nodemon] inserting item details from #T02EA73 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 CHEM] invoice   : #2BF13E
+[MAS.IRSYAD_____ 06-16-2021 CHEM] timestamp : 06-16-2021, 11:34:19 AM
+[MAS.IRSYAD_____ 06-16-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 02 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 03 --  : MOLTO B (PARFUM) + 1 JUG 5L | 1 x 42,000 + 8,000 >> 50,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] total     : Rp 141,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] paid      : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 CHEM] change    : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] status    : PENDING
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 11:34:19 AM
+[nodemon] inserting transaction details on #T2BF13E by MAS IRSYAD
+[nodemon] inserting item details from #T2BF13E ...
+[nodemon] inserting item details from #T2BF13E ...
+[nodemon] inserting item details from #T2BF13E ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] invoice   : #B17965
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] timestamp : 06-16-2021, 11:46:56 AM
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] phone     : 
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 1 x 42,000  >> 42,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] -- 02 --  : MOLTO B (PELICIN) + 1 JUG 1L | 1 x 22,000 + 7,000 >> 29,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] -- 03 --  : SNAPPY (PELICIN) + 1 JUG 5L | 5 x 22,000 + 8,000 >> 118,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] total     : Rp 189,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] paid      : Rp 200,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] change    : Rp 11,000
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] --------  : --------
+[IBU.NURWULAN.K_ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 11:46:56 AM
+[nodemon] inserting transaction details on #TB17965 by IBU NURWULAN K
+[nodemon] inserting item details from #TB17965 ...
+[nodemon] inserting item details from #TB17965 ...
+[nodemon] inserting item details from #TB17965 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 CHEM] invoice   : #B61210
+[MAS.IRSYAD_____ 06-16-2021 CHEM] timestamp : 06-16-2021, 01:50:14 PM
+[MAS.IRSYAD_____ 06-16-2021 CHEM] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 CHEM] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 3 x 42,000  >> 126,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 02 --  : DAILY (DETERJEN) + 2 JUG 1L | 2 x 15,000 + 14,000 >> 44,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] -- 03 --  : OCEAN F (PELEMBUT) + 1 JUG 5L | 1 x 20,000 + 8,000 >> 28,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] total     : Rp 198,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] paid      : Rp 200,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] change    : Rp 2,000
+[MAS.IRSYAD_____ 06-16-2021 CHEM] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 01:50:14 PM
+[nodemon] inserting transaction details on #TB61210 by MAS IRSYAD
+[nodemon] inserting item details from #TB61210 ...
+[nodemon] inserting item details from #TB61210 ...
+[nodemon] inserting item details from #TB61210 ...
+
+[PAK.NASER______ 06-16-2021 CHEM] invoice   : #6E5CF7
+[PAK.NASER______ 06-16-2021 CHEM] timestamp : 06-16-2021, 02:05:34 PM
+[PAK.NASER______ 06-16-2021 CHEM] customer  : PAK NASER
+[PAK.NASER______ 06-16-2021 CHEM] phone     : 
+[PAK.NASER______ 06-16-2021 CHEM] --------  : --------
+[PAK.NASER______ 06-16-2021 CHEM] product   : SUPER CHEMICAL LAUNDRY
+[PAK.NASER______ 06-16-2021 CHEM] --------  : --------
+[PAK.NASER______ 06-16-2021 CHEM] -- 01 --  : MOLTO B (PARFUM)   | 2 x 42,000  >> 84,000
+[PAK.NASER______ 06-16-2021 CHEM] -- 02 --  : MOLTO B (PARFUM) + 1 JUG 1L | 1 x 42,000 + 7,000 >> 49,000
+[PAK.NASER______ 06-16-2021 CHEM] -- 03 --  : MOLTO B (PARFUM) + 1 JUG 5L | 3 x 42,000 + 8,000 >> 134,000
+[PAK.NASER______ 06-16-2021 CHEM] --------  : --------
+[PAK.NASER______ 06-16-2021 CHEM] total     : Rp 267,000
+[PAK.NASER______ 06-16-2021 CHEM] paid      : Rp 300,000
+[PAK.NASER______ 06-16-2021 CHEM] change    : Rp 33,000
+[PAK.NASER______ 06-16-2021 CHEM] --------  : --------
+[PAK.NASER______ 06-16-2021 CHEM] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 02:05:34 PM
+[nodemon] inserting transaction details on #T6E5CF7 by PAK NASER
+[nodemon] inserting item details from #T6E5CF7 ...
+[nodemon] inserting item details from #T6E5CF7 ...
+[nodemon] inserting item details from #T6E5CF7 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 STAT] invoice   : #6E98E3
+[MAS.IRSYAD_____ 06-16-2021 STAT] timestamp : 06-16-2021, 02:08:59 PM
+[MAS.IRSYAD_____ 06-16-2021 STAT] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 STAT] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] product   : STATIONERY & LEMINERAL
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 01 --  : BUKU TULIS CAMPUS | 2 x 1000 >> 2,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 02 --  : BUKU TULIS CAMPUS | 4 x 1000 >> 4,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] total     : Rp 6,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] paid      : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 STAT] change    : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] status    : PENDING
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 02:08:59 PM
+[nodemon] inserting transaction details on #T6E98E3 by MAS IRSYAD
+[nodemon] inserting item details from #T6E98E3 ...
+[nodemon] inserting item details from #T6E98E3 ...
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+Emitted 'error' event at:
+    at Connection._handleProtocolError (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:198:13)
+    at Protocol._delegateError (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/cookie/Git/main/mama-laundry/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[PAK.NASER______ 06-16-2021 STAT] invoice   : #BD94B8
+[PAK.NASER______ 06-16-2021 STAT] timestamp : 06-16-2021, 04:15:39 PM
+[PAK.NASER______ 06-16-2021 STAT] customer  : PAK NASER
+[PAK.NASER______ 06-16-2021 STAT] phone     : 
+[PAK.NASER______ 06-16-2021 STAT] --------  : --------
+[PAK.NASER______ 06-16-2021 STAT] product   : STATIONERY & LEMINERAL
+[PAK.NASER______ 06-16-2021 STAT] --------  : --------
+[PAK.NASER______ 06-16-2021 STAT] -- 01 --  : PENSIL WARNA FABER-CASTELLE | 2 x 2000 >> 4,000
+[PAK.NASER______ 06-16-2021 STAT] -- 02 --  : CAT WARNA ACRYLIC | 1 x 3000 >> 3,000
+[PAK.NASER______ 06-16-2021 STAT] -- 03 --  : KANVAS 40 X 60 CM | 3 x 6000 >> 18,000
+[PAK.NASER______ 06-16-2021 STAT] --------  : --------
+[PAK.NASER______ 06-16-2021 STAT] total     : Rp 25,000
+[PAK.NASER______ 06-16-2021 STAT] paid      : Rp 50,000
+[PAK.NASER______ 06-16-2021 STAT] change    : Rp 25,000
+[PAK.NASER______ 06-16-2021 STAT] --------  : --------
+[PAK.NASER______ 06-16-2021 STAT] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 04:15:39 PM
+[nodemon] inserting transaction details on #TBD94B8 by PAK NASER
+[nodemon] inserting item details from #TBD94B8 ...
+[nodemon] inserting item details from #TBD94B8 ...
+[nodemon] inserting item details from #TBD94B8 ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[MAS.IRSYAD_____ 06-16-2021 STAT] invoice   : #0A89CF
+[MAS.IRSYAD_____ 06-16-2021 STAT] timestamp : 06-16-2021, 06:47:41 PM
+[MAS.IRSYAD_____ 06-16-2021 STAT] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 STAT] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] product   : STATIONERY & LEMINERAL
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 01 --  : BUKU TULIS CAMPUS | 2 x 1000 >> 2,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 02 --  : PENSIL WARNA FABER-CASTELLE | 1 x 2000 >> 2,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 03 --  : KARTON / KERTAS KADO ROLL | 1 x 5000 >> 5,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] total     : Rp 9,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] paid      : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 STAT] change    : Rp 0
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] status    : PENDING
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 06:47:41 PM
+[nodemon] inserting transaction details on #T0A89CF by MAS IRSYAD
+[nodemon] inserting item details from #T0A89CF ...
+[nodemon] inserting item details from #T0A89CF ...
+[nodemon] inserting item details from #T0A89CF ...
+
+[MAS.IRSYAD_____ 06-16-2021 STAT] invoice   : #0011ED
+[MAS.IRSYAD_____ 06-16-2021 STAT] timestamp : 06-16-2021, 06:51:07 PM
+[MAS.IRSYAD_____ 06-16-2021 STAT] customer  : MAS IRSYAD
+[MAS.IRSYAD_____ 06-16-2021 STAT] phone     : 
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] product   : STATIONERY & LEMINERAL
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] -- 01 --  : BUKU TULIS CAMPUS | 3 x 1000 >> 3,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] total     : Rp 3,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] paid      : Rp 10,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] change    : Rp 7,000
+[MAS.IRSYAD_____ 06-16-2021 STAT] --------  : --------
+[MAS.IRSYAD_____ 06-16-2021 STAT] status    : SUCCESS
+[............... 06-16-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-16-2021, 06:51:07 PM
+[nodemon] inserting transaction details on #T0011ED by MAS IRSYAD
+[nodemon] inserting item details from #T0011ED ...

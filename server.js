@@ -33,6 +33,7 @@ app.use(express.static('source'));
 app.use('/bash', express.static(__dirname + 'source/bash'));
 app.use('/css', express.static(__dirname + 'source/css'));
 app.use('/js', express.static(__dirname + 'source/js'));
+app.use('/python', express.static(__dirname + 'source/python'));
 
 app.use(express.static('asset'));
 app.use('/images', express.static(__dirname + 'asset/images'));
@@ -194,17 +195,18 @@ app.post('/', (req,res) => {
 
 	let sql = "SELECT * FROM CUST WHERE NAME = '"+cust_name+"';";
 	db.query(sql,(err, result) => {
-		console.log(result);
+		console.log("[nodemon] issuing new transaction at " + timestamp);
 		if (result[0] == null) {
 			let sql = "INSERT INTO CUST (HASH, NAME, PHONE) VALUES ('C"+order_no+"','"+cust_name+"','"+cust_phone+"');";
 			db.query(sql,(err, result) => {
-				console.log(result);
+				console.log("[nodemon] inserting new customer, "+cust_name+"");
 			});
 		}
-		sql = "SELECT HASH FROM CUST WHERE NAME = '"+cust_name+"';";
+		sql = "SELECT * FROM CUST WHERE NAME = '"+cust_name+"';";
 		db.query(sql,(err, result) => {
 			var hash = order_no;		
 			var hash_u = result[0].HASH;
+			var name = result[0].NAME;
 			var prod = prod_name;			
 			if (prod == "LAUNDRY & DRY CLEANING") {
 				var check_in = req.body["in-laundry-checkin"].toUpperCase();
@@ -219,7 +221,7 @@ app.post('/', (req,res) => {
 			var status = stat_payment;
 			sql = "INSERT INTO TRX VALUES ('T"+hash+"','"+hash_u+"',CURRENT_TIMESTAMP(),STR_TO_DATE('"+check_in+"','%d-%m-%Y'),STR_TO_DATE('"+check_out+"','%d-%m-%Y'),'"+prod+"','"+total+".00','"+paid+".00','"+change+".00','"+status+"');";
 			db.query(sql,(err,result) => {
-				console.log(result);
+				console.log("[nodemon] inserting transaction details on #T"+hash+" by "+name+"");
 			});
 			switch(prod) {
 				case "LAUNDRY & DRY CLEANING":
@@ -237,8 +239,7 @@ app.post('/', (req,res) => {
 							var srvc_name = srvc_ldry_arr[srvc_val].toUpperCase();
 							sql = "INSERT INTO SUB_TRX_LDRY VALUES ('"+no_item+"','T"+hash_t+"','"+item_name+"','"+srvc_name+"','"+baseprice+".00','"+qty_val+"','"+toteach_val+".00');";
 							db.query(sql,(err,result) => {
-								console.log(err);
-								console.log(result);
+								console.log("[nodemon] inserting item details from #T"+hash_t);
 							});
 						} catch(err) {var dump = 0;}
 					}
@@ -264,8 +265,7 @@ app.post('/', (req,res) => {
 							if (jugadd_val == "") {jugadd_val = 0;}
 							sql = "INSERT INTO SUB_TRX_CHEM VALUES ('"+no_item+"','T"+hash_t+"','"+liquid_name+"','"+item_name+"','"+baseprice+".00','"+qty_val+".00','"+jug_name+"','"+jugadd_val+".00','"+ceil_val+".00','"+toteach_val+".00');";
 							db.query(sql,(err,result) => {
-								console.log(err);
-								console.log(result);
+								console.log("[nodemon] inserting item details from #T"+hash_t+" ...");
 							});							
 						} catch(err) {var dump = 0;}
 					}						
@@ -283,8 +283,7 @@ app.post('/', (req,res) => {
 							var item_name = item_stat_arr[item_val].toUpperCase();
 							sql = "INSERT INTO SUB_TRX_STAT VALUES ('"+no_item+"','T"+hash_t+"','"+item_name+"','"+baseprice+".00','"+qty_val+"','"+toteach_val+".00');";
 							db.query(sql,(err,result) => {
-								console.log(err);
-								console.log(result);
+								console.log("[nodemon] inserting item details from #T"+hash_t+" ...");
 							});							
 						} catch(err) {var dump = 0;}
 					}
@@ -292,9 +291,6 @@ app.post('/', (req,res) => {
 			}
 		});		
 	});
-
-
-
 	res.render('index');
 });
 
