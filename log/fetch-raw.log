@@ -2888,3 +2888,41 @@ Emitted 'error' event at:
 [nodemon] issuing new transaction at 06-16-2021, 06:51:07 PM
 [nodemon] inserting transaction details on #T0011ED by MAS IRSYAD
 [nodemon] inserting item details from #T0011ED ...
+
+> server-pkg@2021.1.1 start /home/cookie/Git/main/mama-laundry
+> nodemon server.js
+
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[nodemon] listening on port 8080 ...
+[nodemon] mysql is running ...
+
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] invoice   : #E38378
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] timestamp : 06-17-2021, 10:35:33 AM
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] customer  : IBU NURWULAN K
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] phone     : 
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] product   : LAUNDRY & DRY CLEANING
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] deadline  : 17-06-2021 -- 20-06-2021
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] -- 01 --  : PAKAIAN (CUCI REG) | 5,121 x 8,000  >>  40,968
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] -- 02 --  : PAKAIAN (SETRIKA REG) | 3,121 x 6,500  >>  20,286
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] -- 03 --  : SPREI XL (CUCI REG) | 1 x 20,000  >>  20,000
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] -- 04 --  : BEDCOVER S (CUCI REG) | 1 x 15,000  >>  15,000
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] total     : Rp 96,254
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] paid      : Rp 100,000
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] change    : Rp 3,746
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] --------  : --------
+[IBU.NURWULAN.K_ 06-17-2021 LDRY] status    : SUCCESS
+[............... 06-17-2021 ....] ==================================================
+
+[nodemon] issuing new transaction at 06-17-2021, 10:35:33 AM
+[nodemon] inserting transaction details on #TE38378 by IBU NURWULAN K
+[nodemon] inserting item details from #TE38378
+[nodemon] inserting item details from #TE38378
+[nodemon] inserting item details from #TE38378
+[nodemon] inserting item details from #TE38378
